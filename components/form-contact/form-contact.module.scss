@@ -1,0 +1,213 @@
+.formContact {
+  &.blue {
+    color: var(--science-blue);
+
+    .input {
+      &::placeholder {
+        color: var(--science-blue);
+      }
+
+      &.border {
+        border-bottom: 1px solid var(--science-blue);
+      }
+    }
+  }
+
+  &.white {
+    color: var(--white);
+
+    .input {
+      &::placeholder {
+        color: var(--white);
+      }
+
+      &.border {
+        border-bottom: 1px solid var(--white);
+      }
+    }
+  }
+
+  .formC {
+    padding: desktop-vw(90px) desktop-vw(40px);
+    padding-right: desktop-vw(120px);
+
+    @include mobile {
+      padding: mobile-vw(50px) mobile-vw(12px);
+    }
+
+    .title {
+      font-family: var(--font-fustat);
+      font-size: desktop-vw(22px);
+      font-weight: 500;
+      margin-bottom: desktop-vw(30px);
+
+      @include mobile {
+        font-size: mobile-vw(24px);
+        margin-bottom: mobile-vw(30px);
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: desktop-vw(12px);
+
+    @include mobile {
+      gap: mobile-vw(12px);
+    }
+
+    .row {
+      display: flex;
+      gap: desktop-vw(12px);
+
+      @include mobile {
+        gap: mobile-vw(12px);
+      }
+    }
+
+    .fieldC {
+      flex: 1;
+      margin-bottom: desktop-vw(20px);
+
+      @include mobile {
+        margin-bottom: mobile-vw(20px);
+      }
+
+      &.checkbox {
+        margin-top: desktop-vw(16px);
+
+        @include mobile {
+          margin-top: mobile-vw(16px);
+        }
+      }
+    }
+
+    .submitBtn {
+      @include dims(100%, desktop-vw(80px));
+      margin-top: desktop-vw(12px);
+      pointer-events: auto;
+
+      @include mobile {
+        @include dims(100%, mobile-vw(60px));
+        margin: 0 auto;
+        margin-top: mobile-vw(12px);
+      }
+
+      &:disabled,
+      &[disabled] {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+
+      .spinnerC {
+        @include dims(desktop-vw(20px));
+
+        @include mobile {
+          @include dims(mobile-vw(20px));
+        }
+      }
+    }
+  }
+
+  .formItem {
+    gap: desktop-vw(10px);
+    position: relative;
+
+    @include mobile {
+      gap: mobile-vw(10px);
+    }
+
+    .input {
+      @include dims(100%, desktop-vw(40px));
+      border: none;
+      font-family: var(--font-fustat);
+      font-weight: 400;
+      font-size: desktop-vw(16px);
+      padding: desktop-vw(12px) 0;
+
+      @include mobile {
+        @include dims(100%, mobile-vw(40px));
+        font-size: mobile-vw(16px);
+        padding: mobile-vw(12px) 0;
+      }
+
+      &::placeholder {
+        font-family: var(--font-fustat);
+        font-weight: 500;
+        font-size: desktop-vw(16px);
+        transition: 400ms opacity ease;
+        opacity: 0.3;
+
+        @include mobile {
+          font-size: mobile-vw(16px);
+        }
+      }
+
+      &:focus {
+        &::placeholder {
+          opacity: 0.3;
+        }
+      }
+
+      &.textarea {
+        min-height: desktop-vw(120px);
+        max-height: desktop-vw(160px);
+
+        @include mobile {
+          min-height: mobile-vw(120px);
+          max-height: mobile-vw(160px);
+        }
+      }
+    }
+
+    .box {
+      border: 1px solid var(--science-blue);
+      border-radius: desktop-vw(2px);
+
+      @include mobile {
+        border-radius: mobile-vw(2px);
+      }
+    }
+
+    .formLabel {
+      font-family: var(--font-work-sans);
+      font-size: desktop-vw(14px);
+      font-weight: 400;
+      letter-spacing: -0.04em;
+      text-align: left;
+
+      @include mobile {
+        font-size: mobile-vw(14px);
+      }
+    }
+
+    .formMessage {
+      @include position(absolute, calc(100% + desktop-vw(4px)), auto, auto, 0);
+      font-family: var(--font-work-sans);
+      font-size: desktop-vw(11px);
+      font-weight: 300;
+      letter-spacing: -0.03em;
+      text-align: left;
+
+      @include mobile {
+        @include position(absolute, calc(100% + mobile-vw(4px)), auto, auto, 0);
+        font-size: mobile-vw(11px);
+      }
+    }
+  }
+
+  .response {
+    font-family: var(--font-fustat);
+    font-weight: 400;
+    font-size: desktop-vw(16px);
+    padding: desktop-vw(12px) 0;
+    text-align: center;
+
+    @include mobile {
+      @include dims(100%, mobile-vw(40px));
+      font-size: mobile-vw(16px);
+      padding: mobile-vw(12px) 0;
+    }
+  }
+}

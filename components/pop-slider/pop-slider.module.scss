@@ -1,0 +1,87 @@
+.controls {
+  --height: #{desktop-vw(80px)};
+  @include position(absolute, auto, auto, 2%, 50%);
+  @include dims(desktop-vw(500px), var(--height));
+  border-radius: desktop-vw(64px);
+  border: 0px solid var(--science-blue);
+  display: flex;
+  transform: translateX(-50%);
+  pointer-events: auto;
+  z-index: 10;
+
+  @include mobile {
+    @include position(absolute, auto, auto, 0%, 50%);
+    --height: #{mobile-vw(80px)};
+    @include dims(100%, var(--height));
+  }
+
+  &::before {
+    content: "";
+    border-radius: desktop-vw(64px);
+    @include position(absolute, -5px, -5px, -5px, -5px);
+    background-color: var(--science-blue);
+    z-index: -1;
+  }
+
+  .inner {
+    background-color: var(--white);
+    border-radius: desktop-vw(64px);
+
+    .content {
+      flex: 1;
+      color: var(--science-blue);
+      font-family: var(--font-dela-gothic-one);
+      font-size: desktop-vw(30px);
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+      padding: desktop-vw(4px);
+      padding-left: desktop-vw(16px);
+      pointer-events: auto;
+
+      @include mobile {
+        font-size: mobile-vw(24px);
+        margin-bottom: mobile-vw(30px);
+        text-align: center;
+      }
+    }
+
+    .button {
+      @include dims(var(--height));
+      flex-shrink: 0;
+      padding: desktop-vw(20px);
+    }
+  }
+}
+
+.cta {
+  background-color: var(--science-blue);
+  border: 1px solid var(--science-blue);
+  border-radius: desktop-vw(32px);
+  color: var(--white);
+  font-family: var(--font-fustat);
+  font-size: desktop-vw(18px);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  padding: desktop-vw(4px);
+  padding-left: desktop-vw(16px);
+  pointer-events: auto;
+
+  @include mobile {
+    font-size: mobile-vw(24px);
+    margin-bottom: mobile-vw(30px);
+    text-align: center;
+  }
+
+  .iconC {
+    @include dims(desktop-vw(30px));
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: desktop-vw(8px);
+
+    @include mobile {
+      @include dims(mobile-vw(30px));
+    }
+  }
+}

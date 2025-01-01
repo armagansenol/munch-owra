@@ -1,0 +1,10 @@
+.defaultLayout {
+  background-color: var(--theme-primary);
+  overflow: hidden;
+  transition: 400ms background-color ease;
+
+  main {
+    position: relative;
+    z-index: z-index("main");
+  }
+}

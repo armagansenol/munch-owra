@@ -1,0 +1,404 @@
+.intro {
+  padding: desktop-vw(80px) 0;
+  position: relative;
+
+  @include mobile {
+    padding: mobile-vw(30px) 0;
+  }
+
+  > h1 {
+    color: var(--science-blue);
+    font-family: var(--font-dela-gothic-one);
+    font-size: desktop-vw(70px);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: desktop-vw(40px);
+
+    @include mobile {
+      font-size: mobile-vw(40px);
+      line-height: 1.15;
+      margin-bottom: mobile-vw(40px);
+      text-align: center;
+    }
+  }
+
+  > p {
+    @include dims(desktop-vw(560px), auto);
+    color: var(--black);
+    font-family: var(--font-fustat);
+    font-size: desktop-vw(20px);
+    font-weight: 400;
+    margin-bottom: desktop-vw(80px);
+    text-align: center;
+
+    @include mobile {
+      @include dims(mobile-vw(320px), auto);
+      font-size: mobile-vw(16px);
+      margin-bottom: mobile-vw(30px);
+    }
+  }
+
+  .cta {
+    @include dims(desktop-vw(630px), desktop-vw(80px));
+
+    @include mobile {
+      @include dims(mobile-vw(300px), mobile-vw(60px));
+    }
+  }
+
+  .ice {
+    opacity: 0.75;
+    z-index: -1;
+  }
+
+  .ice1 {
+    @include position(absolute, desktop-vw(70px), auto, auto, desktop-vw(50px));
+    @include dims(desktop-vw(120px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(90px), auto, auto, mobile-vw(10px));
+      @include dims(mobile-vw(40px));
+    }
+  }
+
+  .ice2 {
+    @include position(absolute, desktop-vw(330px), auto, auto, desktop-vw(180px));
+    @include dims(desktop-vw(100px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(120px), auto, auto, mobile-vw(220px));
+      @include dims(mobile-vw(40px));
+    }
+  }
+
+  .ice3 {
+    @include position(absolute, desktop-vw(50px), auto, auto, desktop-vw(730px));
+    @include dims(desktop-vw(120px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(30px), auto, auto, mobile-vw(310px));
+      @include dims(mobile-vw(40px));
+    }
+  }
+
+  .ice4 {
+    @include position(absolute, desktop-vw(280px), auto, auto, desktop-vw(1100px));
+    @include dims(desktop-vw(85px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(280px), auto, auto, mobile-vw(100px));
+      @include dims(mobile-vw(40px));
+    }
+  }
+
+  .ice5 {
+    @include position(absolute, desktop-vw(80px), auto, auto, desktop-vw(1330px));
+    @include dims(desktop-vw(120px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(130px), auto, auto, mobile-vw(330px));
+      @include dims(mobile-vw(40px));
+    }
+  }
+}
+
+.marqueeC {
+  border-bottom: 3px solid var(--science-blue);
+  padding-bottom: desktop-vw(80px);
+
+  @include mobile {
+    padding-bottom: mobile-vw(30px);
+  }
+
+  .imgC {
+    border-radius: desktop-vw(10px);
+    margin-right: desktop-vw(40px);
+    overflow: hidden;
+
+    @include mobile {
+      border-radius: mobile-vw(10px);
+      margin-right: mobile-vw(20px);
+    }
+
+    &:nth-child(1) {
+      @include dims(desktop-vw(310px), desktop-vw(380px));
+
+      @include mobile {
+        @include dims(mobile-vw(160px), mobile-vw(190px));
+      }
+    }
+
+    &:nth-child(2) {
+      @include dims(desktop-vw(310px), desktop-vw(230px));
+
+      @include mobile {
+        @include dims(mobile-vw(190px), mobile-vw(115px));
+      }
+    }
+  }
+}
+
+.why {
+  padding: desktop-vw(80px) 0;
+
+  @include mobile {
+    padding: mobile-vw(50px) 0;
+  }
+
+  > h2 {
+    @include dims(desktop-vw(660px), auto);
+    color: var(--science-blue);
+    font-family: var(--font-dela-gothic-one);
+    font-size: desktop-vw(50px);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: desktop-vw(120px);
+    text-align: center;
+
+    @include mobile {
+      @include dims(mobile-vw(320px), auto);
+      font-size: mobile-vw(35px);
+      line-height: 1.15;
+      margin-bottom: mobile-vw(50px);
+      text-align: center;
+    }
+  }
+
+  .items {
+    column-gap: desktop-vw(100px);
+    row-gap: desktop-vw(100px);
+
+    @include mobile {
+      column-gap: 0;
+      row-gap: mobile-vw(50px);
+    }
+
+    > div {
+      @include dims(desktop-vw(350px), auto);
+
+      @include mobile {
+        @include dims(mobile-vw(300px), auto);
+      }
+
+      > h3 {
+        color: var(--science-blue);
+        font-family: var(--font-dela-gothic-one);
+        font-size: desktop-vw(30px);
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: desktop-vw(16px);
+
+        @include mobile {
+          font-size: mobile-vw(30px);
+          margin-bottom: mobile-vw(16px);
+          text-align: center;
+        }
+      }
+
+      > p {
+        color: var(--black);
+        font-family: var(--font-fustat);
+        font-size: desktop-vw(20px);
+        font-weight: 400;
+        text-align: center;
+
+        @include mobile {
+          font-size: mobile-vw(18px);
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.advantages {
+  background-color: var(--science-blue);
+  padding: desktop-vw(20px);
+
+  @include mobile {
+    padding: mobile-vw(16px);
+  }
+
+  .text {
+    padding: desktop-vw(70px) desktop-vw(80px);
+
+    @include mobile {
+      padding: mobile-vw(30px) 0;
+    }
+
+    > h2 {
+      color: var(--white);
+      font-family: var(--font-dela-gothic-one);
+      font-size: desktop-vw(50px);
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: desktop-vw(100px);
+
+      @include mobile {
+        font-size: mobile-vw(35px);
+        line-height: 1.35;
+        margin-bottom: mobile-vw(50px);
+        text-align: center;
+      }
+    }
+
+    .items {
+      > div {
+        @include dims(desktop-vw(400px), auto);
+        margin-bottom: desktop-vw(100px);
+
+        @include mobile {
+          @include dims(mobile-vw(300px), auto);
+          margin-bottom: mobile-vw(50px);
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        > h3 {
+          color: var(--white);
+          font-family: var(--font-dela-gothic-one);
+          font-size: desktop-vw(30px);
+          font-weight: 400;
+          line-height: 1.2;
+          margin-bottom: desktop-vw(16px);
+
+          @include mobile {
+            font-size: mobile-vw(25px);
+            margin-bottom: mobile-vw(16px);
+            text-align: center;
+          }
+        }
+
+        > p {
+          color: var(--white);
+          font-family: var(--font-fustat);
+          font-size: desktop-vw(20px);
+          font-weight: 400;
+          line-height: 1.5;
+
+          @include mobile {
+            font-size: mobile-vw(18px);
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .imgC {
+    @include dims(auto, desktop-vw(530px));
+    border-radius: desktop-vw(10px);
+    overflow: hidden;
+
+    @include mobile {
+      @include dims(auto, mobile-vw(250px));
+      border-radius: mobile-vw(10px);
+    }
+  }
+}
+
+.contact {
+  margin-bottom: desktop-vw(200px);
+  padding: desktop-vw(60px) 0;
+
+  @include mobile {
+    margin-bottom: mobile-vw(50px);
+    padding: mobile-vw(30px) 0;
+  }
+
+  .text {
+    padding: 0 desktop-vw(80px);
+
+    @include mobile {
+      padding: 0 mobile-vw(16px);
+    }
+
+    > h5 {
+      color: var(--science-blue);
+      font-family: var(--font-dela-gothic-one);
+      font-size: desktop-vw(50px);
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: desktop-vw(40px);
+
+      @include mobile {
+        font-size: mobile-vw(35px);
+        line-height: 1.25;
+        margin-bottom: mobile-vw(30px);
+        text-align: center;
+      }
+    }
+
+    > p {
+      color: var(--black);
+      font-family: var(--font-fustat);
+      font-size: desktop-vw(20px);
+      font-weight: 400;
+      margin-bottom: desktop-vw(50px);
+
+      @include mobile {
+        font-size: mobile-vw(18px);
+        margin-bottom: mobile-vw(50px);
+        text-align: center;
+      }
+    }
+
+    .items {
+      gap: desktop-vw(10px);
+
+      @include mobile {
+        gap: mobile-vw(10px);
+      }
+
+      > div {
+        @include dims(desktop-vw(350px), auto);
+        margin-bottom: desktop-vw(30px);
+
+        @include mobile {
+          @include dims(mobile-vw(300px), auto);
+          margin-bottom: mobile-vw(30px);
+        }
+
+        > h3 {
+          color: var(--science-blue);
+          font-family: var(--font-dela-gothic-one);
+          font-size: desktop-vw(20px);
+          font-weight: 400;
+          line-height: 1;
+          margin-bottom: desktop-vw(10px);
+
+          @include mobile {
+            font-size: mobile-vw(20px);
+            margin-bottom: mobile-vw(10px);
+            text-align: center;
+          }
+        }
+
+        > p {
+          color: var(--black);
+          font-family: var(--font-fustat);
+          font-size: desktop-vw(20px);
+          font-weight: 400;
+
+          @include mobile {
+            font-size: mobile-vw(18px);
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .formContactC {
+    margin-top: desktop-vw(330px);
+    padding: 0 desktop-vw(80px);
+    padding-left: 0;
+
+    @include mobile {
+      margin-top: mobile-vw(30px);
+      padding: 0 mobile-vw(16px);
+    }
+  }
+}

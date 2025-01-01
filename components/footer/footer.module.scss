@@ -1,0 +1,148 @@
+.footer {
+  position: relative;
+  z-index: z-index("footer");
+
+  &::before {
+    content: "";
+    @include position(absolute, desktop-vw(-20px), 0, auto, 0);
+    @include dims(100%);
+    transform: translateY(-15%);
+    background: url("../../public/img/s-2.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    @include mobile {
+      @include dims(200%, mobile-vw(300px));
+      transform: translateY(-30%);
+    }
+  }
+
+  .nav {
+    color: var(--science-blue);
+    margin-bottom: desktop-vw(480px);
+    margin-top: desktop-vw(320px);
+    padding: 0 desktop-vw(80px);
+    z-index: 20;
+
+    @include mobile {
+      margin-bottom: mobile-vw(300px);
+      margin-top: mobile-vw(120px);
+      padding: 0 mobile-vw(16px);
+    }
+
+    .row {
+      gap: desktop-vw(370px);
+
+      @include mobile {
+        gap: mobile-vw(50px);
+      }
+    }
+
+    .col {
+      gap: desktop-vw(40px);
+
+      @include mobile {
+        gap: mobile-vw(50px);
+      }
+    }
+
+    .navItem {
+      max-width: desktop-vw(350px);
+
+      @include mobile {
+        max-width: mobile-vw(300px);
+      }
+
+      > h6 {
+        color: var(--science-blue);
+        font-family: var(--font-fustat);
+        font-size: desktop-vw(20px);
+        font-weight: 800;
+        line-height: 1.35;
+        margin-bottom: desktop-vw(4px);
+
+        @include mobile {
+          font-size: mobile-vw(18px);
+          margin-bottom: mobile-vw(4px);
+          text-align: center;
+        }
+      }
+
+      > p {
+        color: var(--science-blue);
+        font-family: var(--font-fustat);
+        font-size: desktop-vw(18px);
+        font-weight: 400;
+        line-height: 1.35;
+
+        @include mobile {
+          font-size: mobile-vw(18px);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    position: relative;
+
+    @include mobile {
+      gap: mobile-vw(30px);
+    }
+
+    > span {
+      color: var(--science-blue);
+      font-family: var(--font-fustat);
+      font-size: desktop-vw(18px);
+      font-weight: 400;
+      line-height: 1.35;
+
+      @include mobile {
+        font-size: mobile-vw(16px);
+        order: 2;
+      }
+    }
+
+    .social {
+      @include position(absolute, 50%, auto, auto, 50%);
+      gap: desktop-vw(10px);
+      transform: translate(-50%, -50%);
+
+      @include mobile {
+        @include position(relative, auto, auto, auto, auto);
+        gap: mobile-vw(10px);
+        transform: unset;
+        order: 1;
+      }
+
+      .iconC {
+        @include dims(desktop-vw(28px));
+
+        @include mobile {
+          @include dims(mobile-vw(28px));
+        }
+      }
+    }
+  }
+
+  .logoC {
+    @include position(absolute, auto, desktop-vw(120px), desktop-vw(50px), 50%);
+    @include dims(desktop-vw(560px), auto);
+    transform: translateX(-50%);
+
+    @include mobile {
+      @include position(absolute, auto, mobile-vw(20px), mobile-vw(60px), 50%);
+      @include dims(mobile-vw(300px), auto);
+      transform: translateX(-50%);
+    }
+  }
+
+  .iceC {
+    @include position(absolute, auto, 0, desktop-vw(-100px), 0);
+    z-index: 30;
+
+    @include mobile {
+      @include position(absolute, auto, mobile-vw(-70px), mobile-vw(-20px), mobile-vw(-100px));
+    }
+  }
+}

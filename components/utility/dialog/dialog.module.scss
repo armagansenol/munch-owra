@@ -1,0 +1,7 @@
+.overlay {
+  z-index: z-index("modal");
+}
+
+.content {
+  z-index: z-index("modal-content");
+}

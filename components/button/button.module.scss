@@ -1,0 +1,76 @@
+.button {
+  --borderDistance: 4px;
+  border-radius: desktop-vw(10px);
+  position: relative;
+  transition: 300ms all ease;
+
+  @include mobile {
+    border-radius: mobile-vw(10px);
+  }
+
+  &::before {
+    content: "";
+    @include position(
+      absolute,
+      var(--borderDistance),
+      var(--borderDistance),
+      var(--borderDistance),
+      var(--borderDistance)
+    );
+    border-radius: desktop-vw(6px);
+
+    @include mobile {
+      border-radius: mobile-vw(6px);
+    }
+  }
+
+  &.blue {
+    background-color: var(--science-blue);
+    color: var(--white);
+
+    &::before {
+      border: 1px solid var(--white);
+    }
+
+    @include hover {
+      &:hover {
+        background-color: var(--white);
+        color: var(--science-blue);
+
+        &::before {
+          border: 1px solid var(--science-blue);
+        }
+      }
+    }
+  }
+
+  &.white {
+    background-color: var(--white);
+    color: var(--science-blue);
+
+    &::before {
+      border: 1px solid var(--science-blue);
+    }
+
+    @include hover {
+      &:hover {
+        background-color: var(--science-blue);
+        color: var(--white);
+
+        &::before {
+          border: 1px solid var(--white);
+        }
+      }
+    }
+  }
+
+  > span {
+    font-family: var(--font-dela-gothic-one);
+    font-weight: 400;
+    font-size: desktop-vw(32px);
+
+    @include mobile {
+      font-size: mobile-vw(20px);
+    }
+  }
+}

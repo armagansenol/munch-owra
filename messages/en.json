@@ -1,0 +1,243 @@
+{
+    "home": {
+        "headline": {
+            "p1": "Where",
+            "p2": "Quality and",
+            "p3": "Innovation",
+            "p4": "Meet!"
+        },
+        "description": "At Chill Owra, we're here to bring quality and fun into your life. Whether it's refreshing ice, freshly squeezed fruit juices, or the unique aroma of coffee, we aim to provide the best experience with every product.",
+        "why": "Why Chill Owra?",
+        "pros": {
+            "description": "Experience quality and fun with Chill Owra. We're here to add a little more joy and pleasure to your life.",
+            "items": {
+                "i1": {
+                    "title": "Freshness and Flavor",
+                    "description": "Our products are always fresh and full of flavor."
+                },
+                "i2": {
+                    "title": "Reliability",
+                    "description": "You can trust our quality and service."
+                },
+                "i3": {
+                    "title": "Fun Experiences",
+                    "description": "We aim to bring joy to every moment."
+                },
+                "i4": {
+                    "title": "Customer Satisfaction",
+                    "description": "Your satisfaction is our greatest reward."
+                }
+            }
+        },
+        "prosSlider": {
+            "s1": {
+                "title": "Quality with Chill Owra",
+                "description": "At Chill Owra, we prioritize quality in every product. We meticulously ensure the highest standards at every stage, from the materials we use to the production process. Your satisfaction is our priority."
+            },
+            "s2": {
+                "title": "Fun with Chill Owra",
+                "description": "Chill Owra is not just a brand, it's the creator of fun moments. Our products aim to add joy to your daily routine, whether with friends or family."
+            },
+            "s3": {
+                "title": "The Chill Owra Difference",
+                "description": "Chill Owra creates a difference by combining quality and fun. We aim to make every moment unforgettable with our products."
+            }
+        },
+        "contact": {
+            "heading": "Have Any Questions? We'd Be Happy to Help!"
+        },
+        "footer": {
+            "copyright": "©2024 Chill Owra",
+            "madeBy": "Byte My Work"
+        }
+    },
+    "about": {
+        "intro": {
+            "heading": {
+                "p1": "Chill Owra’s",
+                "p2": "Story"
+            },
+            "text": "Chill Owra was founded with the aim of bringing quality and fun into your life. It all started with our desire to offer fresh and high-quality products to our loved ones. Today, we offer a wide range of products, from icy fruit juices to coffee and other beverages."
+        },
+        "marquee": "Where quality meets fun",
+        "mission": {
+            "heading": "Our Mission",
+            "text": "At Chill Owra, we aim to provide quality and enjoyment with every sip. We carefully select our products, prepare them with the freshest ingredients, and present them to you. Customer satisfaction and promoting a healthy lifestyle are our top priorities."
+        },
+        "vision": {
+            "heading": "Our Vision",
+            "text": "To be a part of moments where quality and fun meet all over Turkey. When people think of Chill Owra, we want the first things that come to mind to be trust and taste."
+        },
+        "values": {
+            "quality": {
+                "heading": "Quality",
+                "text": "We ensure the highest quality standards in our products."
+            },
+            "fun": {
+                "heading": "Fun",
+                "text": "We are here to bring a little more joy into your life."
+            },
+            "trust": {
+                "heading": "Trust",
+                "text": "We always maintain the trust of our customers."
+            },
+            "innovation": {
+                "heading": "Innovation",
+                "text": "We constantly renew and improve ourselves."
+            }
+        },
+        "franchise": {
+            "cta": "Become a Franchise",
+            "text": "Chill Owra is more than just a brand; it is a lifestyle. We are here to make every moment more enjoyable and special for you. Join us and add a little more joy to your life with Chill Owra."
+        },
+        "career": {
+            "cta": "Career",
+            "text": "The Chill Owra family consists of experts and passionate people in their field. Each of them loves their job and works to achieve the best results. Each member of our team shares the same passion for offering the best products for you."
+        }
+    },
+    "franchise": {
+        "intro": {
+            "heading": "Join the Chill Owra Family!",
+            "text": "At Chill Owra, we are looking for new partners to join our growing family! With Chill Owra Franchise opportunities, you can start your own business and become a successful entrepreneur. We want to work together to provide the best service to our customers with our quality, freshness, and fun-focused products.",
+            "cta": "Become a Franchise"
+        },
+        "why": {
+            "heading": "Why Should You Franchise with Us?",
+            "items": {
+                "i1": {
+                    "heading": "Brand Power",
+                    "text": "Chill Owra is a strong brand that combines quality and fun."
+                },
+                "i2": {
+                    "heading": "Support",
+                    "text": "We provide comprehensive training and operational support to our franchisees."
+                },
+                "i3": {
+                    "heading": "Product Variety",
+                    "text": "We offer a wide range of products, including ice, fruit juices, coffee, and more."
+                },
+                "i4": {
+                    "heading": "Marketing Support",
+                    "text": "We provide support with national marketing campaigns and local advertising strategies."
+                },
+                "i5": {
+                    "heading": "Innovation",
+                    "text": "We continuously offer opportunities for product development and innovation."
+                }
+            }
+        },
+        "advantages": {
+            "heading": "Advantages of Chill Owra Franchise Ownership",
+            "items": {
+                "i1": {
+                    "heading": "Establishment and Operational Guidance",
+                    "text": "We guide you as you start and run your business."
+                },
+                "i2": {
+                    "heading": "Product Supply",
+                    "text": "We ensure the supply of high-quality ingredients."
+                },
+                "i3": {
+                    "heading": "Brand Recognition",
+                    "text": "You benefit from Chill Owra's strong brand image."
+                },
+                "i4": {
+                    "heading": "Profitability",
+                    "text": "We offer a profitable business model with competitive returns."
+                }
+            }
+        },
+        "contact": {
+            "heading": "How Can I Apply?",
+            "text": "Contact us for more information on the Chill Owra Franchise application process and how to apply. Our team will work with you to discuss the franchise options that are right for you. You can fill out the application form or contact us for more detailed information.",
+            "contactInfo": {
+                "phone": "Phone:",
+                "email": "Email:",
+                "address": "Address:"
+            }
+        }
+    },
+    "contact": {
+        "heading": "Get in Touch",
+        "contactInfo": {
+            "phone": "Phone:",
+            "email": "Email:",
+            "address": "Address:"
+        }
+    },
+    "notFound": {
+        "title": "PAGE NOT FOUND",
+        "button": "HOMEPAGE"
+    },
+    "cursor": {
+        "discover": "Discover Products"
+    },
+    "header": {
+        "modal": {
+            "heading": "Feeling thirsty?",
+            "content": {
+                "p1": "If you’re craving your favorite frozen concoction, drop us an email.",
+                "p2": "We promise it’s worth the brain freeze!"
+            },
+            "button": {
+                "text": "Drop a Line & Chill"
+            }
+        }
+    },
+    "footer": {
+        "salesAndOrders": "Sales and Orders",
+        "generalQuestions": "General Questions",
+        "address": "Address",
+        "copyright": {
+            "year": "2024 Chill Owra"
+        }
+    },
+    "formContact": {
+        "fields": {
+            "name": {
+                "placeholder": "YOUR NAME",
+                "error": "Please enter a valid name"
+            },
+            "email": {
+                "placeholder": "YOUR EMAIL ADDRESS",
+                "error": "Please enter a valid email address"
+            },
+            "phone": {
+                "placeholder": "YOUR PHONE NUMBER",
+                "error": "Please enter a valid phone number"
+            },
+            "message": {
+                "placeholder": "HOW CAN WE HELP?",
+                "error": "Please enter your message"
+            }
+        },
+        "button": {
+            "text": "Send"
+        }
+    },
+    "productSlider": {
+        "s1": {
+            "title": "Chill Owra"
+        },
+        "s2": {
+            "title": "Chill Owra Boba"
+        },
+        "s3": {
+            "title": "Chill Owra Coffee"
+        },
+        "cta": {
+            "title": "Experience in 3D"
+        }
+    },
+    "productDetail": {
+        "franchise": {
+            "cta": "Become a Franchise",
+            "text": "Chill Owra is more than just a brand; it is a lifestyle. We are here to make every moment more enjoyable and special for you. Join us and add a little more joy to your life with Chill Owra."
+        }
+    },
+    "products": {
+        "productGroups": "Products",
+        "otherOptions": "Other Options",
+        "otherProducts": "Other Products"
+    }
+}

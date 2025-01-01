@@ -1,0 +1,16 @@
+.loadingScreen {
+  background-color: var(--science-blue);
+  color: var(--white);
+  font-family: var(--font-dela-gothic-one);
+  font-size: desktop-vw(36px);
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+
+  @include mobile {
+    font-size: mobile-vw(24px);
+    margin-bottom: mobile-vw(30px);
+    text-align: center;
+  }
+}

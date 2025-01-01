@@ -1,0 +1,37 @@
+.sliderFade {
+  position: relative;
+
+  .prev,
+  .next {
+    @include dims(desktop-vw(70px));
+    background-color: var(--white);
+    border: 4px solid var(--science-blue);
+    border-radius: 50%;
+    color: var(--white);
+    pointer-events: auto;
+    padding: desktop-vw(16px);
+
+    @include mobile {
+      @include dims(mobile-vw(36px));
+      border: 2px solid var(--science-blue);
+      padding: mobile-vw(8px);
+    }
+  }
+
+  .prev {
+    @include position(absolute, 50%, auto, auto, 50%);
+    transform: translate(calc(-50% + desktop-vw(-360px)), -50%);
+
+    @include mobile {
+      transform: translate(calc(-50% + mobile-vw(-160px)), -50%);
+    }
+  }
+  .next {
+    @include position(absolute, 50%, auto, auto, 50%);
+    transform: translate(calc(-50% + desktop-vw(360px)), -50%);
+
+    @include mobile {
+      transform: translate(calc(-50% + mobile-vw(160px)), -50%);
+    }
+  }
+}

@@ -1,0 +1,179 @@
+.header {
+  border-bottom: 1px solid var(--theme-secondary);
+  padding: desktop-vw(20px) desktop-vw(40px);
+  position: relative;
+  transition: 400ms border ease;
+  z-index: z-index("header");
+
+  @include mobile {
+    padding: mobile-vw(12px) mobile-vw(16px);
+  }
+
+  .logoC {
+    @include position(absolute, 50%, auto, auto, 50%);
+    @include dims(desktop-vw(80px), auto);
+    transform: translate(-50%, -50%);
+
+    @include mobile {
+      @include position(relative, auto, auto, auto, auto);
+      @include dims(mobile-vw(60px), auto);
+      transform: none;
+      z-index: 200;
+    }
+  }
+
+  .trigger {
+    @include mobile {
+      @include dims(mobile-vw(24px));
+      color: var(--science-blue);
+      z-index: 200;
+    }
+  }
+
+  .navC {
+    @include mobile {
+      @include position(fixed, 0, 0, 0, 0);
+      background-color: var(--white);
+      opacity: 0;
+      padding: mobile-vw(16px);
+      padding-bottom: mobile-vw(100px);
+      pointer-events: none;
+      transition: 400ms opacity ease;
+      z-index: 100;
+
+      &.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+
+  .navItem {
+    color: var(--theme-secondary);
+    font-family: var(--font-dela-gothic-one);
+    font-size: desktop-vw(20px);
+    font-weight: 400;
+    transition: 400ms color ease;
+
+    @include mobile {
+      font-size: mobile-vw(24px);
+    }
+  }
+}
+
+.marquee {
+  background-color: var(--science-blue);
+  color: var(--white);
+  font-family: var(--font-fustat);
+  font-size: desktop-vw(20px);
+  font-weight: 700;
+  padding: desktop-vw(10px) 0;
+
+  @include mobile {
+    font-size: mobile-vw(18px);
+    padding: mobile-vw(8px) 0;
+  }
+
+  .iconC {
+    @include dims(desktop-vw(20px));
+    margin: 0 desktop-vw(32px);
+
+    @include mobile {
+      @include dims(mobile-vw(18px));
+      margin: 0 mobile-vw(20px);
+    }
+  }
+}
+
+.modalContent {
+  @include dims(desktop-vw(700px), auto);
+  background: var(--science-blue);
+  border-radius: desktop-vw(10px);
+  padding: desktop-vw(32px);
+
+  @include mobile {
+    @include dims(mobile-vw(350px), auto);
+    border-radius: mobile-vw(10px);
+    padding: mobile-vw(16px);
+  }
+
+  .modalContentHeader {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+    color: var(--white);
+    font-family: var(--font-fustat);
+    font-size: desktop-vw(36px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    padding-bottom: desktop-vw(14px);
+
+    @include mobile {
+      font-size: mobile-vw(22px);
+      padding-bottom: mobile-vw(8px);
+    }
+
+    .iconC {
+      @include dims(desktop-vw(40px));
+
+      @include mobile {
+        @include dims(mobile-vw(25px));
+      }
+    }
+  }
+
+  .content {
+    padding-top: desktop-vw(16px);
+
+    @include mobile {
+      padding-top: mobile-vw(30px);
+    }
+
+    > p {
+      @include dims(desktop-vw(410px), auto);
+      color: var(--white);
+      font-family: var(--font-fustat);
+      font-size: desktop-vw(24px);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      margin-bottom: desktop-vw(50px);
+
+      @include mobile {
+        @include dims(auto);
+        font-size: mobile-vw(18px);
+        margin-bottom: mobile-vw(10px);
+        text-align: center;
+      }
+    }
+
+    .buttonDrop {
+      background-color: var(--white);
+      border-radius: desktop-vw(10px);
+      color: var(--science-blue);
+      font-family: var(--font-fustat);
+      font-size: desktop-vw(24px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: desktop-vw(50px);
+      padding: desktop-vw(12px) desktop-vw(12px);
+
+      @include mobile {
+        border-radius: mobile-vw(4px);
+        font-size: mobile-vw(18px);
+        margin-bottom: mobile-vw(30px);
+        margin-top: mobile-vw(20px);
+        padding: mobile-vw(5px) mobile-vw(12px);
+      }
+    }
+  }
+
+  .iceC {
+    @include position(absolute, auto, 0, 0, auto);
+    @include dims(desktop-vw(400px));
+    transform: translate(desktop-vw(-250px), desktop-vw(-50px));
+
+    @include mobile {
+      @include dims(mobile-vw(180px));
+      transform: translate(mobile-vw(-5px), mobile-vw(-30px));
+      display: none;
+    }
+  }
+}

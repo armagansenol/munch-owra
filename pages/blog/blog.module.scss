@@ -1,0 +1,44 @@
+.intro {
+  padding: desktop-vw(80px) desktop-vw(40px);
+
+  @include mobile {
+    padding: mobile-vw(30px) mobile-vw(16px);
+  }
+
+  > h1 {
+    color: var(--science-blue);
+    font-family: var(--font-dela-gothic-one);
+    font-size: desktop-vw(40px);
+    font-weight: 400;
+
+    @include mobile {
+      font-size: mobile-vw(32px);
+      text-align: center;
+    }
+  }
+}
+
+.highlight {
+  .cardC {
+    @include dims(100vw, auto);
+    padding: 0 desktop-vw(40px);
+
+    @include mobile {
+      padding: 0 mobile-vw(16px);
+    }
+  }
+}
+
+.content {
+  column-gap: desktop-vw(40px);
+  margin-bottom: desktop-vw(200px);
+  padding: desktop-vw(80px) desktop-vw(40px);
+  row-gap: desktop-vw(100px);
+
+  @include mobile {
+    column-gap: mobile-vw(40px);
+    margin-bottom: mobile-vw(50px);
+    padding: mobile-vw(80px) mobile-vw(16px);
+    row-gap: mobile-vw(50px);
+  }
+}

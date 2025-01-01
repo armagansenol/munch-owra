@@ -1,0 +1,22 @@
+.localeSwitcher {
+  gap: desktop-vw(8px);
+
+  @include mobile {
+    gap: mobile-vw(8px);
+  }
+
+  .locale {
+    font-size: desktop-vw(14px);
+    line-height: 1;
+    opacity: 0.3;
+    transition: 400ms opacity ease;
+
+    @include mobile {
+      font-size: mobile-vw(16px);
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
