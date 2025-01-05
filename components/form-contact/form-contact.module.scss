@@ -1,14 +1,14 @@
 .formContact {
   &.blue {
-    color: var(--science-blue);
+    color: var(--cedar-wood-finish);
 
     .input {
       &::placeholder {
-        color: var(--science-blue);
+        color: var(--cedar-wood-finish);
       }
 
       &.border {
-        border-bottom: 1px solid var(--science-blue);
+        border-bottom: 1px solid var(--cedar-wood-finish);
       }
     }
   }
@@ -162,7 +162,7 @@
     }
 
     .box {
-      border: 1px solid var(--science-blue);
+      border: 1px solid var(--cedar-wood-finish);
       border-radius: desktop-vw(2px);
 
       @include mobile {

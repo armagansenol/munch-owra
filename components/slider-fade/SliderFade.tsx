@@ -101,7 +101,7 @@ export function ButtonPrev(props: ButtonProps) {
       disabled={props.disabled}
     >
       {/* <ArrowLeftIcon className="w-full h-full" /> */}
-      <IconArrow fill="var(--science-blue)" rotate={180} />
+      <IconArrow fill="var(--cedar-wood-finish)" rotate={180} />
     </PrevButton>
   )
 }
@@ -114,7 +114,7 @@ export function ButtonNext(props: ButtonProps) {
       disabled={props.disabled}
     >
       {/* <ArrowRightIcon className="w-full h-full" /> */}
-      <IconArrow fill="var(--science-blue)" />
+      <IconArrow fill="var(--cedar-wood-finish)" />
     </NextButton>
   )
 }

@@ -7,8 +7,8 @@
   }
 
   > h1 {
-    color: var(--science-blue);
-    font-family: var(--font-dela-gothic-one);
+    color: var(--cedar-wood-finish);
+    font-family: var(--font-asap);
     font-size: desktop-vw(70px);
     font-weight: 400;
     line-height: 1;
@@ -103,7 +103,7 @@
 }
 
 .marqueeC {
-  border-bottom: 3px solid var(--science-blue);
+  border-bottom: 3px solid var(--cedar-wood-finish);
   padding-bottom: desktop-vw(80px);
 
   @include mobile {
@@ -147,8 +147,8 @@
 
   > h2 {
     @include dims(desktop-vw(660px), auto);
-    color: var(--science-blue);
-    font-family: var(--font-dela-gothic-one);
+    color: var(--cedar-wood-finish);
+    font-family: var(--font-asap);
     font-size: desktop-vw(50px);
     font-weight: 400;
     line-height: 1;
@@ -181,8 +181,8 @@
       }
 
       > h3 {
-        color: var(--science-blue);
-        font-family: var(--font-dela-gothic-one);
+        color: var(--cedar-wood-finish);
+        font-family: var(--font-asap);
         font-size: desktop-vw(30px);
         font-weight: 400;
         line-height: 1;
@@ -212,7 +212,7 @@
 }
 
 .advantages {
-  background-color: var(--science-blue);
+  background-color: var(--cedar-wood-finish);
   padding: desktop-vw(20px);
 
   @include mobile {
@@ -228,7 +228,7 @@
 
     > h2 {
       color: var(--white);
-      font-family: var(--font-dela-gothic-one);
+      font-family: var(--font-asap);
       font-size: desktop-vw(50px);
       font-weight: 400;
       line-height: 1.1;
@@ -258,7 +258,7 @@
 
         > h3 {
           color: var(--white);
-          font-family: var(--font-dela-gothic-one);
+          font-family: var(--font-asap);
           font-size: desktop-vw(30px);
           font-weight: 400;
           line-height: 1.2;
@@ -316,8 +316,8 @@
     }
 
     > h5 {
-      color: var(--science-blue);
-      font-family: var(--font-dela-gothic-one);
+      color: var(--cedar-wood-finish);
+      font-family: var(--font-asap);
       font-size: desktop-vw(50px);
       font-weight: 400;
       line-height: 1;
@@ -362,8 +362,8 @@
         }
 
         > h3 {
-          color: var(--science-blue);
-          font-family: var(--font-dela-gothic-one);
+          color: var(--cedar-wood-finish);
+          font-family: var(--font-asap);
           font-size: desktop-vw(20px);
           font-weight: 400;
           line-height: 1;

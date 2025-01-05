@@ -2,7 +2,7 @@ import { create } from "zustand"
 
 const defaultColors = {
   primary: "var(--white)",
-  secondary: "var(--science-blue)",
+  secondary: "var(--cedar-wood-finish)",
 }
 
 interface State {

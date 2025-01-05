@@ -64,7 +64,7 @@ export default function Header() {
           <div className={cx(s.feelingThirsty, "flex items-center")}>
             <small>{t("modal.heading")}</small>
             <span className={s.iconC}>
-              <IconPointer fill="var(--white)" />
+              <IconPointer fill="var(--cedar-wood-finish)" />
             </span>
           </div>
         </Marquee>
@@ -72,7 +72,7 @@ export default function Header() {
 
       <header className={cx(s.header, "flex items-center justify-between")} ref={ref}>
         <Link className={cx(s.logoC, "cursor-pointer")} href="/" onClick={closeMenu}>
-          <IconOwraLogo fill="var(--algerian-colar)" />
+          <IconOwraLogo fill="var(--cedar-wood-finish)" />
         </Link>
 
         <div

@@ -25,7 +25,7 @@
   .trigger {
     @include mobile {
       @include dims(mobile-vw(24px));
-      color: var(--science-blue);
+      color: var(--cedar-wood-finish);
       z-index: 200;
     }
   }
@@ -50,9 +50,9 @@
 
   .navItem {
     color: var(--theme-secondary);
-    font-family: var(--font-dela-gothic-one);
+    font-family: var(--font-asap);
     font-size: desktop-vw(20px);
-    font-weight: 400;
+    font-weight: 600;
     transition: 400ms color ease;
 
     @include mobile {
@@ -62,11 +62,11 @@
 }
 
 .marquee {
-  background-color: var(--science-blue);
-  color: var(--white);
-  font-family: var(--font-fustat);
+  background-color: var(--gourmet-honey);
+  color: var(--cedar-wood-finish);
+  font-family: var(--font-asap);
   font-size: desktop-vw(20px);
-  font-weight: 700;
+  font-weight: 900;
   padding: desktop-vw(10px) 0;
 
   @include mobile {
@@ -87,7 +87,7 @@
 
 .modalContent {
   @include dims(desktop-vw(700px), auto);
-  background: var(--science-blue);
+  background: var(--cedar-wood-finish);
   border-radius: desktop-vw(10px);
   padding: desktop-vw(32px);
 
@@ -147,7 +147,7 @@
     .buttonDrop {
       background-color: var(--white);
       border-radius: desktop-vw(10px);
-      color: var(--science-blue);
+      color: var(--cedar-wood-finish);
       font-family: var(--font-fustat);
       font-size: desktop-vw(24px);
       font-weight: 700;

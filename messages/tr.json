@@ -7,7 +7,7 @@
             "p4": "Noktası!"
         },
         "description": "Chill Owra olarak, hayatınıza kalite ve eğlence katmak için buradayız. İster serinletici bir buz, ister taze sıkılmış meyve suları, isterse de kahvenin eşsiz aroması olsun; her bir ürünümüzle size en iyi deneyimi sunmayı hedefliyoruz.",
-        "why": "Neden Chill Owra?",
+        "why": "NUTRIFUSION",
         "pros": {
             "description": "Chill Owra ile kaliteyi ve eğlenceyi bir arada yaşayın. Hayatınıza biraz daha keyif ve neşe katmak için buradayız.",
             "items": {
@@ -54,12 +54,12 @@
     "about": {
         "intro": {
             "heading": {
-                "p1": "Chill Owra’nın",
-                "p2": "Hikayesi"
+                "p1": "It’s All About Good Taste",
+                "p2": "and Good Vibes"
             },
-            "text": "Chill Owra, kaliteyi ve eğlenceyi yaşamınıza getirmek amacıyla kuruldu. Her şey, en sevdiklerimize taptaze ve kaliteli ürünler sunma arzumuzla başladı. Bugün, buzdan meyve sularına, kahveden diğer içeceklere kadar geniş bir ürün yelpazesi ile hizmet veriyoruz."
+            "text": "Owra was founded with the aim of bringing quality and fun into your life. It all started with our desire to offer fresh and high-quality products to our loved ones. Today, we offer a wide range of products, from icy fruit juices to coffee and other beverages."
         },
-        "marquee": "Kalitenin eğlence ile buluşması",
+        "marquee": "KALİTENİN EĞLENCE İLE BULUŞMA NOKTASI",
         "mission": {
             "heading": "Misyonumuz",
             "text": "Chill Owra olarak, her yudumda kaliteyi ve keyfi sunmayı hedefliyoruz. Ürünlerimizi titizlikle seçiyor, en taze malzemelerle hazırlıyor ve sizlere sunuyoruz. Müşteri memnuniyeti ve sağlıklı yaşam tarzını teşvik etmek bizim en büyük önceliğimizdir."
@@ -174,7 +174,7 @@
     },
     "header": {
         "modal": {
-            "heading": "Susadınız mı?",
+            "heading": "See all products?",
             "content": {
                 "p1": "Favori dondurulmuş içeceğinizi mi canınız çekti? Bize bir e-posta gönderin.",
                 "p2": "Beyin donmasına değeceğine söz veriyoruz!"

@@ -78,7 +78,7 @@ export default function SliderProducts() {
         <span>{t("cta.title")}</span>
         <span className={s.iconC}>
           <div className="w-full h-full">
-            <IconArrow fill="var(--science-blue)" />
+            <IconArrow fill="var(--cedar-wood-finish)" />
           </div>
         </span>
       </Link> */}

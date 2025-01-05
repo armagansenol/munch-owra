@@ -6,19 +6,25 @@ import { SmoothLayout } from "@/layouts/smooth"
 import { useTheme } from "@/lib/store/theme"
 import { NextIntlClientProvider } from "next-intl"
 import type { AppProps } from "next/app"
-import { Dela_Gothic_One } from "next/font/google"
+import dynamic from "next/dynamic"
+import { Anton, Asap } from "next/font/google"
 import { useRouter } from "next/router"
 import { QueryClient, QueryClientProvider } from "react-query"
-import dynamic from "next/dynamic"
 
 const Cursor = dynamic(() => import("@/components/cursor").then((module) => module.Cursor), {
   ssr: false,
 })
 
-const delaGothicOne = Dela_Gothic_One({
+const anton = Anton({
   weight: ["400"],
   subsets: ["latin"],
-  variable: "--font-dela-gothic-one",
+  variable: "--font-anton",
+})
+
+const asap = Asap({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-asap",
 })
 
 const queryClient = new QueryClient()
@@ -32,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <QueryClientProvider client={queryClient}>
       <NextIntlClientProvider locale={router.locale} timeZone="Europe/Istanbul" messages={pageProps.messages}>
         <div
-          className={`flex min-h-screen flex-col items-stretch justify-between ${delaGothicOne.variable}`}
+          className={`flex min-h-screen flex-col items-stretch justify-between ${asap.variable} ${anton.variable}`}
           style={
             {
               "--theme-primary": theme.primaryColor,

@@ -1,13 +1,13 @@
 .sliderMain {
-  border-bottom: 3px solid var(--science-blue);
-  border-top: 3px solid var(--science-blue);
+  border-bottom: 3px solid var(--cedar-wood-finish);
+  border-top: 3px solid var(--cedar-wood-finish);
 
   @include mobile {
     border-bottom: none;
   }
 
   .text {
-    border-right: 3px solid var(--science-blue);
+    border-right: 3px solid var(--cedar-wood-finish);
     position: relative;
 
     @include mobile {
@@ -25,7 +25,7 @@
 
       .btn {
         @include dims(desktop-vw(45px));
-        border: 1px solid var(--science-blue);
+        border: 1px solid var(--cedar-wood-finish);
 
         @include mobile {
           @include dims(mobile-vw(32px));
@@ -137,8 +137,8 @@
       }
 
       .link {
-        color: var(--science-blue);
-        font-family: var(--font-dela-gothic-one);
+        color: var(--cedar-wood-finish);
+        font-family: var(--font-asap);
         font-size: desktop-vw(16px);
         font-weight: 400;
         margin-top: auto;

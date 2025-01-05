@@ -7,11 +7,16 @@ import dynamic from "next/dynamic"
 
 import { Marquee } from "@/components/animations/marquee"
 import { FormContact } from "@/components/form-contact"
-import { IconBgStar, IconOk, IconOwraLogo, IconStar } from "@/components/icons"
-import { SliderFade } from "@/components/slider-fade"
+import { GridSpecs } from "@/components/grid-specs"
+import { IconFiller, IconOk, IconStar, IconStickerPremiumMix } from "@/components/icons"
 import { SliderProducts } from "@/components/slider-products"
 import { Img } from "@/components/utility/img"
 import { DefaultLayout } from "@/layouts/default"
+
+import cocoshell from "@/public/img/cocoshell.png"
+import freshburst from "@/public/img/fb.png"
+import nutrifusion from "@/public/img/nutrifusion.png"
+import royalcrisp from "@/public/img/royalcrisp.png"
 
 const ParallaxWrapper = dynamic(() => import("@/components/animations/parallax"), {
   ssr: false,
@@ -22,14 +27,6 @@ const FloatWrapper = dynamic(() => import("@/components/animations/float"), {
 })
 
 import { routes } from "@/lib/constants"
-import i1 from "@/public/img/b-1.png"
-import i2 from "@/public/img/b-2.png"
-import i3 from "@/public/img/b-3.png"
-import i4 from "@/public/img/b-4.png"
-import ice1 from "@/public/img/ice-1.png"
-import ice2 from "@/public/img/ice-2.png"
-import iceCubes from "@/public/img/ice-cubes.png"
-import s1 from "@/public/img/s-1.svg"
 import { FormType, Locales } from "@/types"
 
 export default function Home() {
@@ -38,114 +35,141 @@ export default function Home() {
 
   return (
     <DefaultLayout seo={routes[locale as Locales].home.seo}>
-      <section className={cx(s.intro, "flex items-center justify-center")}>
-        <div className={s.logoC}>
-          <IconOwraLogo />
-        </div>
-
-        <div className={s.cupC}>
-          <FloatWrapper amountY={[-3, 3]} amountRotate={[-4, 4]}>
-            <Img className="object-contain -rotate-6" src="/img/cup.png" alt="Ice Cup" height={1000} width={1000} />
-          </FloatWrapper>
-        </div>
-
-        <div className={s.iceC}>
-          <Img src={iceCubes} alt="Ice Cubes" priority={true} />
-        </div>
-
-        <div className={cx(s.ice, s.ice1)}>
-          <ParallaxWrapper speedY={-1}>
-            <Img alt="Ice Cube" className="object-contain rotate-12" src={i3} />
-          </ParallaxWrapper>
-        </div>
-
-        <div className={cx(s.ice, s.ice2)}>
-          <ParallaxWrapper speedY={-1}>
-            <Img alt="Ice Cube" className="object-contain -rotate-6" src={i1} />
-          </ParallaxWrapper>
-        </div>
-
-        <div className={cx(s.ice, s.ice3)}>
-          <ParallaxWrapper speedY={-1}>
-            <Img alt="Ice Cube" className="object-contain -rotate-12" src={i1} />
-          </ParallaxWrapper>
-        </div>
-
-        <div className={cx(s.ice, s.ice4)}>
-          <ParallaxWrapper speedY={-1}>
-            <Img alt="Ice Cube" className="object-contain rotate-6" src={i2} />
-          </ParallaxWrapper>
-        </div>
-
-        <div className={cx(s.ice, s.ice5)}>
-          <ParallaxWrapper speedY={-1}>
-            <Img alt="Ice Cube" className="object-contain rotate-12" src={i4} />
-          </ParallaxWrapper>
-        </div>
-      </section>
-
-      <section className={cx(s.greetings, "flex flex-col items-center")}>
-        <div className={s.text}>
-          <h1 className="flex flex-col">
-            <span>{t("headline.p1")}</span>
-            <span>{t("headline.p2")}</span>
-            <span>{t("headline.p3")}</span>
-            <span>{t("headline.p4")}</span>
+      <section className={cx(s.intro, "flex flex-col lg:flex-row items-center justify-between")}>
+        <div className="lg:w-1/2 space-y-6 mb-8 lg:mb-0 p-10">
+          <h1 className="text-4xl lg:text-5xl font-bold text-brown-800 leading-tight">
+            Stay Vital <span className="text-[#8B4513]">Every Day</span>,<br />
+            Snack Natural with{" "}
+            <span className="text-[#8B4513]">
+              Every
+              <br />
+              Bite.
+            </span>
           </h1>
-          <p>{t("description")}</p>
+          <p className="text-brown-700 text-lg max-w-md">
+            A daily dose of energy and wellness, powered by nature&apos;s finest selection.
+          </p>
+          <button className="px-6 py-3 border-2 border-brown-800 text-brown-800 hover:bg-brown-800 hover:text-white transition-colors rounded-md">
+            See All Products
+          </button>
         </div>
-
-        <div className={cx(s.fullImg, "h-screen")}>
-          <Img className="object-cover" src={"/img/sample.jpg"} alt="Owra" width={2000} height={2000} />
+        <div className="lg:w-1/2 relative h-[400px] lg:h-[500px]">
+          <div className="relative">
+            <div className={cx(s.box, s.box1)}>
+              <ParallaxWrapper speedY={-0.2}>
+                <Img alt="Box" className="object-contain rotate-[16deg]" src={royalcrisp} />
+              </ParallaxWrapper>
+            </div>
+            <div className={cx(s.box, s.box2)}>
+              <ParallaxWrapper speedY={-0.2}>
+                <Img alt="Box" className="object-contain -rotate-[12deg]" src={nutrifusion} />
+              </ParallaxWrapper>
+            </div>
+            <div className={cx(s.box, s.box3)}>
+              <ParallaxWrapper speedY={-0.2}>
+                <Img alt="Box" className="object-contain rotate-[12deg]" src={cocoshell} />
+              </ParallaxWrapper>
+            </div>
+            <div className={cx(s.box, s.box4)}>
+              <ParallaxWrapper speedY={-0.2}>
+                <Img alt="Box" className="object-contain -rotate-[9deg]" src={freshburst} />
+              </ParallaxWrapper>
+            </div>
+          </div>
         </div>
-
-        <div className={s.waveC}>
-          <Img src={s1} alt="Ice Cubes" />
+      </section>
+      <section className={cx(s.specs, "flex flex-col items-center")}>
+        <div className={s.fillerTop}>
+          <IconFiller />
         </div>
-
-        <div className={cx(s.iceC, s.ice1)}>
-          <ParallaxWrapper speedY={-0.9}>
-            <Img className="object-contain" src={ice1} alt="Ice Cube" />
+        <GridSpecs />
+        <div className={cx(s.munch, s.munch1, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-1.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
-
-        <div className={cx(s.iceC, s.ice2)}>
-          <ParallaxWrapper speedY={-0.6}>
-            <Img className="object-contain" src={ice2} alt="Ice Cube" />
+        <div className={cx(s.munch, s.munch2, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-2.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch3, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-3.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch4, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-4.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch5, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-5.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch6, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-6.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch7, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-7.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch8, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-8.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch9, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-9.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch10, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-10.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch11, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-11.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch12, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-12.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch13, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-0.2}>
+            <Img className="object-contain" src={"/img/munchies/m-13.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
       </section>
-
       <div className={s.marqueeProductsC}>
         <Marquee repeat={5}>
           <div className="flex items-center">
-            <h2>Ürünler</h2>
-            <span className={s.iconC}>
-              <IconStar fill="var(--algerian-colar)" />
-            </span>
+            <h2>OUR MISCHIEVOUS MIXES</h2>
           </div>
         </Marquee>
       </div>
-
       <section className="w-screen h-[90vh] tablet:h-[120vh] flex items-center justify-center">
         <SliderProducts />
       </section>
-
       <section className={s.why}>
         <div className={s.marqueeC}>
           <Marquee repeat={5}>
             <div className="flex items-center">
               <h2>{t("why")}</h2>
-              <span className={s.iconC}>
-                <IconStar fill="var(--algerian-colar)" />
-              </span>
             </div>
           </Marquee>
         </div>
-
         <div className="flex flex-col items-stretch gap:0 tablet:grid grid-cols-12 tablet:gap-10">
           <div className={cx(s.imgs, "col-span-6 flex items-start justify-end")}>
-            <div className="relative flex">
+            <div className="relative">
               <div className={s.imgC}>
                 <Img
                   className="object-cover"
@@ -155,14 +179,9 @@ export default function Home() {
                   height={1000}
                 />
               </div>
-              <div className={cx(s.iconC, s.icon1)}>
+              <div className={s.iconC}>
                 <ParallaxWrapper speedY={-0.5}>
-                  <IconStar fill="var(--algerian-colar)" />
-                </ParallaxWrapper>
-              </div>
-              <div className={cx(s.iconC, s.icon2)}>
-                <ParallaxWrapper speedY={-1}>
-                  <IconStar fill="var(--algerian-colar)" />
+                  <IconStickerPremiumMix fillPrimary="var(--magentle)" fillSecondary="var(--steamed-milk)" />
                 </ParallaxWrapper>
               </div>
             </div>
@@ -210,60 +229,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className={s.slider}>
-        <div className={cx(s.sliderC, "flex items-center justify-center")}>
-          <div className={s.bg}>
-            <IconBgStar />
-          </div>
-          <SliderFade autoplay buttonStyles={s.button}>
-            <div className="flex flex-col items-center">
-              <h3 className={s.title}>{t("prosSlider.s1.title")}</h3>
-              <p className={s.description}>{t("prosSlider.s1.description")}</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <h3 className={s.title}>{t("prosSlider.s2.title")}</h3>
-              <p className={s.description}>{t("prosSlider.s2.description")}</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <h3 className={s.title}>{t("prosSlider.s3.title")}</h3>
-              <p className={s.description}>{t("prosSlider.s3.description")}</p>
-            </div>
-          </SliderFade>
-        </div>
-
-        <div className={cx(s.ice, s.ice1)}>
-          <FloatWrapper amountY={[-20, 20]}>
-            <Img alt="Ice Cube" className="object-contain" src={i3} />
-          </FloatWrapper>
-        </div>
-
-        <div className={cx(s.ice, s.ice2)}>
-          <FloatWrapper amountY={[-20, 20]}>
-            <Img alt="Ice Cube" className="object-contain" src={i1} />
-          </FloatWrapper>
-        </div>
-
-        <div className={cx(s.ice, s.ice3)}>
-          <FloatWrapper amountY={[-20, 20]}>
-            <Img alt="Ice Cube" className="object-contain" src={i1} />
-          </FloatWrapper>
-        </div>
-
-        <div className={cx(s.ice, s.ice4)}>
-          <FloatWrapper amountY={[-20, 20]}>
-            <Img alt="Ice Cube" className="object-contain" src={i2} />
-          </FloatWrapper>
-        </div>
-
-        <div className={cx(s.ice, s.ice5)}>
-          <FloatWrapper amountY={[-20, 20]}>
-            <Img alt="Ice Cube" className="object-contain" src={i4} />
-          </FloatWrapper>
-        </div>
-      </section>
-
       <section className={cx(s.contact, "flex flex-col-reverse tablet:grid grid-cols-12")}>
+        <div className={s.fillerTop}>
+          <IconFiller />
+        </div>
         <div className={cx(s.formC, "col-span-6")}>
           <h2>{t("contact.heading")}</h2>
           <FormContact theme="white" formType={FormType.contact} />
@@ -278,6 +247,9 @@ export default function Home() {
               height={1000}
             />
           </div>
+        </div>
+        <div className={s.fillerBottom}>
+          <IconFiller />
         </div>
       </section>
     </DefaultLayout>

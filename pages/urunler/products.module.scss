@@ -6,9 +6,9 @@
   }
 
   > h1 {
-    color: var(--science-blue);
+    color: var(--cedar-wood-finish);
     font-size: desktop-vw(40px);
-    font-family: var(--font-dela-gothic-one);
+    font-family: var(--font-asap);
     font-weight: 500;
 
     @include mobile {
@@ -25,7 +25,7 @@
   }
 
   .product {
-    color: var(--science-blue);
+    color: var(--cedar-wood-finish);
     font-size: desktop-vw(18px);
     font-family: var(--font-fustat);
     font-weight: 500;
@@ -49,7 +49,7 @@
     .imgC {
       @include dims(desktop-vw(260px), desktop-vw(310px));
       border-radius: desktop-vw(16px);
-      border: 1px solid var(--science-blue);
+      border: 1px solid var(--cedar-wood-finish);
       overflow: hidden;
       padding: desktop-vw(40px);
 

@@ -2,31 +2,16 @@
   position: relative;
   z-index: z-index("footer");
 
-  &::before {
-    content: "";
-    @include position(absolute, desktop-vw(-20px), 0, auto, 0);
-    @include dims(100%);
-    transform: translateY(-15%);
-    background: url("../../public/img/s-2.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-
-    @include mobile {
-      @include dims(200%, mobile-vw(300px));
-      transform: translateY(-30%);
-    }
-  }
-
   .nav {
-    color: var(--science-blue);
-    margin-bottom: desktop-vw(480px);
-    margin-top: desktop-vw(320px);
+    color: var(--cedar-wood-finish);
+    margin-bottom: desktop-vw(50px);
+    margin-top: desktop-vw(50px);
     padding: 0 desktop-vw(80px);
     z-index: 20;
 
     @include mobile {
-      margin-bottom: mobile-vw(300px);
-      margin-top: mobile-vw(120px);
+      margin-bottom: mobile-vw(50px);
+      margin-top: mobile-vw(50px);
       padding: 0 mobile-vw(16px);
     }
 
@@ -54,7 +39,7 @@
       }
 
       > h6 {
-        color: var(--science-blue);
+        color: var(--cedar-wood-finish);
         font-family: var(--font-fustat);
         font-size: desktop-vw(20px);
         font-weight: 800;
@@ -69,7 +54,7 @@
       }
 
       > p {
-        color: var(--science-blue);
+        color: var(--cedar-wood-finish);
         font-family: var(--font-fustat);
         font-size: desktop-vw(18px);
         font-weight: 400;
@@ -91,7 +76,7 @@
     }
 
     > span {
-      color: var(--science-blue);
+      color: var(--cedar-wood-finish);
       font-family: var(--font-fustat);
       font-size: desktop-vw(18px);
       font-weight: 400;

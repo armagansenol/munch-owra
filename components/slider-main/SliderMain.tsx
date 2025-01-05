@@ -101,12 +101,12 @@ export default function SliderMain(props: SliderMainProps) {
           <div className={cx(s.buttons, "flex gap-1")}>
             <div className={cx(s.btn, "cursor-pointer flex items-center justify-center")} onClick={handlePrev}>
               <span className={s.icon}>
-                <IconArrow fill="var(--science-blue)" rotate={180} />
+                <IconArrow fill="var(--cedar-wood-finish)" rotate={180} />
               </span>
             </div>
             <div className={cx(s.btn, "cursor-pointer flex items-center justify-center")} onClick={handleNext}>
               <span className={s.icon}>
-                <IconArrow fill="var(--science-blue)" />
+                <IconArrow fill="var(--cedar-wood-finish)" />
               </span>
             </div>
           </div>

@@ -1,4 +1,5 @@
 .intro {
+  padding-bottom: desktop-vw(200px);
   position: relative;
   z-index: 20;
 
@@ -12,36 +13,13 @@
     }
   }
 
-  .iceC {
-    @include position(absolute, auto, 0, 0, 50%);
-    @include dims(100vw, auto);
-    transform: translateY(50%) translateX(-50%);
-    z-index: 10;
-
-    @include mobile {
-      @include dims(mobile-vw(630px), auto);
-    }
-  }
-
-  .cupC {
-    @include position(absolute, 50%, auto, auto, 50%);
-    @include dims(desktop-vw(500px));
-    transform: translate(-50%, calc(-50% + desktop-vw(-50px)));
-
-    @include mobile {
-      @include dims(mobile-vw(320px));
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  .ice {
-    opacity: 0.75;
+  .box {
     z-index: 10;
   }
 
-  .ice1 {
-    @include position(absolute, desktop-vw(100px), auto, auto, desktop-vw(130px));
-    @include dims(desktop-vw(120px));
+  .box1 {
+    @include position(absolute, desktop-vw(150px), auto, auto, desktop-vw(30px));
+    @include dims(desktop-vw(400px));
 
     @include mobile {
       @include position(absolute, mobile-vw(50px), auto, auto, mobile-vw(20px));
@@ -49,9 +27,9 @@
     }
   }
 
-  .ice2 {
-    @include position(absolute, desktop-vw(350px), auto, auto, desktop-vw(180px));
-    @include dims(desktop-vw(100px));
+  .box2 {
+    @include position(absolute, desktop-vw(50px), auto, auto, desktop-vw(180px));
+    @include dims(desktop-vw(400px));
 
     @include mobile {
       @include position(absolute, mobile-vw(300px), auto, auto, mobile-vw(300px));
@@ -59,9 +37,9 @@
     }
   }
 
-  .ice3 {
-    @include position(absolute, desktop-vw(550px), auto, auto, desktop-vw(480px));
-    @include dims(desktop-vw(120px));
+  .box3 {
+    @include position(absolute, desktop-vw(50px), auto, auto, desktop-vw(220px));
+    @include dims(desktop-vw(400px));
 
     @include mobile {
       @include position(absolute, mobile-vw(40px), auto, auto, mobile-vw(310px));
@@ -69,9 +47,59 @@
     }
   }
 
-  .ice4 {
-    @include position(absolute, desktop-vw(450px), auto, auto, desktop-vw(1050px));
-    @include dims(desktop-vw(80px));
+  .box4 {
+    @include position(absolute, desktop-vw(150px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(400px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
+    }
+  }
+}
+
+.specs {
+  background-color: var(--cedar-wood-finish);
+  position: relative;
+  z-index: 10;
+
+  .munch {
+    z-index: 10;
+  }
+
+  .munch1 {
+    @include position(absolute, desktop-vw(50px), auto, auto, desktop-vw(30px));
+    @include dims(desktop-vw(50px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(50px), auto, auto, mobile-vw(20px));
+      @include dims(mobile-vw(50px));
+    }
+  }
+
+  .munch2 {
+    @include position(absolute, desktop-vw(100px), auto, auto, desktop-vw(180px));
+    @include dims(desktop-vw(50px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(300px), auto, auto, mobile-vw(300px));
+      @include dims(mobile-vw(50px));
+    }
+  }
+
+  .munch3 {
+    @include position(absolute, desktop-vw(150px), auto, auto, desktop-vw(220px));
+    @include dims(desktop-vw(50px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(40px), auto, auto, mobile-vw(310px));
+      @include dims(mobile-vw(50px));
+    }
+  }
+
+  .munch4 {
+    @include position(absolute, desktop-vw(200px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(50px));
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -79,135 +107,105 @@
     }
   }
 
-  .ice5 {
-    @include position(absolute, desktop-vw(140px), auto, auto, desktop-vw(1200px));
-    @include dims(desktop-vw(120px));
+  .munch5 {
+    @include position(absolute, desktop-vw(250px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(50px));
 
     @include mobile {
-      @include position(absolute, mobile-vw(180px), auto, auto, mobile-vw(300px));
-      @include dims(mobile-vw(35px));
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
     }
   }
-}
 
-.greetings {
-  background-color: var(--science-blue);
-  position: relative;
-  z-index: 10;
-
-  .text {
-    padding: desktop-vw(300px) 0;
+  .munch6 {
+    @include position(absolute, desktop-vw(300px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(50px));
 
     @include mobile {
-      padding: mobile-vw(100px) 0;
-    }
-
-    > h1 {
-      color: var(--white);
-      font-family: var(--font-dela-gothic-one);
-      font-size: desktop-vw(82px);
-      font-weight: 400;
-      line-height: 1.25;
-
-      @include mobile {
-        font-size: mobile-vw(40px);
-        margin-bottom: mobile-vw(30px);
-        text-align: center;
-      }
-
-      span {
-        display: block;
-
-        &:nth-child(1) {
-          margin-left: desktop-vw(500px);
-
-          @include mobile {
-            margin-left: 0;
-          }
-        }
-
-        &:nth-child(2) {
-          margin-left: desktop-vw(300px);
-
-          @include mobile {
-            margin-left: 0;
-          }
-        }
-
-        &:nth-child(3) {
-          margin-left: desktop-vw(400px);
-
-          @include mobile {
-            margin-left: 0;
-          }
-        }
-
-        &:nth-child(4) {
-          margin-left: desktop-vw(300px);
-
-          @include mobile {
-            margin-left: 0;
-          }
-        }
-      }
-    }
-
-    > p {
-      @include dims(desktop-vw(500px), auto);
-      color: var(--white);
-      font-family: var(--font-fustat);
-      font-size: desktop-vw(18px);
-      font-weight: 400;
-      margin-left: desktop-vw(900px);
-
-      @include mobile {
-        @include dims(mobile-vw(330px), auto);
-        font-size: mobile-vw(16px);
-        margin-left: 0;
-        text-align: center;
-      }
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
     }
   }
 
-  .fullImg {
-    position: relative;
-    display: none;
+  .munch7 {
+    @include position(absolute, desktop-vw(300px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(50px));
 
     @include mobile {
-      @include dims(100%, mobile-vw(300px));
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
     }
   }
 
-  .waveC {
-    @include position(absolute, auto, 0, 0, 0);
-    transform: translateY(40%);
+  .munch8 {
+    @include position(absolute, desktop-vw(-100px), auto, auto, desktop-vw(200px));
+    @include dims(desktop-vw(130px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
+    }
   }
 
-  .iceC {
-    &.ice1 {
-      @include position(absolute, desktop-vw(550px), auto, auto, desktop-vw(150px));
-      @include dims(desktop-vw(150px));
+  .munch9 {
+    @include position(absolute, desktop-vw(400px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(50px));
 
-      @include mobile {
-        @include position(absolute, mobile-vw(250px), auto, auto, mobile-vw(5px));
-        @include dims(mobile-vw(70px));
-      }
+    @include mobile {
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
     }
+  }
 
-    &.ice2 {
-      @include position(absolute, desktop-vw(850px), auto, auto, desktop-vw(700px));
-      @include dims(desktop-vw(150px));
+  .munch10 {
+    @include position(absolute, desktop-vw(450px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(50px));
 
-      @include mobile {
-        @include position(absolute, mobile-vw(280px), auto, auto, mobile-vw(290px));
-        @include dims(mobile-vw(70px));
-      }
+    @include mobile {
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
     }
+  }
+
+  .munch11 {
+    @include position(absolute, desktop-vw(500px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(50px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
+    }
+  }
+
+  .munch12 {
+    @include position(absolute, desktop-vw(550px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(50px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
+    }
+  }
+
+  .munch13 {
+    @include position(absolute, desktop-vw(600px), auto, auto, desktop-vw(350px));
+    @include dims(desktop-vw(50px));
+
+    @include mobile {
+      @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
+      @include dims(mobile-vw(40px));
+    }
+  }
+
+  .fillerTop {
+    @include position(absolute, desktop-vw(-250px), auto, auto, auto);
+    @include dims(100%, 100%);
+    transform: rotateY(180deg);
+    z-index: -1;
   }
 }
 
 .marqueeProductsC {
-  margin-top: desktop-vw(150px);
   padding: desktop-vw(50px) 0;
 
   @include mobile {
@@ -215,23 +213,15 @@
   }
 
   h2 {
-    color: var(--science-blue);
-    font-family: var(--font-dela-gothic-one);
-    font-size: desktop-vw(80px);
+    color: var(--cedar-wood-finish);
+    font-family: var(--font-anton);
+    font-size: desktop-vw(60px);
     font-weight: 400;
-
-    @include mobile {
-      font-size: mobile-vw(30px);
-    }
-  }
-
-  .iconC {
-    @include dims(desktop-vw(50px));
     margin: 0 desktop-vw(50px);
 
     @include mobile {
-      @include dims(mobile-vw(30px));
-      margin: 0 mobile-vw(30px);
+      font-size: mobile-vw(30px);
+      margin: 0 mobile-vw(50px);
     }
   }
 }
@@ -240,32 +230,24 @@
   border-bottom: 1px solid var(--algerian-colar);
 
   .marqueeC {
+    background-color: var(--black);
     border-bottom: 1px solid var(--algerian-colar);
-    // border-top: 1px solid var(--algerian-colar);
-    padding: desktop-vw(50px) 0;
+    padding: desktop-vw(10px) 0;
 
     @include mobile {
       padding: mobile-vw(30px) 0;
     }
 
     h2 {
-      color: var(--science-blue);
-      font-family: var(--font-dela-gothic-one);
+      color: var(--red-dit);
+      font-family: var(--font-anton);
       font-size: desktop-vw(80px);
       font-weight: 400;
-
-      @include mobile {
-        font-size: mobile-vw(30px);
-      }
-    }
-
-    .iconC {
-      @include dims(desktop-vw(50px));
       margin: 0 desktop-vw(50px);
 
       @include mobile {
-        @include dims(mobile-vw(30px));
-        margin: 0 mobile-vw(30px);
+        font-size: mobile-vw(30px);
+        margin: 0 mobile-vw(50px);
       }
     }
   }
@@ -280,7 +262,7 @@
     }
 
     .imgC {
-      @include dims(desktop-vw(480px), desktop-vw(580px));
+      @include dims(desktop-vw(480px), desktop-vw(280px));
       border-radius: desktop-vw(10px);
       overflow: hidden;
       z-index: 10;
@@ -292,32 +274,12 @@
     }
 
     .iconC {
-      @include dims(desktop-vw(120px));
+      @include position(absolute, auto, 0, 0, auto);
+      @include dims(desktop-vw(200px));
 
       @include mobile {
         @include dims(mobile-vw(60px));
         display: none;
-      }
-
-      &.icon1 {
-        @include position(absolute, 0, auto, auto, 0);
-        transform: translateX(-50%);
-        z-index: 15;
-
-        @include mobile {
-          @include position(absolute, 0, auto, auto, 0);
-        }
-      }
-
-      &.icon2 {
-        @include position(absolute, auto, 0, 0, auto);
-        transform: translate(-20%, 130%);
-        z-index: 15;
-
-        @include mobile {
-          @include position(absolute, auto, 0, 0, auto);
-          transform: translate(40%, 100%);
-        }
       }
     }
   }
@@ -358,8 +320,8 @@
       }
 
       h5 {
-        color: var(--science-blue);
-        font-family: var(--font-dela-gothic-one);
+        color: var(--cedar-wood-finish);
+        font-family: var(--font-asap);
         font-size: desktop-vw(24px);
         font-weight: 400;
         position: relative;
@@ -431,8 +393,8 @@
     .button {
       @include dims(desktop-vw(60px));
       background-color: var(--white);
-      color: var(--science-blue);
-      border: 1px solid var(--science-blue);
+      color: var(--cedar-wood-finish);
+      border: 1px solid var(--cedar-wood-finish);
 
       @include mobile {
         @include dims(mobile-vw(32px));
@@ -442,8 +404,8 @@
 
   .title {
     @include dims(desktop-vw(600px), auto);
-    color: var(--science-blue);
-    font-family: var(--font-dela-gothic-one);
+    color: var(--cedar-wood-finish);
+    font-family: var(--font-asap);
     font-size: desktop-vw(50px);
     font-weight: 400;
     line-height: 1.2;
@@ -537,8 +499,9 @@
 }
 
 .contact {
-  background-color: var(--science-blue);
+  background-color: var(--cedar-wood-finish);
   gap: desktop-vw(80px);
+  margin: desktop-vw(200px) 0;
   padding: desktop-vw(20px);
   position: relative;
 
@@ -557,7 +520,7 @@
 
     h2 {
       color: var(--white);
-      font-family: var(--font-dela-gothic-one);
+      font-family: var(--font-asap);
       font-size: desktop-vw(32px);
       font-weight: 400;
       margin-bottom: desktop-vw(50px);
@@ -581,9 +544,16 @@
     }
   }
 
-  // .waveC {
-  //   @include position(absolute, auto, 0, 0, 0);
-  //   transform: translateY(60%);
-  //   z-index: -1;
-  // }
+  .fillerTop {
+    @include position(absolute, desktop-vw(-250px), auto, auto, auto);
+    @include dims(100%, 100%);
+    z-index: -1;
+  }
+
+  .fillerBottom {
+    @include position(absolute, auto, auto, desktop-vw(-250px), auto);
+    @include dims(100%, 100%);
+    transform: rotate(180deg);
+    z-index: -1;
+  }
 }

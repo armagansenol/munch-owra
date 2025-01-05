@@ -8,18 +8,8 @@ import { useRef } from "react"
 
 import { useSingle } from "@/api/queries/contact"
 import { useAll } from "@/api/queries/social-media"
-import {
-  IconFacebook,
-  IconInstagram,
-  IconLinkedin,
-  IconOwraLogo,
-  IconTiktok,
-  IconX,
-  IconYoutube,
-} from "@/components/icons"
-import { Img } from "@/components/utility/img"
+import { IconFacebook, IconInstagram, IconLinkedin, IconTiktok, IconX, IconYoutube } from "@/components/icons"
 import { Link } from "@/components/utility/link"
-import iceCubes from "@/public/img/ice-cubes-2.png"
 import { SocialMedia } from "@/types"
 
 export default function Footer() {
@@ -59,12 +49,12 @@ export default function Footer() {
   )
 
   const icons: Record<SocialMedia, JSX.Element> = {
-    [SocialMedia.tiktok]: <IconTiktok fill={"var(--science-blue)"} />,
-    [SocialMedia.linkedin]: <IconLinkedin fill={"var(--science-blue)"} />,
-    [SocialMedia.facebook]: <IconFacebook fill={"var(--science-blue)"} />,
-    [SocialMedia.instagram]: <IconInstagram fill={"var(--science-blue)"} />,
-    [SocialMedia.x]: <IconX fill={"var(--science-blue)"} />,
-    [SocialMedia.youtube]: <IconYoutube fill={"var(--science-blue)"} />,
+    [SocialMedia.tiktok]: <IconTiktok fill={"var(--cedar-wood-finish)"} />,
+    [SocialMedia.linkedin]: <IconLinkedin fill={"var(--cedar-wood-finish)"} />,
+    [SocialMedia.facebook]: <IconFacebook fill={"var(--cedar-wood-finish)"} />,
+    [SocialMedia.instagram]: <IconInstagram fill={"var(--cedar-wood-finish)"} />,
+    [SocialMedia.x]: <IconX fill={"var(--cedar-wood-finish)"} />,
+    [SocialMedia.youtube]: <IconYoutube fill={"var(--cedar-wood-finish)"} />,
   }
 
   return (
@@ -109,14 +99,6 @@ export default function Footer() {
           </span>
         </div>
       </nav>
-
-      <div className={cx(s.logoC, "logo-c", "pointer-events-none")}>
-        <IconOwraLogo />
-      </div>
-
-      <div className={cx(s.iceC, "ice-c", "pointer-events-none")}>
-        <Img src={iceCubes} alt="Ice Cubes" />
-      </div>
     </footer>
   )
 }

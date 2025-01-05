@@ -238,7 +238,7 @@ function Scene() {
 //               onClick={handlePrev}
 //             >
 //               <span>
-//                 <IconArrow fill="var(--science-blue)" rotate={180} />
+//                 <IconArrow fill="var(--cedar-wood-finish)" rotate={180} />
 //               </span>
 //             </div>
 //             <div className={cx(s.content, "flex items-center justify-center")}>
@@ -249,7 +249,7 @@ function Scene() {
 //               onClick={handleNext}
 //             >
 //               <span>
-//                 <IconArrow fill="var(--science-blue)" />
+//                 <IconArrow fill="var(--cedar-wood-finish)" />
 //               </span>
 //             </div>
 //           </div>
@@ -258,7 +258,7 @@ function Scene() {
 //           <span>Homepage</span>
 //           <span className={s.iconC}>
 //             <div className="w-full h-full">
-//               <IconArrow fill="var(--science-blue)" />
+//               <IconArrow fill="var(--cedar-wood-finish)" />
 //             </div>
 //           </span>
 //         </Link>
@@ -386,7 +386,7 @@ function Slider() {
               onClick={handlePrev}
             >
               <span>
-                <IconArrow fill="var(--science-blue)" rotate={180} />
+                <IconArrow fill="var(--cedar-wood-finish)" rotate={180} />
               </span>
             </div>
             <div className={cx(s.content, "flex items-center justify-center")}>
@@ -397,7 +397,7 @@ function Slider() {
               onClick={handleNext}
             >
               <span>
-                <IconArrow fill="var(--science-blue)" />
+                <IconArrow fill="var(--cedar-wood-finish)" />
               </span>
             </div>
           </div>
@@ -406,7 +406,7 @@ function Slider() {
           <span>Homepage</span>
           <span className={s.iconC}>
             <div className="w-full h-full">
-              <IconArrow fill="var(--science-blue)" />
+              <IconArrow fill="var(--cedar-wood-finish)" />
             </div>
           </span>
         </Link>

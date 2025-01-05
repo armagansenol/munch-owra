@@ -10,7 +10,7 @@
   > h1 {
     color: var(--theme-secondary);
     font-size: desktop-vw(40px);
-    font-family: var(--font-dela-gothic-one);
+    font-family: var(--font-asap);
     font-weight: 500;
     margin: 0 auto;
     transition: 400ms color ease;
@@ -123,7 +123,7 @@
     .name {
       color: var(--theme-secondary);
       font-size: desktop-vw(40px);
-      font-family: var(--font-dela-gothic-one);
+      font-family: var(--font-asap);
       font-weight: 400;
       transition: 400ms color ease;
 
@@ -200,7 +200,7 @@
 .marqueeC {
   h2 {
     color: var(--theme-primary);
-    font-family: var(--font-dela-gothic-one);
+    font-family: var(--font-asap);
     font-size: desktop-vw(80px);
     font-weight: 400;
 
@@ -254,7 +254,7 @@
 }
 
 .contact {
-  background-color: var(--science-blue);
+  background-color: var(--cedar-wood-finish);
   gap: desktop-vw(80px);
   padding: desktop-vw(20px);
   position: relative;
@@ -274,7 +274,7 @@
 
     h2 {
       color: var(--white);
-      font-family: var(--font-dela-gothic-one);
+      font-family: var(--font-asap);
       font-size: desktop-vw(44px);
       font-weight: 400;
       line-height: 1.25;

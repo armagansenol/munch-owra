@@ -25,7 +25,7 @@
   }
 
   &.blue {
-    background-color: var(--science-blue);
+    background-color: var(--cedar-wood-finish);
     color: var(--white);
 
     &::before {
@@ -35,10 +35,10 @@
     @include hover {
       &:hover {
         background-color: var(--white);
-        color: var(--science-blue);
+        color: var(--cedar-wood-finish);
 
         &::before {
-          border: 1px solid var(--science-blue);
+          border: 1px solid var(--cedar-wood-finish);
         }
       }
     }
@@ -46,15 +46,15 @@
 
   &.white {
     background-color: var(--white);
-    color: var(--science-blue);
+    color: var(--cedar-wood-finish);
 
     &::before {
-      border: 1px solid var(--science-blue);
+      border: 1px solid var(--cedar-wood-finish);
     }
 
     @include hover {
       &:hover {
-        background-color: var(--science-blue);
+        background-color: var(--cedar-wood-finish);
         color: var(--white);
 
         &::before {
@@ -65,7 +65,7 @@
   }
 
   > span {
-    font-family: var(--font-dela-gothic-one);
+    font-family: var(--font-asap);
     font-weight: 400;
     font-size: desktop-vw(32px);
 

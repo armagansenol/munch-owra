@@ -2,11 +2,16 @@
 
 // Each color filled here will create a css variable exposed globally
 $colors: (
-  "white": rgb(255, 250, 243),
+  "white": rgb(255, 250, 234),
   "black": rgb(21, 24, 25),
   "error": rgb(229, 72, 77),
-  "science-blue": rgb(0, 117, 206),
-  "algerian-colar": rgb(255, 91, 74),
+  "cedar-wood-finish": rgb(112, 21, 0),
+  "toasted-marshmallow-fluff": rgb(255, 250, 234),
+  "red-dit": rgb(255, 72, 0),
+  "pico-orange": rgb(255, 162, 0),
+  "magentle": rgb(155, 23, 174),
+  "steamed-milk": rgb(237, 216, 190),
+  "gourmet-honey": rgb(228, 203, 169),
 );
 
 :root {

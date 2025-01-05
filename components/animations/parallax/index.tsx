@@ -43,7 +43,7 @@ const Parallax = (props: ParallaxProps) => {
 
   return (
     <div ref={ref} className="inherit-dims">
-      <div className="parallax-item">{children}</div>
+      <div className="parallax-item h-full w-full">{children}</div>
     </div>
   )
 }

@@ -3,7 +3,7 @@
   @include position(absolute, auto, auto, 2%, 50%);
   @include dims(desktop-vw(500px), var(--height));
   border-radius: desktop-vw(64px);
-  border: 0px solid var(--science-blue);
+  border: 0px solid var(--cedar-wood-finish);
   display: flex;
   transform: translateX(-50%);
   pointer-events: auto;
@@ -19,7 +19,7 @@
     content: "";
     border-radius: desktop-vw(64px);
     @include position(absolute, -5px, -5px, -5px, -5px);
-    background-color: var(--science-blue);
+    background-color: var(--cedar-wood-finish);
     z-index: -1;
   }
 
@@ -29,8 +29,8 @@
 
     .content {
       flex: 1;
-      color: var(--science-blue);
-      font-family: var(--font-dela-gothic-one);
+      color: var(--cedar-wood-finish);
+      font-family: var(--font-asap);
       font-size: desktop-vw(30px);
       font-weight: 700;
       line-height: 1;
@@ -55,8 +55,8 @@
 }
 
 .cta {
-  background-color: var(--science-blue);
-  border: 1px solid var(--science-blue);
+  background-color: var(--cedar-wood-finish);
+  border: 1px solid var(--cedar-wood-finish);
   border-radius: desktop-vw(32px);
   color: var(--white);
   font-family: var(--font-fustat);
