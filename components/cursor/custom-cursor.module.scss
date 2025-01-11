@@ -14,7 +14,7 @@
   .c {
     @include position(absolute, 50%, auto, auto, 50%);
     @include dims(var(--size));
-    background-color: var(--algerian-colar);
+    background-color: var(--steamed-milk);
     border-radius: 50%;
     transition: 200ms background-color cubic-bezier(0.215, 0.61, 0.355, 1),
       200ms color cubic-bezier(0.215, 0.61, 0.355, 1), 300ms width cubic-bezier(0.215, 0.61, 0.355, 1),
@@ -24,9 +24,9 @@
     .text {
       @include position(absolute, 50%, auto, auto, 50%);
       transform: translate(-50%, -45%);
-      color: var(--white);
+      color: var(--cedar-wood-finish);
       display: block;
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(18px);
       font-weight: 900;
       line-height: 1.25;
