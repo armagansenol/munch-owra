@@ -1,92 +1,11 @@
 .sliderProducts {
-  position: relative;
-
-  .cta {
-    background-color: var(--cedar-wood-finish);
-    border: 3px solid var(--white);
-    border-radius: desktop-vw(32px);
-    color: var(--white);
-    font-family: var(--font-fustat);
-    font-size: desktop-vw(18px);
-    font-weight: 700;
-    line-height: 1;
-    padding: desktop-vw(4px);
-    padding-left: desktop-vw(16px);
-    white-space: nowrap;
-
-    @include mobile {
-      border-radius: mobile-vw(32px);
-      font-size: mobile-vw(16px);
-      padding: mobile-vw(4px);
-      padding-left: mobile-vw(16px);
-      text-align: center;
-    }
-
-    .iconC {
-      @include dims(desktop-vw(30px));
-      background-color: var(--white);
-      border-radius: 50%;
-      padding: desktop-vw(8px);
-
-      @include mobile {
-        @include dims(mobile-vw(25px));
-        padding: mobile-vw(4px);
-      }
-    }
-  }
+  @include dims(100%, desktop-vw(800px));
 
   .imgC {
-    @include dims(desktop-vw(400px), desktop-vw(750px));
+    @include dims(desktop-vw(400px), desktop-vw(500px));
 
     @include mobile {
       @include dims(mobile-vw(330px), mobile-vw(300px));
-    }
-  }
-
-  .text {
-    @include position(absolute, auto, auto, desktop-vw(-50px), 50%);
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cedar-wood-finish);
-    border-radius: desktop-vw(100px);
-    border: 4px solid var(--white);
-    padding: desktop-vw(8px) desktop-vw(30px);
-    transform: translateX(-50%);
-
-    @include mobile {
-      @include position(absolute, auto, auto, mobile-vw(-120px), 50%);
-      border-radius: mobile-vw(32px);
-      padding: mobile-vw(8px) mobile-vw(16px);
-    }
-
-    .title {
-      color: var(--white);
-      font-family: var(--font-asap);
-      font-size: desktop-vw(24px);
-      font-weight: 400;
-      line-height: 1.3;
-      white-space: nowrap;
-      text-align: center;
-
-      @include mobile {
-        font-size: mobile-vw(24px);
-        text-align: center;
-      }
-    }
-
-    .description {
-      color: var(--white);
-      font-family: var(--font-fustat);
-      font-size: desktop-vw(16px);
-      font-weight: 500;
-      line-height: 1.5;
-      text-align: center;
-
-      @include mobile {
-        font-size: mobile-vw(14px);
-        text-align: center;
-      }
     }
   }
 
@@ -95,6 +14,52 @@
 
     &.active {
       opacity: 1;
+    }
+  }
+
+  .prevBtn {
+    @include dims(desktop-vw(50px));
+    background-color: var(--black);
+    border-radius: 50%;
+    padding: desktop-vw(10px);
+    position: absolute;
+    left: desktop-vw(100px);
+    z-index: 100;
+  }
+
+  .nextBtn {
+    @include dims(desktop-vw(50px));
+    background-color: var(--black);
+    border-radius: 50%;
+    padding: desktop-vw(10px);
+    position: absolute;
+    right: desktop-vw(100px);
+    z-index: 100;
+  }
+
+  .iconC {
+    @include dims(desktop-vw(14px));
+  }
+}
+
+.marqueeC {
+  color: var(--text-color);
+  background-color: var(--black);
+  padding: desktop-vw(10px) 0;
+
+  @include mobile {
+    padding: mobile-vw(30px) 0;
+  }
+
+  h2 {
+    font-family: var(--font-anton);
+    font-size: desktop-vw(80px);
+    font-weight: 400;
+    margin: 0 desktop-vw(50px);
+
+    @include mobile {
+      font-size: mobile-vw(30px);
+      margin: 0 mobile-vw(50px);
     }
   }
 }
