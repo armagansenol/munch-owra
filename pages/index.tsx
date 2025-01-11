@@ -8,12 +8,12 @@ import dynamic from "next/dynamic"
 import { Marquee } from "@/components/animations/marquee"
 import { FormContact } from "@/components/form-contact"
 import { GridSpecs } from "@/components/grid-specs"
-import { IconFiller, IconOk, IconStar, IconStickerPremiumMix } from "@/components/icons"
+import { IconFiller, IconOk, IconStickerPremiumMix } from "@/components/icons"
 import { SliderProducts } from "@/components/slider-products"
 import { Img } from "@/components/utility/img"
 import { DefaultLayout } from "@/layouts/default"
 
-import cocoshell from "@/public/img/cocoshell.png"
+import chocoshell from "@/public/img/chocoshell.png"
 import freshburst from "@/public/img/fb.png"
 import nutrifusion from "@/public/img/nutrifusion.png"
 import royalcrisp from "@/public/img/royalcrisp.png"
@@ -62,17 +62,17 @@ export default function Home() {
             </div>
             <div className={cx(s.box, s.box2)}>
               <ParallaxWrapper speedY={-0.2}>
-                <Img alt="Box" className="object-contain -rotate-[12deg]" src={nutrifusion} />
+                <Img alt="Box" className="object-contain -rotate-[9deg]" src={freshburst} />
               </ParallaxWrapper>
             </div>
             <div className={cx(s.box, s.box3)}>
               <ParallaxWrapper speedY={-0.2}>
-                <Img alt="Box" className="object-contain rotate-[12deg]" src={cocoshell} />
+                <Img alt="Box" className="object-contain rotate-[12deg]" src={chocoshell} />
               </ParallaxWrapper>
             </div>
             <div className={cx(s.box, s.box4)}>
               <ParallaxWrapper speedY={-0.2}>
-                <Img alt="Box" className="object-contain -rotate-[9deg]" src={freshburst} />
+                <Img alt="Box" className="object-contain -rotate-[12deg]" src={nutrifusion} />
               </ParallaxWrapper>
             </div>
           </div>
@@ -82,69 +82,69 @@ export default function Home() {
         <div className={s.fillerTop}>
           <IconFiller />
         </div>
-        <GridSpecs />
+        <GridSpecs productImage={nutrifusion.src} />
         <div className={cx(s.munch, s.munch1, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-1.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch2, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-2.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch3, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-3.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch4, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-4.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch5, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-5.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch6, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-6.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch7, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-7.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch8, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-8.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch9, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-9.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch10, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-10.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch11, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-11.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch12, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-12.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
         <div className={cx(s.munch, s.munch13, "w-10 h-10")}>
-          <ParallaxWrapper speedY={-0.2}>
+          <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-13.png"} alt="Owra" width={200} height={200} />
           </ParallaxWrapper>
         </div>
@@ -156,28 +156,13 @@ export default function Home() {
           </div>
         </Marquee>
       </div>
-      <section className="w-screen h-[90vh] tablet:h-[120vh] flex items-center justify-center">
-        <SliderProducts />
-      </section>
+      <SliderProducts />
       <section className={s.why}>
-        <div className={s.marqueeC}>
-          <Marquee repeat={5}>
-            <div className="flex items-center">
-              <h2>{t("why")}</h2>
-            </div>
-          </Marquee>
-        </div>
         <div className="flex flex-col items-stretch gap:0 tablet:grid grid-cols-12 tablet:gap-10">
           <div className={cx(s.imgs, "col-span-6 flex items-start justify-end")}>
             <div className="relative">
               <div className={s.imgC}>
-                <Img
-                  className="object-cover"
-                  src={"/img/ice-glass-shoot-full.jpg"}
-                  alt="Owra"
-                  width={1000}
-                  height={1000}
-                />
+                <Img className="object-cover" src={"/img/home-1.jpg"} alt="Owra" width={1000} height={1000} />
               </div>
               <div className={s.iconC}>
                 <ParallaxWrapper speedY={-0.5}>
@@ -239,13 +224,7 @@ export default function Home() {
         </div>
         <div className="col-span-6">
           <div className={s.imgC}>
-            <Img
-              className="object-cover"
-              src={"/img/ice-glass-commercial-social.jpg"}
-              alt="Owra"
-              width={1000}
-              height={1000}
-            />
+            <Img className="object-cover" src={"/img/home-2.jpg"} alt="Owra" width={1000} height={1000} />
           </div>
         </div>
         <div className={s.fillerBottom}>

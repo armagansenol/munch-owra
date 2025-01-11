@@ -29,11 +29,18 @@
       font-family: var(--font-asap);
       font-size: desktop-vw(26px);
       font-weight: 500;
+      margin-bottom: desktop-vw(100px);
 
       @include mobile {
         font-size: mobile-vw(18px);
         text-align: center;
       }
+    }
+
+    .imgC {
+      @include position(absolute, 57.5%, auto, auto, 50%);
+      @include dims(70%, auto);
+      transform: translateX(-40%) rotate(-10deg);
     }
   }
 }

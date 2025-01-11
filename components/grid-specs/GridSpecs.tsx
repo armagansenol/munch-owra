@@ -2,7 +2,11 @@ import s from "./grid-specs.module.scss"
 
 import cx from "clsx"
 
-export interface GridSpecsProps {}
+import { Img } from "@/components/utility/img"
+
+export interface GridSpecsProps {
+  productImage: string
+}
 
 export default function GridSpecs(props: GridSpecsProps) {
   return (
@@ -32,10 +36,13 @@ export default function GridSpecs(props: GridSpecsProps) {
         <div
           className={cx(
             s.gridItem,
-            "col-span-6 row-span-12 col-start-7 col-end-13 row-start-1 row-end-13 rounded-lg px-20 flex items-center"
+            "relative overflow-hidden col-span-6 row-span-12 col-start-7 col-end-13 row-start-1 row-end-13 rounded-lg px-20 flex items-center"
           )}
         >
           <p>Rich in fiber, full of energy—keeping you vibrant all day..</p>
+          <div className={s.imgC}>
+            <Img alt="Box" className="object-contain" src={props.productImage} height={500} width={500} />
+          </div>
         </div>
       </div>
     </div>

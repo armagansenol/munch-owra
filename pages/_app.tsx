@@ -22,7 +22,7 @@ const anton = Anton({
 })
 
 const asap = Asap({
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-asap",
 })

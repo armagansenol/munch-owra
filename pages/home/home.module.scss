@@ -68,8 +68,8 @@
   }
 
   .munch1 {
-    @include position(absolute, desktop-vw(50px), auto, auto, desktop-vw(30px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, desktop-vw(-50px), auto, auto, desktop-vw(600px));
+    @include dims(desktop-vw(90px));
 
     @include mobile {
       @include position(absolute, mobile-vw(50px), auto, auto, mobile-vw(20px));
@@ -78,8 +78,8 @@
   }
 
   .munch2 {
-    @include position(absolute, desktop-vw(100px), auto, auto, desktop-vw(180px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, desktop-vw(450px), auto, auto, desktop-vw(-30px));
+    @include dims(desktop-vw(110px));
 
     @include mobile {
       @include position(absolute, mobile-vw(300px), auto, auto, mobile-vw(300px));
@@ -98,8 +98,8 @@
   }
 
   .munch4 {
-    @include position(absolute, desktop-vw(200px), auto, auto, desktop-vw(350px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, desktop-vw(700px), desktop-vw(70px), auto, auto);
+    @include dims(desktop-vw(90px));
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -108,8 +108,8 @@
   }
 
   .munch5 {
-    @include position(absolute, desktop-vw(250px), auto, auto, desktop-vw(350px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, desktop-vw(450px), desktop-vw(-30px), auto, auto);
+    @include dims(desktop-vw(100px));
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -118,8 +118,9 @@
   }
 
   .munch6 {
-    @include position(absolute, desktop-vw(300px), auto, auto, desktop-vw(350px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, auto, auto, desktop-vw(-100px), desktop-vw(350px));
+    @include dims(desktop-vw(210px));
+    filter: blur(4px);
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -128,7 +129,7 @@
   }
 
   .munch7 {
-    @include position(absolute, desktop-vw(300px), auto, auto, desktop-vw(350px));
+    @include position(absolute, desktop-vw(100px), auto, auto, desktop-vw(-20px));
     @include dims(desktop-vw(50px));
 
     @include mobile {
@@ -148,8 +149,8 @@
   }
 
   .munch9 {
-    @include position(absolute, desktop-vw(400px), auto, auto, desktop-vw(350px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, desktop-vw(550px), desktop-vw(130px), auto, auto);
+    @include dims(desktop-vw(60px));
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -158,8 +159,8 @@
   }
 
   .munch10 {
-    @include position(absolute, desktop-vw(450px), auto, auto, desktop-vw(350px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, desktop-vw(-50px), desktop-vw(250px), auto, auto);
+    @include dims(desktop-vw(65px));
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -168,8 +169,9 @@
   }
 
   .munch11 {
-    @include position(absolute, desktop-vw(500px), auto, auto, desktop-vw(350px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, desktop-vw(100px), desktop-vw(-120px), auto, auto);
+    @include dims(desktop-vw(300px));
+    filter: blur(4px);
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -178,8 +180,9 @@
   }
 
   .munch12 {
-    @include position(absolute, desktop-vw(550px), auto, auto, desktop-vw(350px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, auto, auto, desktop-vw(-170px), desktop-vw(-150px));
+    @include dims(desktop-vw(340px));
+    filter: blur(8px);
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -188,8 +191,8 @@
   }
 
   .munch13 {
-    @include position(absolute, desktop-vw(600px), auto, auto, desktop-vw(350px));
-    @include dims(desktop-vw(50px));
+    @include position(absolute, desktop-vw(470px), auto, auto, desktop-vw(600px));
+    @include dims(desktop-vw(40px));
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -228,29 +231,6 @@
 
 .why {
   border-bottom: 1px solid var(--algerian-colar);
-
-  .marqueeC {
-    background-color: var(--black);
-    border-bottom: 1px solid var(--algerian-colar);
-    padding: desktop-vw(10px) 0;
-
-    @include mobile {
-      padding: mobile-vw(30px) 0;
-    }
-
-    h2 {
-      color: var(--red-dit);
-      font-family: var(--font-anton);
-      font-size: desktop-vw(80px);
-      font-weight: 400;
-      margin: 0 desktop-vw(50px);
-
-      @include mobile {
-        font-size: mobile-vw(30px);
-        margin: 0 mobile-vw(50px);
-      }
-    }
-  }
 
   .imgs {
     padding: desktop-vw(100px);
