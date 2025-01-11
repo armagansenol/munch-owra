@@ -64,7 +64,7 @@ export default function SliderProducts() {
             <IconArrow fill={Object.values(products)[currentSlide].color} />
           </div>
         </div>
-        <div className="absolute top-0 left-0 right-0 bottom-0 p-10 z-0">
+        <div className={cx(s.bg, "absolute top-0 left-0 right-0 bottom-0 p-5 z-0")}>
           <IconWavyBg fill={Object.values(products)[currentSlide].color} />
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function SliderProducts() {
         className={s.marqueeC}
         style={{ "--text-color": Object.values(products)[currentSlide].color } as React.CSSProperties}
       >
-        <Marquee repeat={5}>
+        <Marquee repeat={10} duration={5}>
           <div className="flex items-center">
             <h2>{Object.values(products)[currentSlide].marquee}</h2>
           </div>
