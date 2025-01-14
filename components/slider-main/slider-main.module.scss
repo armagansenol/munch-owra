@@ -42,7 +42,7 @@
 
       .indicator {
         color: var(--black);
-        font-family: var(--font-fustat);
+        font-family: var(--font-asap);
         font-size: desktop-vw(12px);
         font-weight: 400;
 
@@ -68,7 +68,7 @@
 
       .category {
         color: var(--black);
-        font-family: var(--font-fustat);
+        font-family: var(--font-asap);
         font-size: desktop-vw(14px);
         font-weight: 400;
         margin-bottom: desktop-vw(6px);
@@ -82,7 +82,7 @@
 
       .time {
         color: var(--black);
-        font-family: var(--font-fustat);
+        font-family: var(--font-asap);
         font-size: desktop-vw(12px);
         font-weight: 400;
         margin-bottom: desktop-vw(32px);
@@ -95,7 +95,7 @@
 
       .title {
         color: var(--black);
-        font-family: var(--font-fustat);
+        font-family: var(--font-asap);
         font-size: desktop-vw(20px);
         font-weight: 700;
         line-height: 1.3;
@@ -112,7 +112,7 @@
 
       .description {
         color: var(--black);
-        font-family: var(--font-fustat);
+        font-family: var(--font-asap);
         font-size: desktop-vw(14px);
         font-weight: 400;
         padding-right: desktop-vw(50px);
@@ -127,7 +127,7 @@
       .date {
         @include position(absolute, 0, 0, auto, auto);
         color: var(--black);
-        font-family: var(--font-fustat);
+        font-family: var(--font-asap);
         font-size: desktop-vw(12px);
         font-weight: 400;
 

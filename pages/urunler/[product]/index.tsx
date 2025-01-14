@@ -7,9 +7,7 @@ import { useState } from "react"
 import { useIsomorphicLayoutEffect } from "usehooks-ts"
 
 import { single } from "@/api/queries/product-detail"
-import { Marquee } from "@/components/animations/marquee"
-import { IconStar } from "@/components/icons"
-import { SliderProducts } from "@/components/slider-products"
+import GridSpecs from "@/components/grid-specs/GridSpecs"
 import { Img } from "@/components/utility/img"
 import { Link } from "@/components/utility/link"
 import { DefaultLayout } from "@/layouts/default"
@@ -93,40 +91,13 @@ export default function ProductGroup(props: ProductGroupProps) {
           </div>
         </div>
       </section>
-      <section className="w-screen py-10 pb-0 tablet:pb-10 bg-[var(--theme-secondary)]">
-        <div className={cx(s.marqueeC, "mb-10")}>
-          <Marquee repeat={5}>
-            <div className="flex items-center">
-              <h2>{t("products.otherProducts")}</h2>
-              <span className={s.iconC}>
-                <IconStar fill="var(--theme-primary)" />
-              </span>
-            </div>
-          </Marquee>
-        </div>
-        <div className="px-0 tablet:px-10">
-          <div className="h-[90vh] tablet:h-[120vh] rounded-none tablet:rounded-xl overflow-hidden">
-            <SliderProducts />
-          </div>
-        </div>
+      <section>
+        <GridSpecs
+          primaryFill="var(--magentle)"
+          secondaryFill="var(--steamed-milk)"
+          productImage={props.product.images[currentItem].img}
+        />
       </section>
-      {/* <section className={cx(s.franchise, "flex flex-col items-center")}>
-        <p>{t("productDetail.franchise.text")}</p>
-        <Link className={s.cta} href={`/${routes[locale as Locales].franchise.path}`}>
-          <Button>{t("productDetail.franchise.cta")}</Button>
-        </Link>
-      </section> */}
-      {/* <section className={cx(s.contact, "flex flex-col-reverse tablet:grid grid-cols-12")}>
-        <div className={cx(s.formC, "col-span-6")}>
-          <h2>{t("contact.heading")}</h2>
-          <FormContact theme="white" formType={FormType.contact} />
-        </div>
-        <div className="col-span-6">
-          <div className={s.imgC}>
-            <Img className="object-cover" src={"/img/sample.jpg"} alt="Owra" width={2000} height={2000} />
-          </div>
-        </div>
-      </section> */}
     </DefaultLayout>
   )
 }

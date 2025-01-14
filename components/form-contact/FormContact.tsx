@@ -8,7 +8,6 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 
 import { FormSchema, useSubmitForm } from "@/api/mutations/contact-form"
-import { Button } from "@/components/button"
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/utility/form"
 import { Input } from "@/components/utility/input"
 import { LoadingSpinner } from "@/components/utility/loading-spinner"
@@ -23,7 +22,6 @@ export interface FormContactProps {
 export default function FormContact(props: FormContactProps) {
   const { theme = "blue", formType } = props
   const t = useTranslations("formContact")
-
   const [responseMessage, setResponseMessage] = useState("")
 
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -83,7 +81,6 @@ export default function FormContact(props: FormContactProps) {
                 )}
               />
             </div>
-
             <div
               className={cx(s.fieldC, {
                 [s.error]: form.formState.errors.email,
@@ -102,7 +99,6 @@ export default function FormContact(props: FormContactProps) {
                 )}
               />
             </div>
-
             <div
               className={cx(s.fieldC, {
                 [s.error]: form.formState.errors.phone,
@@ -121,7 +117,6 @@ export default function FormContact(props: FormContactProps) {
                 )}
               />
             </div>
-
             <div
               className={cx(s.fieldC, {
                 [s.error]: form.formState.errors.message,
@@ -144,21 +139,14 @@ export default function FormContact(props: FormContactProps) {
                 )}
               />
             </div>
-
-            <button
-              className={cx(s.submitBtn, "flex items-center justify-center")}
-              type="submit"
-              disabled={!form.formState.isValid}
-            >
-              <Button theme={theme}>
-                {isLoading ? (
-                  <div className={s.spinnerC}>
-                    <LoadingSpinner />
-                  </div>
-                ) : (
-                  <span>{t("button.text")}</span>
-                )}
-              </Button>
+            <button className={s.submitBtn} type="submit" disabled={!form.formState.isValid}>
+              {isLoading ? (
+                <div className={cx(s.spinnerC, "pointer-events-none")}>
+                  <LoadingSpinner />
+                </div>
+              ) : (
+                <span className="pointer-events-none">{t("button.text")}</span>
+              )}
             </button>
           </form>
         </Form>

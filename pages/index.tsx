@@ -8,13 +8,13 @@ import dynamic from "next/dynamic"
 import { Marquee } from "@/components/animations/marquee"
 import { FormContact } from "@/components/form-contact"
 import { GridSpecs } from "@/components/grid-specs"
-import { IconFiller, IconOk, IconStickerPremiumMix } from "@/components/icons"
+import { IconFiller, StickerPremiumMix } from "@/components/icons"
 import { SliderProducts } from "@/components/slider-products"
 import { Img } from "@/components/utility/img"
 import { DefaultLayout } from "@/layouts/default"
 
 import chocoshell from "@/public/img/chocoshell.png"
-import freshburst from "@/public/img/fb.png"
+import freshburst from "@/public/img/freshburst.png"
 import nutrifusion from "@/public/img/nutrifusion.png"
 import royalcrisp from "@/public/img/royalcrisp.png"
 
@@ -26,6 +26,7 @@ const FloatWrapper = dynamic(() => import("@/components/animations/float"), {
   ssr: false,
 })
 
+import { Link } from "@/components/utility/link"
 import { routes } from "@/lib/constants"
 import { FormType, Locales } from "@/types"
 
@@ -36,24 +37,18 @@ export default function Home() {
   return (
     <DefaultLayout seo={routes[locale as Locales].home.seo}>
       <section className={cx(s.intro, "flex flex-col lg:flex-row items-center justify-between")}>
-        <div className="lg:w-1/2 space-y-6 mb-8 lg:mb-0 p-10">
-          <h1 className="text-4xl lg:text-5xl font-bold text-brown-800 leading-tight">
-            Stay Vital <span className="text-[#8B4513]">Every Day</span>,<br />
-            Snack Natural with{" "}
-            <span className="text-[#8B4513]">
-              Every
-              <br />
-              Bite.
-            </span>
+        <div className={cx(s.text, "tablet:w-1/2")}>
+          <h1>
+            {t.rich("intro.heading", {
+              strong: (chunks) => <strong className="font-bold italic">{chunks}</strong>,
+            })}
           </h1>
-          <p className="text-brown-700 text-lg max-w-md">
-            A daily dose of energy and wellness, powered by nature&apos;s finest selection.
-          </p>
-          <button className="px-6 py-3 border-2 border-brown-800 text-brown-800 hover:bg-brown-800 hover:text-white transition-colors rounded-md">
-            See All Products
-          </button>
+          <p>{t("intro.description")}</p>
+          <Link className={cx(s.cta, "flex items-center justify-center")} href="/products">
+            {t("intro.cta")}
+          </Link>
         </div>
-        <div className="lg:w-1/2 relative h-[400px] lg:h-[500px]">
+        <div className="tablet:w-1/2 relative h-[400px] lg:h-[500px]">
           <div className="relative">
             <div className={cx(s.box, s.box1)}>
               <ParallaxWrapper speedY={-0.2}>
@@ -78,11 +73,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={cx(s.specs, "flex flex-col items-center")}>
-        <div className={s.fillerTop}>
-          <IconFiller />
-        </div>
-        <GridSpecs productImage={nutrifusion.src} />
+      <section className={cx(s.specs)}>
+        <GridSpecs primaryFill="var(--red-dit)" secondaryFill="var(--steamed-milk)" productImage={nutrifusion.src} />
         <div className={cx(s.munch, s.munch1, "w-10 h-10")}>
           <ParallaxWrapper speedY={-0.5}>
             <Img className="object-contain" src={"/img/munchies/m-1.png"} alt="Owra" width={200} height={200} />
@@ -157,8 +149,8 @@ export default function Home() {
         </Marquee>
       </div>
       <SliderProducts />
-      <section className={s.why}>
-        <div className="flex flex-col items-stretch gap:0 tablet:grid grid-cols-12 tablet:gap-10">
+      <section className={cx(s.why, "flex items-center")}>
+        <div className="tablet:w-1/2">
           <div className={cx(s.imgs, "col-span-6 flex items-start justify-end")}>
             <div className="relative">
               <div className={s.imgC}>
@@ -166,60 +158,33 @@ export default function Home() {
               </div>
               <div className={s.iconC}>
                 <ParallaxWrapper speedY={-0.5}>
-                  <IconStickerPremiumMix fillPrimary="var(--magentle)" fillSecondary="var(--steamed-milk)" />
+                  <StickerPremiumMix fillPrimary="var(--magentle)" fillSecondary="var(--steamed-milk)" />
                 </ParallaxWrapper>
               </div>
             </div>
           </div>
-          <div className={cx(s.text, "flex flex-col items-center justify-center tablet:items-start col-span-6")}>
-            <p>{t("pros.description")}</p>
-            <ul>
-              <li>
-                <h5>
-                  <span className={s.iconC}>
-                    <IconOk />
-                  </span>
-                  {t("pros.items.i1.title")}
-                </h5>
-                <p>{t("pros.items.i1.description")}</p>
-              </li>
-              <li>
-                <h5>
-                  <span className={s.iconC}>
-                    <IconOk />
-                  </span>
-                  {t("pros.items.i2.title")}
-                </h5>
-                <p>{t("pros.items.i2.description")}</p>
-              </li>
-              <li>
-                <h5>
-                  <span className={s.iconC}>
-                    <IconOk />
-                  </span>
-                  {t("pros.items.i3.title")}
-                </h5>
-                <p>{t("pros.items.i3.description")}</p>
-              </li>
-              <li>
-                <h5>
-                  <span className={s.iconC}>
-                    <IconOk />
-                  </span>
-                  {t("pros.items.i4.title")}
-                </h5>
-                <p>{t("pros.items.i4.description")}</p>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div className={cx(s.text, "tablet:w-1/2")}>
+          <h1>
+            {t.rich("why.heading", { strong: (chunks) => <strong className="font-bold italic">{chunks}</strong> })}
+          </h1>
+          <p>{t("why.description")}</p>
+          <Link className={cx(s.cta, "flex items-center justify-center")} href="/products">
+            {t("why.cta")}
+          </Link>
         </div>
       </section>
-      <section className={cx(s.contact, "flex flex-col-reverse tablet:grid grid-cols-12")}>
+      <section className={cx(s.contact, "flex flex-col-reverse tablet:grid grid-cols-12 items-center")}>
         <div className={s.fillerTop}>
           <IconFiller />
         </div>
         <div className={cx(s.formC, "col-span-6")}>
-          <h2>{t("contact.heading")}</h2>
+          <h2>
+            {t.rich("contact.heading", {
+              strong: (chunks) => <strong className="font-bold italic">{chunks}</strong>,
+              br: () => <br />,
+            })}
+          </h2>
           <FormContact theme="white" formType={FormType.contact} />
         </div>
         <div className="col-span-6">

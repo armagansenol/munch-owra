@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react"
 import Float from "@/components/animations/float"
 import { Marquee } from "@/components/animations/marquee"
 import CursorText from "@/components/cursor/cursor-text"
-import { IconArrow, IconWavyBg } from "@/components/icons"
+import { IconArrow, IconWavyBg, IconWavyBgVertical } from "@/components/icons"
 import { SliderFade } from "@/components/slider-fade"
 import { Img } from "@/components/utility/img"
 import { Link } from "@/components/utility/link"
@@ -64,8 +64,13 @@ export default function SliderProducts() {
             <IconArrow fill={Object.values(products)[currentSlide].color} />
           </div>
         </div>
-        <div className={cx(s.bg, "absolute top-0 left-0 right-0 bottom-0 p-5 z-0")}>
-          <IconWavyBg fill={Object.values(products)[currentSlide].color} />
+        <div className={cx(s.bg, "absolute top-0 left-0 right-0 bottom-0 z-0 hidden tablet:block")}>
+          <div className="w-full h-full hidden tablet:block">
+            <IconWavyBg fill={Object.values(products)[currentSlide].color} />
+          </div>
+          <div className="w-full h-full block tablet:hidden">
+            <IconWavyBgVertical fill={Object.values(products)[currentSlide].color} />
+          </div>
         </div>
       </div>
       <div

@@ -1,15 +1,49 @@
 .intro {
-  padding-bottom: desktop-vw(200px);
+  padding-bottom: desktop-vw(250px);
+  padding-left: desktop-vw(120px);
   position: relative;
   z-index: 20;
 
-  .logoC {
-    padding: desktop-vw(150px) 0 desktop-vw(70px) 0;
-    @include dims(desktop-vw(830px), auto);
+  .text {
+    @include dims(desktop-vw(445px), auto);
+    padding-top: desktop-vw(150px);
 
-    @include mobile {
-      padding: mobile-vw(120px) 0;
-      @include dims(mobile-vw(350px), auto);
+    > h1 {
+      color: var(--cedar-wood-finish);
+      font-family: var(--font-asap);
+      font-size: desktop-vw(40px);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: desktop-vw(32px);
+    }
+
+    > p {
+      color: var(--cedar-wood-finish);
+      font-family: var(--font-asap);
+      font-size: desktop-vw(18px);
+      font-weight: 400;
+      line-height: 1.35;
+      margin-bottom: desktop-vw(60px);
+    }
+
+    .cta {
+      background-color: transparent;
+      border: 1px solid var(--cedar-wood-finish);
+      border-radius: 12px;
+      color: var(--cedar-wood-finish);
+      display: inline-flex;
+      font-family: var(--font-asap);
+      font-size: desktop-vw(18px);
+      font-weight: 600;
+      padding: desktop-vw(7px) desktop-vw(20px);
+      transition: 300ms all ease;
+
+      @include hover {
+        &:hover {
+          background-color: var(--cedar-wood-finish);
+          color: var(--white);
+        }
+      }
     }
   }
 
@@ -18,8 +52,8 @@
   }
 
   .box1 {
-    @include position(absolute, desktop-vw(150px), auto, auto, desktop-vw(30px));
-    @include dims(desktop-vw(400px));
+    @include position(absolute, desktop-vw(150px), auto, auto, desktop-vw(-140px));
+    @include dims(desktop-vw(190px), desktop-vw(350px));
 
     @include mobile {
       @include position(absolute, mobile-vw(50px), auto, auto, mobile-vw(20px));
@@ -28,18 +62,18 @@
   }
 
   .box2 {
-    @include position(absolute, desktop-vw(50px), auto, auto, desktop-vw(180px));
-    @include dims(desktop-vw(400px));
+    @include position(absolute, desktop-vw(30px), auto, auto, desktop-vw(30px));
+    @include dims(desktop-vw(190px), desktop-vw(370px));
 
     @include mobile {
-      @include position(absolute, mobile-vw(300px), auto, auto, mobile-vw(300px));
+      @include position(absolute, mobile-vw(300px), auto, auto, mobile-vw(250px));
       @include dims(mobile-vw(50px));
     }
   }
 
   .box3 {
-    @include position(absolute, desktop-vw(50px), auto, auto, desktop-vw(220px));
-    @include dims(desktop-vw(400px));
+    @include position(absolute, desktop-vw(120px), auto, auto, desktop-vw(170px));
+    @include dims(desktop-vw(220px), desktop-vw(400px));
 
     @include mobile {
       @include position(absolute, mobile-vw(40px), auto, auto, mobile-vw(310px));
@@ -48,8 +82,8 @@
   }
 
   .box4 {
-    @include position(absolute, desktop-vw(150px), auto, auto, desktop-vw(350px));
-    @include dims(desktop-vw(400px));
+    @include position(absolute, desktop-vw(200px), auto, auto, desktop-vw(320px));
+    @include dims(desktop-vw(220px), desktop-vw(410px));
 
     @include mobile {
       @include position(absolute, mobile-vw(290px), auto, auto, mobile-vw(50px));
@@ -59,7 +93,6 @@
 }
 
 .specs {
-  background-color: var(--cedar-wood-finish);
   position: relative;
   z-index: 10;
 
@@ -199,13 +232,6 @@
       @include dims(mobile-vw(40px));
     }
   }
-
-  .fillerTop {
-    @include position(absolute, desktop-vw(-250px), auto, auto, auto);
-    @include dims(100%, 100%);
-    transform: rotateY(180deg);
-    z-index: -1;
-  }
 }
 
 .marqueeProductsC {
@@ -231,10 +257,11 @@
 
 .why {
   border-bottom: 1px solid var(--algerian-colar);
+  gap: desktop-vw(80px);
+  padding: desktop-vw(120px) 0;
+  padding-bottom: desktop-vw(40px);
 
   .imgs {
-    padding: desktop-vw(100px);
-    padding-bottom: desktop-vw(160px);
     position: relative;
 
     @include mobile {
@@ -242,7 +269,7 @@
     }
 
     .imgC {
-      @include dims(desktop-vw(480px), desktop-vw(280px));
+      @include dims(desktop-vw(580px), desktop-vw(360px));
       border-radius: desktop-vw(10px);
       overflow: hidden;
       z-index: 10;
@@ -256,6 +283,7 @@
     .iconC {
       @include position(absolute, auto, 0, 0, auto);
       @include dims(desktop-vw(200px));
+      transform: translate(40%, 75%);
 
       @include mobile {
         @include dims(mobile-vw(60px));
@@ -265,78 +293,42 @@
   }
 
   .text {
-    padding: 0 desktop-vw(250px) desktop-vw(50px) desktop-vw(30px);
-
-    @include mobile {
-      padding: mobile-vw(50px) mobile-vw(32px);
-      padding-top: 0;
+    > h1 {
+      @include dims(desktop-vw(540px), auto);
+      color: var(--cedar-wood-finish);
+      font-family: var(--font-asap);
+      font-size: desktop-vw(40px);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: desktop-vw(25px);
     }
 
     > p {
-      color: var(--black);
-      font-family: var(--font-fustat);
-      font-size: desktop-vw(20px);
+      @include dims(desktop-vw(440px), auto);
+      color: var(--cedar-wood-finish);
+      font-family: var(--font-asap);
+      font-size: desktop-vw(18px);
       font-weight: 400;
-      margin-bottom: desktop-vw(60px);
-      margin-left: desktop-vw(-30px);
-
-      @include mobile {
-        font-size: mobile-vw(18px);
-        margin-bottom: mobile-vw(50px);
-        margin-left: 0;
-        text-align: center;
-      }
+      line-height: 1.35;
+      margin-bottom: desktop-vw(40px);
     }
 
-    li {
-      margin-bottom: desktop-vw(30px);
+    .cta {
+      background-color: transparent;
+      border: 1px solid var(--cedar-wood-finish);
+      border-radius: 12px;
+      color: var(--cedar-wood-finish);
+      display: inline-flex;
+      font-family: var(--font-asap);
+      font-size: desktop-vw(18px);
+      font-weight: 600;
+      padding: desktop-vw(7px) desktop-vw(20px);
+      transition: 300ms all ease;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      @include mobile {
-        margin-bottom: mobile-vw(30px);
-      }
-
-      h5 {
-        color: var(--cedar-wood-finish);
-        font-family: var(--font-asap);
-        font-size: desktop-vw(24px);
-        font-weight: 400;
-        position: relative;
-
-        @include mobile {
-          font-size: mobile-vw(20px);
-          margin-bottom: mobile-vw(8px);
-          text-align: center;
-        }
-
-        .iconC {
-          @include position(absolute, 50%, auto, auto, 0);
-          @include dims(desktop-vw(20px));
-          align-items: center;
-          transform: translate(calc(-100% - desktop-vw(12px)), -40%);
-          display: flex;
-          justify-content: center;
-
-          @include mobile {
-            @include dims(mobile-vw(20px));
-            transform: translate(calc(-100% - mobile-vw(12px)), -40%);
-            display: none;
-          }
-        }
-      }
-
-      p {
-        color: var(--black);
-        font-family: var(--font-fustat);
-        font-size: desktop-vw(18px);
-        font-weight: 400;
-
-        @include mobile {
-          font-size: mobile-vw(16px);
-          text-align: center;
+      @include hover {
+        &:hover {
+          background-color: var(--cedar-wood-finish);
+          color: var(--white);
         }
       }
     }
@@ -402,7 +394,7 @@
   .description {
     @include dims(desktop-vw(600px), auto);
     color: var(--black);
-    font-family: var(--font-fustat);
+    font-family: var(--font-asap);
     font-size: desktop-vw(18px);
     font-weight: 400;
     text-align: center;
@@ -482,7 +474,7 @@
   background-color: var(--cedar-wood-finish);
   gap: desktop-vw(80px);
   margin: desktop-vw(200px) 0;
-  padding: desktop-vw(20px);
+  padding: desktop-vw(0px) desktop-vw(120px);
   position: relative;
 
   @include mobile {
@@ -491,9 +483,6 @@
   }
 
   .formC {
-    padding: desktop-vw(60px);
-    padding-right: 0;
-
     @include mobile {
       padding: 0;
     }
@@ -514,8 +503,8 @@
   }
 
   .imgC {
-    @include dims(100%, desktop-vw(760px));
-    border-radius: desktop-vw(20px);
+    @include dims(100%, desktop-vw(680px));
+    border-radius: desktop-vw(10px);
     overflow: hidden;
 
     @include mobile {

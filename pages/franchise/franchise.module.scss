@@ -25,7 +25,7 @@
   > p {
     @include dims(desktop-vw(560px), auto);
     color: var(--black);
-    font-family: var(--font-fustat);
+    font-family: var(--font-asap);
     font-size: desktop-vw(20px);
     font-weight: 400;
     margin-bottom: desktop-vw(80px);
@@ -197,7 +197,7 @@
 
       > p {
         color: var(--black);
-        font-family: var(--font-fustat);
+        font-family: var(--font-asap);
         font-size: desktop-vw(20px);
         font-weight: 400;
         text-align: center;
@@ -273,7 +273,7 @@
 
         > p {
           color: var(--white);
-          font-family: var(--font-fustat);
+          font-family: var(--font-asap);
           font-size: desktop-vw(20px);
           font-weight: 400;
           line-height: 1.5;
@@ -333,7 +333,7 @@
 
     > p {
       color: var(--black);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(20px);
       font-weight: 400;
       margin-bottom: desktop-vw(50px);
@@ -378,7 +378,7 @@
 
         > p {
           color: var(--black);
-          font-family: var(--font-fustat);
+          font-family: var(--font-asap);
           font-size: desktop-vw(20px);
           font-weight: 400;
 

@@ -1,4 +1,16 @@
 .gridSpecs {
+  background-color: var(--cedar-wood-finish);
+  padding-bottom: desktop-vw(100px);
+  padding-top: desktop-vw(50px);
+  position: relative;
+
+  .fillerTop {
+    @include position(absolute, desktop-vw(-220px), auto, auto, auto);
+    @include dims(100%, 100%);
+    transform: rotateY(180deg);
+    z-index: -1;
+  }
+
   .grid {
     @include dims(desktop-vw(1100px), desktop-vw(460px));
   }
@@ -23,13 +35,13 @@
 
   .gridItem {
     background-color: var(--pico-orange);
+    position: relative;
 
-    > p {
+    p {
       color: var(--cedar-wood-finish);
       font-family: var(--font-asap);
       font-size: desktop-vw(26px);
       font-weight: 500;
-      margin-bottom: desktop-vw(100px);
 
       @include mobile {
         font-size: mobile-vw(18px);
@@ -37,8 +49,46 @@
       }
     }
 
+    &.item1 {
+      padding-left: desktop-vw(140px);
+      padding-top: desktop-vw(30px);
+      padding-right: desktop-vw(50px);
+    }
+
+    &.item2 {
+      padding-left: desktop-vw(140px);
+      padding-top: desktop-vw(120px);
+      padding-right: desktop-vw(50px);
+    }
+
+    &.item3 {
+      padding-left: desktop-vw(40px);
+      padding-right: desktop-vw(140px);
+      padding-top: desktop-vw(140px);
+
+      .inner {
+        @include dims(100%, auto);
+      }
+    }
+
+    .premiumMix {
+      @include position(absolute, desktop-vw(30px), auto, auto, desktop-vw(5px));
+      @include dims(desktop-vw(240px));
+      transform: translate(-40%, -40%);
+    }
+
+    .nonGluten {
+      @include position(absolute, desktop-vw(-10px), auto, auto, desktop-vw(-60px));
+      @include dims(desktop-vw(350px), desktop-vw(150px));
+    }
+
+    .fiberSource {
+      @include position(absolute, desktop-vw(-50px), desktop-vw(-70px), auto, auto);
+      @include dims(desktop-vw(400px), desktop-vw(200px));
+    }
+
     .imgC {
-      @include position(absolute, 57.5%, auto, auto, 50%);
+      @include position(absolute, auto, auto, desktop-vw(-50px), auto);
       @include dims(70%, auto);
       transform: translateX(-40%) rotate(-10deg);
     }

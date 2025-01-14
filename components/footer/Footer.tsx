@@ -78,9 +78,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div
-          className={cx(s.copyright, "flex flex-col items-center justify-between tablet:flex-row tablet:items-end ")}
-        >
+        <div className={cx(s.copyright, "flex flex-col items-center justify-between tablet:flex-row tablet:items-end")}>
           <span>© {t("copyright.year")}</span>
           <span className={cx(s.social, "flex")}>
             {socialMedia?.map((item, i) => {

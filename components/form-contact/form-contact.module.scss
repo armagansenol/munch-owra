@@ -8,7 +8,7 @@
       }
 
       &.border {
-        border-bottom: 1px solid var(--cedar-wood-finish);
+        border-bottom: 1px solid var(--ironstone);
       }
     }
   }
@@ -22,7 +22,7 @@
       }
 
       &.border {
-        border-bottom: 1px solid var(--white);
+        border-bottom: 1px solid var(--ironstone);
       }
     }
   }
@@ -36,7 +36,7 @@
     }
 
     .title {
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(22px);
       font-weight: 500;
       margin-bottom: desktop-vw(30px);
@@ -84,12 +84,31 @@
     }
 
     .submitBtn {
-      @include dims(100%, desktop-vw(80px));
+      cursor: pointer;
       margin-top: desktop-vw(12px);
       pointer-events: auto;
+      background-color: transparent;
+      border: 1px solid var(--steamed-milk);
+      border-radius: desktop-vw(12px);
+      color: var(--steamed-milk);
+      display: flex;
+      font-family: var(--font-asap);
+      font-size: desktop-vw(18px);
+      font-weight: 600;
+      margin-right: auto;
+      padding: desktop-vw(7px) desktop-vw(20px);
+      transition: 300ms all ease;
+
+      @include hover {
+        &:hover {
+          background-color: var(--steamed-milk);
+          color: var(--cedar-wood-finish);
+        }
+      }
 
       @include mobile {
         @include dims(100%, mobile-vw(60px));
+        border-radius: mobile-vw(12px);
         margin: 0 auto;
         margin-top: mobile-vw(12px);
       }
@@ -121,7 +140,7 @@
     .input {
       @include dims(100%, desktop-vw(40px));
       border: none;
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-weight: 400;
       font-size: desktop-vw(16px);
       padding: desktop-vw(12px) 0;
@@ -133,7 +152,7 @@
       }
 
       &::placeholder {
-        font-family: var(--font-fustat);
+        font-family: var(--font-asap);
         font-weight: 500;
         font-size: desktop-vw(16px);
         transition: 400ms opacity ease;
@@ -198,7 +217,7 @@
   }
 
   .response {
-    font-family: var(--font-fustat);
+    font-family: var(--font-asap);
     font-weight: 400;
     font-size: desktop-vw(16px);
     padding: desktop-vw(12px) 0;

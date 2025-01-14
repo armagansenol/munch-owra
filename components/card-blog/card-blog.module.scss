@@ -65,7 +65,7 @@
 
     .category {
       color: var(--black);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(16px);
       font-weight: 400;
       margin-bottom: desktop-vw(8px);
@@ -79,7 +79,7 @@
 
     .time {
       color: var(--black);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(16px);
       font-weight: 400;
       margin-bottom: desktop-vw(24px);
@@ -93,7 +93,7 @@
 
     .title {
       color: var(--black);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(24px);
       font-weight: 700;
       margin-bottom: desktop-vw(14px);
@@ -107,7 +107,7 @@
 
     .description {
       color: var(--black);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(16px);
       font-weight: 400;
       margin-bottom: desktop-vw(75px);
@@ -122,7 +122,7 @@
     .date {
       @include position(absolute, 0, 0, auto, auto);
       color: var(--black);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(18px);
       font-weight: 400;
 

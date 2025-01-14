@@ -23,7 +23,7 @@
   .breadcrumb {
     color: var(--theme-secondary);
     font-size: desktop-vw(16px);
-    font-family: var(--font-fustat);
+    font-family: var(--font-asap);
     font-weight: 700;
     transition: 400ms color ease;
 
@@ -110,7 +110,7 @@
     .volume {
       color: var(--theme-secondary);
       font-size: desktop-vw(16px);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-weight: 400;
       transition: 400ms color ease;
 
@@ -138,7 +138,7 @@
     .size {
       color: var(--theme-secondary);
       font-size: desktop-vw(16px);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-weight: 700;
       margin-bottom: desktop-vw(20px);
       transition: 400ms color ease;
@@ -153,7 +153,7 @@
     .desc {
       color: var(--black);
       font-size: desktop-vw(14px);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-weight: 400;
       margin-bottom: desktop-vw(50px);
       transition: 400ms color ease;
@@ -169,7 +169,7 @@
       .title {
         color: var(--theme-secondary);
         font-size: desktop-vw(16px);
-        font-family: var(--font-fustat);
+        font-family: var(--font-asap);
         font-weight: 700;
         margin-bottom: desktop-vw(20px);
         transition: 400ms color ease;
@@ -231,7 +231,7 @@
   > p {
     @include dims(desktop-vw(860px), auto);
     color: var(--black);
-    font-family: var(--font-fustat);
+    font-family: var(--font-asap);
     font-size: desktop-vw(26px);
     font-weight: 400;
     margin-bottom: desktop-vw(100px);
