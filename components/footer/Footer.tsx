@@ -1,7 +1,5 @@
 import s from "./footer.module.scss"
 
-import { gsap, ScrollTrigger } from "@/lib/gsap"
-import { useGSAP } from "@gsap/react"
 import cx from "clsx"
 import { useTranslations } from "next-intl"
 import { useRef } from "react"
@@ -25,36 +23,6 @@ export default function Footer() {
   const { data: contact } = useSingle()
   const { data: socialMedia } = useAll()
   const t = useTranslations("footer")
-
-  useGSAP(
-    () => {
-      const tl = gsap.timeline({ paused: true })
-
-      tl.from(
-        ".logo-c",
-        {
-          yPercent: 100,
-          scale: 0.9,
-        },
-        "s"
-      ).from(
-        ".ice-c",
-        {
-          yPercent: -80,
-          scale: 1.05,
-        },
-        "s"
-      )
-
-      ScrollTrigger.create({
-        animation: tl,
-        trigger: ref.current,
-        scrub: true,
-        end: "bottom bottom",
-      })
-    },
-    { scope: ref, dependencies: [contact, socialMedia, t], revertOnUpdate: true }
-  )
 
   const icons: Record<SocialMedia, JSX.Element> = {
     [SocialMedia.tiktok]: <IconTiktok fill={"var(--cedar-wood-finish)"} />,
