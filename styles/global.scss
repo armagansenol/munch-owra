@@ -1,5 +1,5 @@
 @import "./_reset.scss";
-@import "./_fonts.scss";
+// @import "./_fonts.scss";
 @import "./_colors.scss";
 @import "./_easings.scss";
 @import "./_functions.scss";
@@ -11,8 +11,6 @@
 :root {
   --header-height: #{desktop-vw(120px)};
   --page-padding-top: #{desktop-vw(50px)};
-
-  --font-fustat: Fustat;
 
   @include mobile {
     --header-height: #{mobile-vw(120px)};

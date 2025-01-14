@@ -1,15 +1,16 @@
 {
     "home": {
-        "headline": {
-            "p1": "Where",
-            "p2": "Quality and",
-            "p3": "Innovation",
-            "p4": "Meet!"
+        "intro": {
+            "heading": "Stay Vital <strong>Every Day</strong>, Snack Natural with <strong>Every Bite.</strong>",
+            "description": "A daily dose of energy and wellness, powered by nature's finest selection.",
+            "cta": "See All Products"
         },
-        "description": "At Chill Owra, we're here to bring quality and fun into your life. Whether it's refreshing ice, freshly squeezed fruit juices, or the unique aroma of coffee, we aim to provide the best experience with every product.",
-        "why": "NUTRIFUSION",
+        "why": {
+            "heading": "Stay Vital <strong>Every Day</strong>, Snack Natural with <strong>Every Bite.</strong>",
+            "description": "A daily dose of energy and wellness, powered by nature's finest selection.",
+            "cta": "Our Products"
+        },
         "pros": {
-            "description": "Experience quality and fun with Chill Owra. We're here to add a little more joy and pleasure to your life.",
             "items": {
                 "i1": {
                     "title": "Freshness and Flavor",
@@ -44,7 +45,7 @@
             }
         },
         "contact": {
-            "heading": "Have Any Questions? We'd Be Happy to Help!"
+            "heading": "Do you have any questions? <br></br> <strong>We're happy to help!</strong>"
         },
         "footer": {
             "copyright": "©2024 Chill Owra",
@@ -54,19 +55,20 @@
     "about": {
         "intro": {
             "heading": {
-                "p1": "It’s All About Good Taste",
-                "p2": "and Good Vibes"
+                "p1": "It’s All About <strong>Good Taste</strong>",
+                "p2": "and <strong>Good Vibes</strong>"
             },
             "text": "Owra was founded with the aim of bringing quality and fun into your life. It all started with our desire to offer fresh and high-quality products to our loved ones. Today, we offer a wide range of products, from icy fruit juices to coffee and other beverages."
         },
         "marquee": "WHERE QUALITY MEETS FUN",
+        "marquee2": "OTHER DELIGHTS WE'VE CRAFTED",
         "mission": {
             "heading": "Our Mission",
-            "text": "At Chill Owra, we aim to provide quality and enjoyment with every sip. We carefully select our products, prepare them with the freshest ingredients, and present them to you. Customer satisfaction and promoting a healthy lifestyle are our top priorities."
+            "text": "At Owra, we aim to deliver quality and enjoyment in every bite. We carefully select our products, prepare them with the freshest ingredients, and present them to you. Customer satisfaction and promoting a healthy lifestyle are our top priorities."
         },
         "vision": {
             "heading": "Our Vision",
-            "text": "To be a part of moments where quality and fun meet all over Turkey. When people think of Chill Owra, we want the first things that come to mind to be trust and taste."
+            "text": "Being a part of moments where quality and fun meet across Turkey. We strive to make sure that when Owra is mentioned, the first things that come to mind are trust and flavor."
         },
         "values": {
             "quality": {
@@ -92,6 +94,7 @@
         },
         "career": {
             "cta": "Career",
+            "title": "Would you like to <strong>work with us?</strong>",
             "text": "The Chill Owra family consists of experts and passionate people in their field. Each of them loves their job and works to achieve the best results. Each member of our team shares the same passion for offering the best products for you."
         }
     },
@@ -174,7 +177,7 @@
     },
     "header": {
         "modal": {
-            "heading": "Feeling thirsty?",
+            "heading": "See All Products",
             "content": {
                 "p1": "If you’re craving your favorite frozen concoction, drop us an email.",
                 "p2": "We promise it’s worth the brain freeze!"
@@ -195,24 +198,24 @@
     "formContact": {
         "fields": {
             "name": {
-                "placeholder": "YOUR NAME",
+                "placeholder": "Name Surname",
                 "error": "Please enter a valid name"
             },
             "email": {
-                "placeholder": "YOUR EMAIL ADDRESS",
+                "placeholder": "Email Address",
                 "error": "Please enter a valid email address"
             },
             "phone": {
-                "placeholder": "YOUR PHONE NUMBER",
+                "placeholder": "Phone Number",
                 "error": "Please enter a valid phone number"
             },
             "message": {
-                "placeholder": "HOW CAN WE HELP?",
+                "placeholder": "How Can We Help?",
                 "error": "Please enter your message"
             }
         },
         "button": {
-            "text": "Send"
+            "text": "Submit Form"
         }
     },
     "productSlider": {
