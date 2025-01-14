@@ -4,9 +4,23 @@
   position: relative;
   z-index: 20;
 
+  @include mobile {
+    padding-bottom: mobile-vw(50px);
+    padding-left: mobile-vw(16px);
+  }
+
+  .textC {
+    @include dims(50%, auto);
+  }
+
   .text {
     @include dims(desktop-vw(445px), auto);
     padding-top: desktop-vw(150px);
+
+    @include mobile {
+      @include dims(100%, auto);
+      padding-top: mobile-vw(80px);
+    }
 
     > h1 {
       color: var(--cedar-wood-finish);
@@ -15,6 +29,12 @@
       font-weight: 400;
       line-height: 1.2;
       margin-bottom: desktop-vw(32px);
+
+      @include mobile {
+        font-size: mobile-vw(32px);
+        margin-bottom: mobile-vw(20px);
+        text-align: center;
+      }
     }
 
     > p {
@@ -24,6 +44,12 @@
       font-weight: 400;
       line-height: 1.35;
       margin-bottom: desktop-vw(60px);
+
+      @include mobile {
+        font-size: mobile-vw(16px);
+        margin-bottom: mobile-vw(40px);
+        text-align: center;
+      }
     }
 
     .cta {
@@ -44,7 +70,16 @@
           color: var(--white);
         }
       }
+
+      @include mobile {
+        font-size: mobile-vw(16px);
+        padding: mobile-vw(7px) mobile-vw(16px);
+      }
     }
+  }
+
+  .boxes {
+    @include dims(50%, desktop-vw(500px));
   }
 
   .box {
@@ -260,6 +295,11 @@
   gap: desktop-vw(80px);
   padding: desktop-vw(120px) 0;
 
+  @include mobile {
+    gap: mobile-vw(40px);
+    padding: mobile-vw(60px) mobile-vw(16px);
+  }
+
   .imgs {
     position: relative;
 
@@ -300,6 +340,12 @@
       font-weight: 400;
       line-height: 1.2;
       margin-bottom: desktop-vw(25px);
+
+      @include mobile {
+        @include dims(100%, auto);
+        font-size: mobile-vw(32px);
+        margin-bottom: mobile-vw(20px);
+      }
     }
 
     > p {
@@ -310,6 +356,12 @@
       font-weight: 400;
       line-height: 1.35;
       margin-bottom: desktop-vw(40px);
+
+      @include mobile {
+        @include dims(100%, auto);
+        font-size: mobile-vw(16px);
+        margin-bottom: mobile-vw(30px);
+      }
     }
 
     .cta {
@@ -329,6 +381,11 @@
           background-color: var(--cedar-wood-finish);
           color: var(--white);
         }
+      }
+
+      @include mobile {
+        font-size: mobile-vw(16px);
+        padding: mobile-vw(7px) mobile-vw(16px);
       }
     }
   }

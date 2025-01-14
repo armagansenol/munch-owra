@@ -12,6 +12,7 @@ import { Link } from "@/components/utility/link"
 import { routes } from "@/lib/constants"
 import { useLenisStore } from "@/lib/store/lenis"
 import { Locales } from "@/types"
+import LetterSwapForward from "../letter-swap-forward"
 
 export default function Header() {
   const ref = useRef(null)
@@ -90,14 +91,24 @@ export default function Header() {
           )}
         >
           <div className="flex flex-col tablet:flex-row items-center justify-between tablet:justify-center gap-5 tablet:gap-10">
-            <div className={s.navItem} onClick={closeMenu}>
-              <Link href={`/${routes[locale as Locales].about.path}`}>{routes[locale as Locales].about.ui}</Link>
+            <div className={cx(s.navItem, "cursor-pointer")} onClick={closeMenu}>
+              <Link href={`/${routes[locale as Locales].about.path}`}>
+                <LetterSwapForward label={routes[locale as Locales].about.ui} reverse={false} className="font-bold" />
+              </Link>
             </div>
-            <div className={s.navItem} onClick={closeMenu}>
-              <Link href={`/${routes[locale as Locales].products.path}`}>{routes[locale as Locales].products.ui}</Link>
+            <div className={cx(s.navItem, "cursor-pointer")} onClick={closeMenu}>
+              <Link href={`/${routes[locale as Locales].products.path}`}>
+                <LetterSwapForward
+                  label={routes[locale as Locales].products.ui}
+                  reverse={false}
+                  className="font-bold"
+                />
+              </Link>
             </div>
-            <div className={s.navItem} onClick={closeMenu}>
-              <Link href={`/${routes[locale as Locales].blog.path}`}>{routes[locale as Locales].blog.ui}</Link>
+            <div className={cx(s.navItem, "cursor-pointer")} onClick={closeMenu}>
+              <Link href={`/${routes[locale as Locales].blog.path}`}>
+                <LetterSwapForward label={routes[locale as Locales].blog.ui} reverse={false} className="font-bold" />
+              </Link>
             </div>
           </div>
 
@@ -107,8 +118,10 @@ export default function Header() {
                 {routes[locale as Locales].franchise.ui}
               </Link>
             </div> */}
-            <div className={s.navItem} onClick={closeMenu}>
-              <Link href={`/${routes[locale as Locales].contact.path}`}>{routes[locale as Locales].contact.ui}</Link>
+            <div className={cx(s.navItem, "cursor-pointer")} onClick={closeMenu}>
+              <Link href={`/${routes[locale as Locales].contact.path}`}>
+                <LetterSwapForward label={routes[locale as Locales].contact.ui} reverse={false} className="font-bold" />
+              </Link>
             </div>
             <div className={s.navItem}>
               <LocaleSwitcher />

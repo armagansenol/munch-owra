@@ -190,10 +190,10 @@
     }
 
     .formLabel {
-      font-family: var(--font-work-sans);
+      font-family: var(--font-asap);
       font-size: desktop-vw(14px);
       font-weight: 400;
-      letter-spacing: -0.04em;
+      line-height: 1.2;
       text-align: left;
 
       @include mobile {

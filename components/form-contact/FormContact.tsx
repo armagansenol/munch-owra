@@ -8,11 +8,12 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 
 import { FormSchema, useSubmitForm } from "@/api/mutations/contact-form"
-import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/utility/form"
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/utility/form"
 import { Input } from "@/components/utility/input"
 import { LoadingSpinner } from "@/components/utility/loading-spinner"
 import { Textarea } from "@/components/utility/textarea"
 import { FormType } from "@/types"
+import { Checkbox } from "../utility/checkbox"
 
 export interface FormContactProps {
   theme?: "blue" | "white"
@@ -139,6 +140,28 @@ export default function FormContact(props: FormContactProps) {
                 )}
               />
             </div>
+            <div
+              className={cx(s.fieldC, {
+                [s.error]: form.formState.errors.kvkk,
+              })}
+            >
+              <FormField
+                control={form.control}
+                name="kvkk"
+                render={({ field }) => (
+                  <FormItem className={s.formItem}>
+                    <div className="flex flex-row items-start gap-3 space-y-0">
+                      <FormControl>
+                        <Checkbox checked={field.value} onCheckedChange={field.onChange} />
+                      </FormControl>
+                      <FormLabel className={s.formLabel}>{t("consent")}</FormLabel>
+                    </div>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+
             <button className={s.submitBtn} type="submit" disabled={!form.formState.isValid}>
               {isLoading ? (
                 <div className={cx(s.spinnerC, "pointer-events-none")}>

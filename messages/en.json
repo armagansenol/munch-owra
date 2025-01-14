@@ -196,6 +196,7 @@
         }
     },
     "formContact": {
+        "consent": "I consent to the processing of my personal data under KVKK No. 6698, as detailed in the information notice.",
         "fields": {
             "name": {
                 "placeholder": "Name Surname",

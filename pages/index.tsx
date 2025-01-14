@@ -29,6 +29,7 @@ const FloatWrapper = dynamic(() => import("@/components/animations/float"), {
 import { Link } from "@/components/utility/link"
 import { routes } from "@/lib/constants"
 import { FormType, Locales } from "@/types"
+import LetterSwapForward from "@/components/letter-swap-forward"
 
 export default function Home() {
   const t = useTranslations("home")
@@ -37,18 +38,20 @@ export default function Home() {
   return (
     <DefaultLayout seo={routes[locale as Locales].home.seo}>
       <section className={cx(s.intro, "flex flex-col lg:flex-row items-center justify-between")}>
-        <div className={cx(s.text, "tablet:w-1/2")}>
-          <h1>
-            {t.rich("intro.heading", {
-              strong: (chunks) => <strong className="font-bold italic">{chunks}</strong>,
-            })}
-          </h1>
-          <p>{t("intro.description")}</p>
-          <Link className={cx(s.cta, "flex items-center justify-center")} href="/products">
-            {t("intro.cta")}
-          </Link>
+        <div className={s.textC}>
+          <div className={s.text}>
+            <h1>
+              {t.rich("intro.heading", {
+                strong: (chunks) => <strong className="font-bold italic">{chunks}</strong>,
+              })}
+            </h1>
+            <p>{t("intro.description")}</p>
+            <Link className={cx(s.cta, "flex items-center justify-center cursor-pointer")} href="/products">
+              <LetterSwapForward label={t("intro.cta")} reverse={false} className="font-bold" />
+            </Link>
+          </div>
         </div>
-        <div className="tablet:w-1/2 relative h-[400px] lg:h-[500px]">
+        <div className={s.boxes}>
           <div className="relative">
             <div className={cx(s.box, s.box1)}>
               <ParallaxWrapper speedY={-0.2}>
