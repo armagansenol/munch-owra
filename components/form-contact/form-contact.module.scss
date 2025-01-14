@@ -84,9 +84,6 @@
     }
 
     .submitBtn {
-      cursor: pointer;
-      margin-top: desktop-vw(12px);
-      pointer-events: auto;
       background-color: transparent;
       border: 1px solid var(--steamed-milk);
       border-radius: desktop-vw(12px);
@@ -96,21 +93,24 @@
       font-size: desktop-vw(18px);
       font-weight: 600;
       margin-right: auto;
+      margin-top: desktop-vw(12px);
       padding: desktop-vw(7px) desktop-vw(20px);
+      pointer-events: auto;
       transition: 300ms all ease;
+
+      @include mobile {
+        border-radius: mobile-vw(12px);
+        font-size: mobile-vw(18px);
+        margin: 0 auto;
+        margin-top: mobile-vw(12px);
+        padding: mobile-vw(7px) mobile-vw(20px);
+      }
 
       @include hover {
         &:hover {
           background-color: var(--steamed-milk);
           color: var(--cedar-wood-finish);
         }
-      }
-
-      @include mobile {
-        @include dims(100%, mobile-vw(60px));
-        border-radius: mobile-vw(12px);
-        margin: 0 auto;
-        margin-top: mobile-vw(12px);
       }
 
       &:disabled,
@@ -198,6 +198,7 @@
 
       @include mobile {
         font-size: mobile-vw(14px);
+        line-height: 1.75;
       }
     }
 

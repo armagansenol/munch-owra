@@ -64,7 +64,7 @@ export default function SliderProducts() {
             <IconArrow fill={Object.values(products)[currentSlide].color} />
           </div>
         </div>
-        <div className={cx(s.bg, "absolute top-0 left-0 right-0 bottom-0 z-0 hidden tablet:block")}>
+        <div className={cx(s.bg, "absolute top-0 left-0 right-0 bottom-0 z-0")}>
           <div className="w-full h-full hidden tablet:block">
             <IconWavyBg fill={Object.values(products)[currentSlide].color} />
           </div>

@@ -8,12 +8,12 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 
 import { FormSchema, useSubmitForm } from "@/api/mutations/contact-form"
+import { Checkbox } from "@/components/utility/checkbox"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/utility/form"
 import { Input } from "@/components/utility/input"
 import { LoadingSpinner } from "@/components/utility/loading-spinner"
 import { Textarea } from "@/components/utility/textarea"
 import { FormType } from "@/types"
-import { Checkbox } from "../utility/checkbox"
 
 export interface FormContactProps {
   theme?: "blue" | "white"
@@ -161,7 +161,6 @@ export default function FormContact(props: FormContactProps) {
                 )}
               />
             </div>
-
             <button className={s.submitBtn} type="submit" disabled={!form.formState.isValid}>
               {isLoading ? (
                 <div className={cx(s.spinnerC, "pointer-events-none")}>

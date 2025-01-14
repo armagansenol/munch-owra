@@ -40,14 +40,26 @@ export default function Home() {
       <section className={cx(s.intro, "flex flex-col lg:flex-row items-center justify-between")}>
         <div className={s.textC}>
           <div className={s.text}>
-            <h1>
+            <h1 className="text-center lg:text-left">
               {t.rich("intro.heading", {
                 strong: (chunks) => <strong className="font-bold italic">{chunks}</strong>,
               })}
             </h1>
-            <p>{t("intro.description")}</p>
-            <Link className={cx(s.cta, "flex items-center justify-center cursor-pointer")} href="/products">
-              <LetterSwapForward label={t("intro.cta")} reverse={false} className="font-bold" />
+            <p className="text-center lg:text-left">{t("intro.description")}</p>
+            <Link
+              className={cx(s.cta, "flex items-center justify-center cursor-pointer mx-auto lg:mx-0")}
+              href="/products"
+            >
+              <LetterSwapForward
+                label={t("intro.cta")}
+                reverse={false}
+                className="font-bold"
+                transition={{
+                  type: "spring",
+                  duration: 0.5,
+                }}
+                staggerDuration={0.01}
+              />
             </Link>
           </div>
         </div>
@@ -152,9 +164,9 @@ export default function Home() {
         </Marquee>
       </div>
       <SliderProducts />
-      <section className={cx(s.why, "flex items-center")}>
-        <div className="tablet:w-1/2">
-          <div className={cx(s.imgs, "col-span-6 flex items-start justify-end")}>
+      <section className={cx(s.why, "flex flex-col lg:flex-row items-center")}>
+        <div className="w-full lg:w-1/2">
+          <div className={cx(s.imgs, "flex items-start justify-center lg:justify-end")}>
             <div className="relative">
               <div className={s.imgC}>
                 <Img className="object-cover" src={"/img/home-1.jpg"} alt="Owra" width={1000} height={1000} />
@@ -167,21 +179,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={cx(s.text, "tablet:w-1/2")}>
+        <div className={cx(s.text, "w-full lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0")}>
           <h1>
             {t.rich("why.heading", { strong: (chunks) => <strong className="font-bold italic">{chunks}</strong> })}
           </h1>
           <p>{t("why.description")}</p>
-          <Link className={cx(s.cta, "flex items-center justify-center")} href="/products">
+          <Link className={cx(s.cta, "flex items-center justify-center mx-auto lg:mx-0")} href="/products">
             {t("why.cta")}
           </Link>
         </div>
       </section>
-      <section className={cx(s.contact, "flex flex-col-reverse tablet:grid grid-cols-12 items-center")}>
+      <section className={cx(s.contact, "flex flex-col-reverse lg:grid lg:grid-cols-12 items-center")}>
         <div className={s.fillerTop}>
           <IconFiller />
         </div>
-        <div className={cx(s.formC, "col-span-6")}>
+        <div className={cx(s.formC, "w-full lg:col-span-6 text-center lg:text-left px-4 lg:px-0")}>
           <h2>
             {t.rich("contact.heading", {
               strong: (chunks) => <strong className="font-bold italic">{chunks}</strong>,
@@ -190,7 +202,7 @@ export default function Home() {
           </h2>
           <FormContact theme="white" formType={FormType.contact} />
         </div>
-        <div className="col-span-6">
+        <div className="w-full lg:col-span-6">
           <div className={s.imgC}>
             <Img className="object-cover" src={"/img/home-2.jpg"} alt="Owra" width={1000} height={1000} />
           </div>

@@ -17,7 +17,7 @@ export default function GridSpecs(props: GridSpecsProps) {
       <div className={s.fillerTop}>
         <IconFiller />
       </div>
-      <h2 className={cx(s.greetingsTitle, "mb-20")}>
+      <h2 className={s.greetingsTitle}>
         <span>Gluten-free, fiber-rich, </span>
         and bursting with taste—snack time
         <span> just got better!</span>
@@ -27,7 +27,7 @@ export default function GridSpecs(props: GridSpecsProps) {
           className={cx(
             s.gridItem,
             s.item1,
-            "col-span-6 row-span-5 col-start-1 col-end-7 row-start-1 row-end-6 rounded-lg"
+            "col-span-12 row-span-3 lg:col-span-6 lg:row-span-5 col-start-1 lg:col-end-7 row-start-1 row-end-4 lg:row-end-6 rounded-lg"
           )}
         >
           <div className={s.premiumMix}>
@@ -39,7 +39,7 @@ export default function GridSpecs(props: GridSpecsProps) {
           className={cx(
             s.gridItem,
             s.item2,
-            "col-span-6 row-span-7 col-start-1 col-end-7 row-start-6 row-end-13 rounded-lg"
+            "col-span-12 row-span-3 lg:col-span-6 lg:row-span-7 col-start-1 lg:col-end-7 row-start-4 row-end-7 lg:row-start-6 lg:row-end-13 rounded-lg"
           )}
         >
           <div className={s.nonGluten}>
@@ -51,7 +51,7 @@ export default function GridSpecs(props: GridSpecsProps) {
           className={cx(
             s.gridItem,
             s.item3,
-            "col-span-6 row-span-12 col-start-7 col-end-13 row-start-1 row-end-13 rounded-lg"
+            "col-span-12 row-span-6 lg:col-span-6 lg:row-span-12 col-start-1 lg:col-start-7 lg:col-end-13 row-start-7 row-end-13 lg:row-start-1 lg:row-end-13 rounded-lg"
           )}
         >
           <div className={s.inner}>

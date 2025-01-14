@@ -115,7 +115,7 @@
 
     @include mobile {
       @include position(relative, auto, auto, auto, auto);
-      @include dims(mobile-vw(60px), auto);
+      @include dims(mobile-vw(120px), auto);
       transform: none;
       z-index: 200;
     }

@@ -15,6 +15,10 @@
     background-color: var(--toasted-marshmallow-fluff);
     transform: translateX(-50%) translateY(50%);
     z-index: 20;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &:after {
@@ -24,6 +28,10 @@
     background-color: var(--steamed-milk);
     transform: translateX(-50%) translateY(50%);
     z-index: 10;
+
+    @include mobile {
+      @include dims(100vw, 1px);
+    }
   }
 
   .logoC {

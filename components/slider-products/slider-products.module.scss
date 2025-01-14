@@ -29,6 +29,11 @@
     position: absolute;
     left: desktop-vw(100px);
     z-index: 100;
+
+    @include mobile {
+      @include dims(mobile-vw(35px));
+      left: mobile-vw(10px);
+    }
   }
 
   .nextBtn {
@@ -39,23 +44,33 @@
     position: absolute;
     right: desktop-vw(100px);
     z-index: 100;
+
+    @include mobile {
+      @include dims(mobile-vw(35px));
+      right: mobile-vw(10px);
+    }
   }
 
   .bg {
     padding: desktop-vw(10px);
     transition: 300ms all ease;
 
-    * {
-      transition: 300ms all ease;
+    @include mobile {
+      padding: 0;
+      padding-bottom: mobile-vw(14px);
     }
 
-    @include mobile {
-      padding: mobile-vw(5px);
+    * {
+      transition: 300ms all ease;
     }
   }
 
   .iconC {
     @include dims(desktop-vw(30px));
+
+    @include mobile {
+      @include dims(mobile-vw(10px));
+    }
 
     * {
       transition: 300ms all ease;
