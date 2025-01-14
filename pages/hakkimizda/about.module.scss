@@ -1,6 +1,6 @@
 .intro {
-  margin-bottom: desktop-vw(75px);
-  padding: desktop-vw(50px) 0;
+  margin-bottom: desktop-vw(100px);
+  padding: desktop-vw(100px) 0;
 
   @include mobile {
     margin-bottom: mobile-vw(30px);
@@ -8,8 +8,8 @@
   }
 
   .imgC {
-    @include dims(auto, desktop-vw(510px));
-    margin: 0 0 0 desktop-vw(60px);
+    @include dims(auto, desktop-vw(420px));
+    margin: 0 0 0 desktop-vw(80px);
     position: relative;
 
     @include mobile {
@@ -21,7 +21,7 @@
   }
 
   .text {
-    padding-left: desktop-vw(60px);
+    padding-left: desktop-vw(120px);
 
     @include mobile {
       margin-bottom: mobile-vw(30px);
@@ -49,10 +49,10 @@
     }
 
     > p {
-      @include dims(desktop-vw(500px), auto);
+      @include dims(desktop-vw(490px), auto);
       color: var(--cedar-wood-finish);
-      font-family: var(--font-fustat);
-      font-size: desktop-vw(20px);
+      font-family: var(--font-asap);
+      font-size: desktop-vw(18px);
       font-weight: 400;
 
       @include mobile {
@@ -69,8 +69,9 @@
   background-color: var(--black);
   border-bottom: 1px solid var(--cedar-wood-finish);
   border-top: 1px solid var(--cedar-wood-finish);
-  padding: desktop-vw(10px) 0;
-  transform: rotate(5deg) translateX(-25vw);
+  padding: desktop-vw(5px) 0;
+  position: relative;
+  transform: rotate(4deg) translateX(-25vw);
 
   @include mobile {
     padding: mobile-vw(10px) 0;
@@ -81,10 +82,18 @@
     font-family: var(--font-anton);
     font-size: desktop-vw(80px);
     font-weight: 400;
+    margin: 0 desktop-vw(50px);
 
     @include mobile {
       font-size: mobile-vw(40px);
     }
+  }
+
+  .sticker {
+    @include position(absolute, 50%, desktop-vw(450px), auto, auto);
+    @include dims(desktop-vw(300px));
+    transform: translateY(-50%);
+    z-index: 10;
   }
 }
 
@@ -115,7 +124,7 @@
     color: var(--cedar-wood-finish);
     font-family: var(--font-asap);
     font-size: desktop-vw(30px);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1;
     margin-bottom: desktop-vw(30px);
 
@@ -128,8 +137,8 @@
   p {
     @include dims(desktop-vw(440px), auto);
     color: var(--cedar-wood-finish);
-    font-family: var(--font-fustat);
-    font-size: desktop-vw(20px);
+    font-family: var(--font-asap);
+    font-size: desktop-vw(16px);
     font-weight: 400;
     text-align: center;
 
@@ -145,7 +154,7 @@
   border-top: var(--border-width) solid var(--cedar-wood-finish);
 
   .imgC {
-    @include dims(auto, desktop-vw(600px));
+    @include dims(auto, desktop-vw(450px));
     border-bottom: var(--border-width) solid var(--cedar-wood-finish);
 
     @include mobile {
@@ -162,7 +171,7 @@
 
     > div {
       border-right: var(--border-width) solid var(--cedar-wood-finish);
-      padding: desktop-vw(70px) 0;
+      padding: desktop-vw(40px) 0;
 
       @include mobile {
         border-bottom: var(--border-width) solid var(--cedar-wood-finish);
@@ -200,8 +209,8 @@
 
       > p {
         @include dims(desktop-vw(260px), auto);
-        color: var(--black);
-        font-family: var(--font-fustat);
+        color: var(--cedar-wood-finish);
+        font-family: var(--font-asap);
         font-size: desktop-vw(18px);
         font-weight: 400;
         text-align: center;
@@ -216,61 +225,76 @@
 }
 
 .franchise {
-  padding: desktop-vw(100px) 0;
   position: relative;
 
-  @include mobile {
-    padding: mobile-vw(50px) 0;
-  }
-
-  .ice1 {
-    @include position(absolute, auto, auto, desktop-vw(-150px), desktop-vw(40px));
-    @include dims(desktop-vw(190px));
+  .otherDelights {
+    border-bottom: 3px solid var(--cedar-wood-finish);
+    margin-bottom: desktop-vw(50px);
+    padding: desktop-vw(50px) 0;
 
     @include mobile {
-      @include position(absolute, mobile-vw(80px), auto, auto, mobile-vw(0px));
-      @include dims(mobile-vw(120px));
+      padding: mobile-vw(10px) 0;
+    }
+
+    h2 {
+      color: var(--cedar-wood-finish);
+      font-family: var(--font-anton);
+      font-size: desktop-vw(60px);
+      font-weight: 400;
+      margin: 0 desktop-vw(40px);
+
+      @include mobile {
+        font-size: mobile-vw(40px);
+      }
     }
   }
 
-  .ice2 {
-    @include position(absolute, auto, auto, desktop-vw(-180px), desktop-vw(220px));
-    @include dims(desktop-vw(180px));
+  .links {
+    @include dims(desktop-vw(1200px), auto);
+    margin-bottom: desktop-vw(80px);
+    margin-left: auto;
+    margin-right: auto;
 
-    @include mobile {
-      @include position(absolute, mobile-vw(380px), auto, auto, mobile-vw(270px));
-      @include dims(mobile-vw(110px));
+    .link {
+      border-bottom: 2px solid var(--cedar-wood-finish);
+      color: var(--cedar-wood-finish);
+      font-family: var(--font-asap);
+      font-size: desktop-vw(40px);
+      font-weight: 500;
+      padding: desktop-vw(5px) 0;
+
+      .iconC {
+        @include dims(desktop-vw(18px));
+      }
     }
   }
 
-  > p {
-    @include dims(desktop-vw(860px), auto);
-    color: var(--black);
-    font-family: var(--font-fustat);
-    font-size: desktop-vw(26px);
+  .text {
+    @include dims(desktop-vw(800px), auto);
+    color: var(--cedar-wood-finish);
+    font-family: var(--font-asap);
+    font-size: desktop-vw(28px);
     font-weight: 400;
-    margin-bottom: desktop-vw(100px);
     text-align: center;
 
-    @include mobile {
-      @include dims(mobile-vw(300px), auto);
-      font-size: mobile-vw(20px);
-      margin-bottom: mobile-vw(50px);
-    }
-  }
-
-  .cta {
-    @include dims(desktop-vw(630px), desktop-vw(80px));
-
-    @include mobile {
-      @include dims(mobile-vw(300px), mobile-vw(60px));
+    > p {
+      margin-bottom: desktop-vw(30px);
     }
   }
 }
 
+.boxes {
+  @include dims(desktop-vw(1000px), auto);
+  gap: desktop-vw(30px);
+  margin-bottom: desktop-vw(-345px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: desktop-vw(100px);
+}
+
 .career {
   background-color: var(--cedar-wood-finish);
-  padding: desktop-vw(20px) 0;
+  padding: desktop-vw(80px) desktop-vw(120px);
   position: relative;
 
   @include mobile {
@@ -278,14 +302,28 @@
   }
 
   .text {
+    h4 {
+      @include dims(desktop-vw(350px), auto);
+      color: var(--white);
+      font-family: var(--font-asap);
+      font-size: desktop-vw(32px);
+      font-weight: 400;
+      margin-bottom: desktop-vw(32px);
+
+      @include mobile {
+        @include dims(100%, auto);
+        font-size: mobile-vw(18px);
+        margin-bottom: mobile-vw(50px);
+      }
+    }
+
     p {
       @include dims(desktop-vw(500px), auto);
       color: var(--white);
-      font-family: var(--font-fustat);
-      font-size: desktop-vw(20px);
+      font-family: var(--font-asap);
+      font-size: desktop-vw(18px);
       font-weight: 500;
-      margin-bottom: desktop-vw(100px);
-      text-align: center;
+      margin-bottom: desktop-vw(40px);
 
       @include mobile {
         @include dims(100%, auto);
@@ -295,7 +333,7 @@
     }
 
     .cta {
-      @include dims(desktop-vw(630px), desktop-vw(80px));
+      @include dims(desktop-vw(360px), desktop-vw(50px));
 
       @include mobile {
         @include dims(mobile-vw(300px), mobile-vw(60px));
@@ -304,7 +342,7 @@
   }
 
   .imgC {
-    @include dims(auto, desktop-vw(530px));
+    @include dims(auto, desktop-vw(420px));
     border-radius: desktop-vw(10px);
     overflow: hidden;
 
@@ -315,8 +353,8 @@
   }
 
   .fillerBottom {
-    @include position(absolute, auto, auto, desktop-vw(-250px), auto);
-    @include dims(100%, 100%);
+    @include position(absolute, auto, 0, desktop-vw(-150px), 0);
+    @include dims(100%);
     transform: rotate(180deg);
     z-index: -1;
   }
