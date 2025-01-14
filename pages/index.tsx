@@ -66,7 +66,7 @@ export default function Home() {
               </ParallaxWrapper>
             </div>
             <div className={cx(s.box, s.box4)}>
-              <ParallaxWrapper speedY={-0.2}>
+              <ParallaxWrapper speedY={-0.3}>
                 <Img alt="Box" className="object-contain -rotate-[12deg]" src={nutrifusion} />
               </ParallaxWrapper>
             </div>
