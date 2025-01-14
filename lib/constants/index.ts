@@ -8,7 +8,7 @@ export const routes = {
       path: "",
       ui: "Home",
       seo: {
-        title: "Chill Owra",
+        title: "Munch Owra",
         description: "Where quality meets fun.",
       },
     },
@@ -18,7 +18,7 @@ export const routes = {
       path: "hakkimizda",
       ui: "About",
       seo: {
-        title: "About | Chill Owra",
+        title: "About | Munch Owra",
         description: "Where quality meets fun.",
       },
     },
@@ -28,7 +28,7 @@ export const routes = {
       path: "iletisim",
       ui: "Contact",
       seo: {
-        title: "Contact | Chill Owra",
+        title: "Contact | Munch Owra",
         description: "Where quality meets fun.",
       },
     },
@@ -38,7 +38,7 @@ export const routes = {
       path: "blog",
       ui: "Blog",
       seo: {
-        title: "Blog | Chill Owra",
+        title: "Blog | Munch Owra",
         description: "Where quality meets fun.",
       },
     },
@@ -48,7 +48,7 @@ export const routes = {
       path: "franchise",
       ui: "Franchise",
       seo: {
-        title: "Franchise | Chill Owra",
+        title: "Franchise | Munch Owra",
         description: "Where quality meets fun.",
       },
     },
@@ -58,7 +58,7 @@ export const routes = {
       path: "urunler",
       ui: "Products",
       seo: {
-        title: "Products | Chill Owra",
+        title: "Products | Munch Owra",
         description: "Where quality meets fun.",
       },
     },
@@ -80,7 +80,7 @@ export const routes = {
       path: "",
       ui: "Anasayfa",
       seo: {
-        title: "Chill Owra",
+        title: "Munch Owra",
         description: "Kalite ve eğlencenin buluşma noktası!",
       },
     },
@@ -90,7 +90,7 @@ export const routes = {
       path: "hakkimizda",
       ui: "Hakkımızda",
       seo: {
-        title: "Hakkımızda | Chill Owra",
+        title: "Hakkımızda | Munch Owra",
         description: "Kalite ve eğlencenin buluşma noktası!",
       },
     },
@@ -100,7 +100,7 @@ export const routes = {
       path: "iletisim",
       ui: "İletişim",
       seo: {
-        title: "İletişim | Chill Owra",
+        title: "İletişim | Munch Owra",
         description: "Kalite ve eğlencenin buluşma noktası.",
       },
     },
@@ -110,7 +110,7 @@ export const routes = {
       path: "blog",
       ui: "Blog",
       seo: {
-        title: "Blog | Chill Owra",
+        title: "Blog | Munch Owra",
         description: "Kalite ve eğlencenin buluşma noktası!",
       },
     },
@@ -120,7 +120,7 @@ export const routes = {
       path: "franchise",
       ui: "Franchise",
       seo: {
-        title: "Franchise | Chill Owra",
+        title: "Franchise | Munch Owra",
         description: "Kalite ve eğlencenin buluşma noktası.",
       },
     },
@@ -130,7 +130,7 @@ export const routes = {
       path: "urunler",
       ui: "Ürünler",
       seo: {
-        title: "Ürünler | Chill Owra",
+        title: "Ürünler | Munch Owra",
         description: "Kalite ve eğlencenin buluşma noktası.",
       },
     },
