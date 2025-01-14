@@ -61,13 +61,16 @@
       padding-right: desktop-vw(50px);
     }
 
-    &.item3 {
-      padding-left: desktop-vw(40px);
-      padding-right: desktop-vw(140px);
-      padding-top: desktop-vw(140px);
+    .inner {
+      @include dims(100%);
+      position: relative;
+      overflow: hidden;
 
-      .inner {
-        @include dims(100%, auto);
+      .innerContent {
+        @include dims(100%);
+        padding-left: desktop-vw(40px);
+        padding-right: desktop-vw(140px);
+        padding-top: desktop-vw(140px);
       }
     }
 
@@ -88,8 +91,8 @@
     }
 
     .imgC {
-      @include position(absolute, auto, auto, desktop-vw(-50px), auto);
-      @include dims(70%, auto);
+      @include position(absolute, auto, auto, desktop-vw(-480px), 50%);
+      @include dims(65%, auto);
       transform: translateX(-40%) rotate(-10deg);
     }
   }

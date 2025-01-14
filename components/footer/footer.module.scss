@@ -16,7 +16,7 @@
     }
 
     .row {
-      gap: desktop-vw(370px);
+      gap: desktop-vw(150px);
 
       @include mobile {
         gap: mobile-vw(50px);
@@ -42,7 +42,7 @@
         color: var(--cedar-wood-finish);
         font-family: var(--font-asap);
         font-size: desktop-vw(20px);
-        font-weight: 800;
+        font-weight: 600;
         line-height: 1.35;
         margin-bottom: desktop-vw(4px);
 
@@ -79,7 +79,7 @@
       color: var(--cedar-wood-finish);
       font-family: var(--font-asap);
       font-size: desktop-vw(18px);
-      font-weight: 400;
+      font-weight: 500;
       line-height: 1.35;
 
       @include mobile {
@@ -111,14 +111,13 @@
   }
 
   .logoC {
-    @include position(absolute, auto, desktop-vw(120px), desktop-vw(50px), 50%);
-    @include dims(desktop-vw(560px), auto);
-    transform: translateX(-50%);
+    @include dims(desktop-vw(120px), auto);
 
     @include mobile {
-      @include position(absolute, auto, mobile-vw(20px), mobile-vw(60px), 50%);
-      @include dims(mobile-vw(300px), auto);
-      transform: translateX(-50%);
+      @include position(relative, auto, auto, auto, auto);
+      @include dims(mobile-vw(60px), auto);
+      transform: none;
+      z-index: 200;
     }
   }
 

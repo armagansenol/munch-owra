@@ -8,7 +8,15 @@ import { useRef } from "react"
 
 import { useSingle } from "@/api/queries/contact"
 import { useAll } from "@/api/queries/social-media"
-import { IconFacebook, IconInstagram, IconLinkedin, IconTiktok, IconX, IconYoutube } from "@/components/icons"
+import {
+  IconFacebook,
+  IconInstagram,
+  IconLinkedin,
+  IconOwraLogo,
+  IconTiktok,
+  IconX,
+  IconYoutube,
+} from "@/components/icons"
 import { Link } from "@/components/utility/link"
 import { SocialMedia } from "@/types"
 
@@ -61,6 +69,11 @@ export default function Footer() {
     <footer className={cx(s.footer, "flex flex-col items-stretch justify-center")} ref={ref}>
       <nav className={cx(s.nav, "flex flex-col items-stretch gap-10 tablet:gap-20")}>
         <div className={cx(s.row, "flex flex-col items-center tablet:flex-row tablet:items-start")}>
+          <div className={cx(s.col, "flex flex-col")}>
+            <Link className={cx(s.logoC, "cursor-pointer")} href="/">
+              <IconOwraLogo fill="var(--cedar-wood-finish)" />
+            </Link>
+          </div>
           <div className={cx(s.col, "flex flex-col")}>
             <div className={s.navItem}>
               <h6>{t("salesAndOrders")}</h6>

@@ -3,6 +3,7 @@ import s from "./grid-specs.module.scss"
 import cx from "clsx"
 
 import { IconFiller, StickerFiberSource, StickerNonGluten, StickerPremiumMix } from "@/components/icons"
+import { Img } from "@/components/utility/img"
 
 export interface GridSpecsProps {
   productImage: string
@@ -53,11 +54,13 @@ export default function GridSpecs(props: GridSpecsProps) {
             "col-span-6 row-span-12 col-start-7 col-end-13 row-start-1 row-end-13 rounded-lg"
           )}
         >
-          <div className={cx(s.inner, "w-full h-full relative")}>
-            <p>Rich in fiber, full of energy—keeping you vibrant all day.</p>
-            {/* <div className={s.imgC}>
+          <div className={s.inner}>
+            <div className={s.innerContent}>
+              <p>Rich in fiber, full of energy—keeping you vibrant all day.</p>
+            </div>
+            <div className={s.imgC}>
               <Img alt="Box" className="object-contain" src={props.productImage} height={500} width={500} />
-            </div> */}
+            </div>
           </div>
           <div className={s.fiberSource}>
             <StickerFiberSource fillPrimary={props.primaryFill} fillSecondary={props.secondaryFill} />
