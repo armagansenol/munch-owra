@@ -8,16 +8,14 @@ import { useEffect, useRef, useState } from "react"
 import { Marquee } from "@/components/animations/marquee"
 import { IconOwraLogo, IconPointer } from "@/components/icons"
 import { LocaleSwitcher } from "@/components/locale-switcher"
-import { Img } from "@/components/utility/img"
 import { Link } from "@/components/utility/link"
 import { routes } from "@/lib/constants"
 import { useLenisStore } from "@/lib/store/lenis"
-import { useModalStore } from "@/lib/store/modal"
 import { Locales } from "@/types"
 
 export default function Header() {
   const ref = useRef(null)
-  const modalStore = useModalStore()
+  // const modalStore = useModalStore()
   const { lenis } = useLenisStore()
   const [hamburgerOpen, setHamburgerOpen] = useState(false)
   const locale = useLocale()
@@ -31,35 +29,35 @@ export default function Header() {
     return hamburgerOpen ? lenis?.stop() : lenis?.start()
   }, [hamburgerOpen, lenis])
 
-  function handleModal() {
-    modalStore.setIsOpen(true)
-    modalStore.setContent(
-      <div className={s.modalContent}>
-        <div className={cx(s.modalContentHeader, "flex items-center justify-between")}>
-          <p>{t("modal.heading")}</p>
-          <span className={cx(s.iconC, "cursor-pointer")} onClick={() => modalStore.setIsOpen(false)}>
-            <Cross2Icon className="w-full h-full" />
-          </span>
-        </div>
+  // function handleModal() {
+  //   modalStore.setIsOpen(true)
+  //   modalStore.setContent(
+  //     <div className={s.modalContent}>
+  //       <div className={cx(s.modalContentHeader, "flex items-center justify-between")}>
+  //         <p>{t("modal.heading")}</p>
+  //         <span className={cx(s.iconC, "cursor-pointer")} onClick={() => modalStore.setIsOpen(false)}>
+  //           <Cross2Icon className="w-full h-full" />
+  //         </span>
+  //       </div>
 
-        <div className={cx(s.content, "flex flex-col items-center tablet:items-start")}>
-          <p>{t("modal.content.p1")}</p>
-          <p>{t("modal.content.p2")}</p>
-          <Link className={s.buttonDrop} href="mailto:sales@owra.co">
-            {t("modal.button.text")}
-          </Link>
-        </div>
+  //       <div className={cx(s.content, "flex flex-col items-center tablet:items-start")}>
+  //         <p>{t("modal.content.p1")}</p>
+  //         <p>{t("modal.content.p2")}</p>
+  //         <Link className={s.buttonDrop} href="mailto:sales@owra.co">
+  //           {t("modal.button.text")}
+  //         </Link>
+  //       </div>
 
-        <div className={s.iceC}>
-          <Img alt="Ice Cube Sitting" src={"/img/ice-3.png"} height={500} width={500} className="object-contain" />
-        </div>
-      </div>
-    )
-  }
+  //       <div className={s.iceC}>
+  //         <Img alt="Ice Cube Sitting" src={"/img/ice-3.png"} height={500} width={500} className="object-contain" />
+  //       </div>
+  //     </div>
+  //   )
+  // }
 
   return (
     <>
-      <div className={cx(s.marquee, "cursor-pointer")} onClick={handleModal}>
+      <Link href={`/${routes[locale as Locales].products.path}`} className={cx(s.marquee, "cursor-pointer block")}>
         <Marquee repeat={10}>
           <div className={cx(s.feelingThirsty, "flex items-center")}>
             <small>{t("modal.heading")}</small>
@@ -68,7 +66,7 @@ export default function Header() {
             </span>
           </div>
         </Marquee>
-      </div>
+      </Link>
 
       <header className={cx(s.header, "flex items-center justify-between")} ref={ref}>
         <Link className={cx(s.logoC, "cursor-pointer")} href="/" onClick={closeMenu}>

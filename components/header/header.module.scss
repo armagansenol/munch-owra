@@ -1,6 +1,5 @@
 .header {
-  border-bottom: 1px solid var(--theme-secondary);
-  padding: desktop-vw(20px) desktop-vw(40px);
+  padding: desktop-vw(18px) desktop-vw(40px);
   position: relative;
   transition: 400ms border ease;
   z-index: z-index("header");
@@ -9,10 +8,29 @@
     padding: mobile-vw(12px) mobile-vw(16px);
   }
 
+  &:before {
+    content: "";
+    @include position(absolute, auto, auto, 0, 50%);
+    @include dims(desktop-vw(340px), 4px);
+    background-color: var(--toasted-marshmallow-fluff);
+    transform: translateX(-50%) translateY(50%);
+    z-index: 20;
+  }
+
+  &:after {
+    content: "";
+    @include position(absolute, auto, auto, 0, 50%);
+    @include dims(calc(100% - 70px), 1px);
+    background-color: var(--steamed-milk);
+    transform: translateX(-50%) translateY(50%);
+    z-index: 10;
+  }
+
   .logoC {
     @include position(absolute, 50%, auto, auto, 50%);
-    @include dims(desktop-vw(80px), auto);
-    transform: translate(-50%, -50%);
+    @include dims(desktop-vw(120px), auto);
+    transform: translate(-50%, -20%);
+    z-index: 30;
 
     @include mobile {
       @include position(relative, auto, auto, auto, auto);
@@ -51,7 +69,7 @@
   .navItem {
     color: var(--theme-secondary);
     font-family: var(--font-asap);
-    font-size: desktop-vw(20px);
+    font-size: desktop-vw(16px);
     font-weight: 600;
     transition: 400ms color ease;
 
@@ -100,7 +118,7 @@
   .modalContentHeader {
     border-bottom: 1px solid rgba(255, 255, 255, 0.23);
     color: var(--white);
-    font-family: var(--font-fustat);
+    font-family: var(--font-asap);
     font-size: desktop-vw(36px);
     font-weight: 700;
     letter-spacing: -0.03em;
@@ -130,7 +148,7 @@
     > p {
       @include dims(desktop-vw(410px), auto);
       color: var(--white);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(24px);
       font-weight: 400;
       letter-spacing: -0.03em;
@@ -148,7 +166,7 @@
       background-color: var(--white);
       border-radius: desktop-vw(10px);
       color: var(--cedar-wood-finish);
-      font-family: var(--font-fustat);
+      font-family: var(--font-asap);
       font-size: desktop-vw(24px);
       font-weight: 700;
       letter-spacing: -0.03em;
