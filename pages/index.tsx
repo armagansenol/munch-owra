@@ -11,7 +11,10 @@ import { GridSpecs } from "@/components/grid-specs"
 import { IconFiller, StickerPremiumMix } from "@/components/icons"
 import { SliderProducts } from "@/components/slider-products"
 import { Img } from "@/components/utility/img"
+import { Link } from "@/components/utility/link"
 import { DefaultLayout } from "@/layouts/default"
+import { routes } from "@/lib/constants"
+import { FormType, Locales } from "@/types"
 
 import chocoshell from "@/public/img/chocoshell.png"
 import freshburst from "@/public/img/freshburst.png"
@@ -22,14 +25,9 @@ const ParallaxWrapper = dynamic(() => import("@/components/animations/parallax")
   ssr: false,
 })
 
-const FloatWrapper = dynamic(() => import("@/components/animations/float"), {
+const LetterSwapForward = dynamic(() => import("@/components/letter-swap-forward"), {
   ssr: false,
 })
-
-import { Link } from "@/components/utility/link"
-import { routes } from "@/lib/constants"
-import { FormType, Locales } from "@/types"
-import LetterSwapForward from "@/components/letter-swap-forward"
 
 export default function Home() {
   const t = useTranslations("home")
@@ -51,7 +49,7 @@ export default function Home() {
               href="/products"
             >
               <LetterSwapForward
-                label={t("intro.cta")}
+                label={`${t("intro.cta")}`}
                 reverse={false}
                 className="font-bold"
                 transition={{
@@ -185,7 +183,16 @@ export default function Home() {
           </h1>
           <p>{t("why.description")}</p>
           <Link className={cx(s.cta, "flex items-center justify-center mx-auto lg:mx-0")} href="/products">
-            {t("why.cta")}
+            <LetterSwapForward
+              label={`${t("why.cta")}`}
+              reverse={false}
+              className="font-bold"
+              transition={{
+                type: "spring",
+                duration: 0.5,
+              }}
+              staggerDuration={0.01}
+            />
           </Link>
         </div>
       </section>

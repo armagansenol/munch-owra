@@ -4,7 +4,8 @@
 
   @include mobile {
     margin-bottom: mobile-vw(30px);
-    padding: mobile-vw(30px) 0;
+    padding: mobile-vw(30px) mobile-vw(16px);
+    padding-bottom: mobile-vw(50px);
   }
 
   .imgC {
@@ -16,7 +17,6 @@
       @include dims(auto, mobile-vw(250px));
       margin: 0;
       order: 2;
-      padding: 0 mobile-vw(16px);
     }
   }
 
@@ -37,7 +37,7 @@
       margin-bottom: desktop-vw(30px);
 
       @include mobile {
-        font-size: mobile-vw(48px);
+        font-size: mobile-vw(28px);
         margin-bottom: mobile-vw(30px);
         order: 1;
         text-align: center;
@@ -57,7 +57,7 @@
 
       @include mobile {
         @include dims(100%, auto);
-        font-size: mobile-vw(18px);
+        font-size: mobile-vw(16px);
         text-align: center;
       }
     }
@@ -92,8 +92,14 @@
   .sticker {
     @include position(absolute, 50%, desktop-vw(450px), auto, auto);
     @include dims(desktop-vw(300px));
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     z-index: 10;
+
+    @include mobile {
+      @include position(absolute, 50%, mobile-vw(80px), auto, auto);
+      @include dims(mobile-vw(180px));
+      transform: translateY(-40%);
+    }
   }
 }
 
@@ -102,6 +108,7 @@
 
   @include mobile {
     padding: mobile-vw(50px) 0;
+    padding-top: mobile-vw(75px);
   }
 
   > div {
@@ -255,6 +262,12 @@
     margin-left: auto;
     margin-right: auto;
 
+    @include mobile {
+      @include dims(100%, auto);
+      padding: 0 mobile-vw(16px);
+      margin-bottom: mobile-vw(40px);
+    }
+
     .link {
       border-bottom: 2px solid var(--cedar-wood-finish);
       color: var(--cedar-wood-finish);
@@ -265,6 +278,15 @@
 
       .iconC {
         @include dims(desktop-vw(18px));
+      }
+
+      @include mobile {
+        font-size: mobile-vw(24px);
+        padding: mobile-vw(10px) 0;
+
+        .iconC {
+          @include dims(mobile-vw(14px));
+        }
       }
     }
   }
@@ -280,40 +302,66 @@
     > p {
       margin-bottom: desktop-vw(30px);
     }
-  }
-}
 
-.boxes {
-  @include dims(desktop-vw(1000px), auto);
-  gap: desktop-vw(30px);
-  margin-bottom: desktop-vw(-345px);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: desktop-vw(100px);
+    @include mobile {
+      @include dims(100%, auto);
+      font-size: mobile-vw(18px);
+      padding: 0 mobile-vw(16px);
+
+      > p {
+        margin-bottom: mobile-vw(20px);
+      }
+    }
+  }
+
+  .boxes {
+    @include dims(desktop-vw(1000px), auto);
+    gap: desktop-vw(30px);
+    margin-bottom: desktop-vw(-300px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: desktop-vw(50px);
+
+    @include mobile {
+      @include dims(100%, auto);
+      gap: mobile-vw(8px);
+      margin-bottom: mobile-vw(-100px);
+      margin-top: mobile-vw(30px);
+      padding: 0;
+    }
+  }
 }
 
 .career {
   background-color: var(--cedar-wood-finish);
+  margin-bottom: desktop-vw(200px);
   padding: desktop-vw(80px) desktop-vw(120px);
   position: relative;
 
   @include mobile {
-    padding: mobile-vw(30px) mobile-vw(16px);
+    padding: mobile-vw(50px) 0;
   }
 
   .text {
+    @include mobile {
+      padding: 0 mobile-vw(16px);
+    }
+
     h4 {
       @include dims(desktop-vw(350px), auto);
       color: var(--white);
       font-family: var(--font-asap);
       font-size: desktop-vw(32px);
       font-weight: 400;
+      line-height: 1.25;
       margin-bottom: desktop-vw(32px);
 
       @include mobile {
         @include dims(100%, auto);
-        font-size: mobile-vw(18px);
-        margin-bottom: mobile-vw(50px);
+        font-size: mobile-vw(32px);
+        line-height: 1.25;
+        margin-bottom: mobile-vw(30px);
+        text-align: center;
       }
     }
 
@@ -322,21 +370,40 @@
       color: var(--white);
       font-family: var(--font-asap);
       font-size: desktop-vw(18px);
-      font-weight: 500;
+      font-weight: 400;
       margin-bottom: desktop-vw(40px);
 
       @include mobile {
         @include dims(100%, auto);
-        font-size: mobile-vw(18px);
-        margin-bottom: mobile-vw(50px);
+        font-size: mobile-vw(16px);
+        margin-bottom: mobile-vw(30px);
+        text-align: center;
       }
     }
 
     .cta {
-      @include dims(desktop-vw(360px), desktop-vw(50px));
+      background-color: transparent;
+      border: 1px solid var(--white);
+      border-radius: desktop-vw(12px);
+      color: var(--white);
+      display: inline-flex;
+      font-family: var(--font-asap);
+      font-size: desktop-vw(18px);
+      font-weight: 600;
+      padding: desktop-vw(7px) desktop-vw(20px);
+      transition: 300ms all ease;
 
       @include mobile {
-        @include dims(mobile-vw(300px), mobile-vw(60px));
+        border-radius: mobile-vw(12px);
+        font-size: mobile-vw(16px);
+        padding: mobile-vw(7px) mobile-vw(16px);
+      }
+
+      @include hover {
+        &:hover {
+          background-color: var(--white);
+          color: var(--cedar-wood-finish);
+        }
       }
     }
   }
@@ -353,9 +420,14 @@
   }
 
   .fillerBottom {
-    @include position(absolute, auto, 0, desktop-vw(-150px), 0);
-    @include dims(100%);
+    @include position(absolute, auto, auto, desktop-vw(-150px), auto);
+    @include dims(100%, desktop-vw(610px));
     transform: rotate(180deg);
     z-index: -1;
+
+    @include mobile {
+      @include position(absolute, auto, auto, mobile-vw(-50px), auto);
+      @include dims(100vw, mobile-vw(160px));
+    }
   }
 }

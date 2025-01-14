@@ -77,7 +77,7 @@ const LetterSwapForward = ({
 
   return (
     <span
-      className={`flex justify-center items-center relative overflow-hidden  ${className} `}
+      className={`flex justify-center items-center relative overflow-hidden cursor-pointer ${className}`}
       onMouseEnter={hoverStart}
       onClick={onClick}
       ref={scope}
@@ -92,7 +92,7 @@ const LetterSwapForward = ({
               {letter}
             </motion.span>
             <motion.span
-              className="absolute letter-secondary "
+              className="absolute letter-secondary"
               aria-hidden={true}
               style={{ top: reverse ? "-100%" : "100%" }}
             >

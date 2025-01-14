@@ -461,7 +461,7 @@
 
   .fillerBottom {
     @include position(absolute, auto, auto, desktop-vw(-250px), auto);
-    @include dims(100%, 100%);
+    @include dims(100%, desktop-vw(610px));
     transform: rotate(180deg);
     z-index: -1;
 

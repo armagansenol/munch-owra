@@ -6,7 +6,6 @@ import { useLocale, useTranslations } from "next-intl"
 import dynamic from "next/dynamic"
 
 import { Marquee } from "@/components/animations/marquee"
-import { Button } from "@/components/button"
 import {
   IconArrow,
   IconFiller,
@@ -31,6 +30,10 @@ const ParallaxWrapper = dynamic(() => import("@/components/animations/parallax")
   ssr: false,
 })
 
+const LetterSwapForward = dynamic(() => import("@/components/letter-swap-forward"), {
+  ssr: false,
+})
+
 export default function About() {
   const t = useTranslations("about")
   const locale = useLocale()
@@ -39,7 +42,7 @@ export default function About() {
     <DefaultLayout seo={routes[locale as Locales].about.seo}>
       <div className={cx(s.intro, "flex flex-col tablet:grid tablet:grid-cols-12 items-center")}>
         <div className={cx(s.imgC, "col-span-6 rounded-md overflow-hidden")}>
-          <Img className="object-cover" src={"/img/about-1.jpg"} alt="Ice Glass" width={1000} height={1000} />
+          <Img className="object-cover" src={"/img/about-1.jpg"} alt="Products" width={1000} height={1000} />
         </div>
         <div className={cx(s.text, "col-span-6")}>
           <h1>
@@ -59,7 +62,9 @@ export default function About() {
       </div>
       <section className={s.marqueeC}>
         <div className={s.sticker}>
-          <StickerPremiumMix fillPrimary="var(--red-dit)" fillSecondary="var(--steamed-milk)" />
+          <ParallaxWrapper speedY={-0.2}>
+            <StickerPremiumMix fillPrimary="var(--red-dit)" fillSecondary="var(--steamed-milk)" />
+          </ParallaxWrapper>
         </div>
         <Marquee repeat={5}>
           <div className="flex items-center">
@@ -67,21 +72,25 @@ export default function About() {
           </div>
         </Marquee>
       </section>
-      <section className={cx(s.purpose, "grid grid-cols-1 tablet:grid-cols-2")}>
-        <div className="flex flex-col items-center justify-center">
-          <h2>{t("mission.heading")}</h2>
+      <section className={cx(s.purpose, "grid grid-cols-1 tablet:grid-cols-2 gap-8 tablet:gap-0")}>
+        <div className="flex flex-col items-center justify-center p-4 tablet:p-0 text-center">
+          <h2 className="mb-4">{t("mission.heading")}</h2>
           <p>{t("mission.text")}</p>
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <h2>{t("vision.heading")}</h2>
+        <div className="flex flex-col items-center justify-center p-4 tablet:p-0 text-center">
+          <h2 className="mb-4">{t("vision.heading")}</h2>
           <p>{t("vision.text")}</p>
         </div>
       </section>
       <section className={s.pros}>
-        <div className={s.imgC}>
-          <Img className="object-cover" src={"/img/about-2.jpg"} alt="Owra" width={2000} height={2000} />
+        <div className={cx(s.imgC, "overflow-hidden")}>
+          <ParallaxWrapper speedY={0.5}>
+            <div className="h-[120%] -translate-y-[40%]">
+              <Img className="object-cover" src={"/img/about-2.jpg"} alt="Products" width={2000} height={2000} />
+            </div>
+          </ParallaxWrapper>
         </div>
-        <div className={cx(s.items, "grid grid-cols-1 tablet:grid-cols-4")}>
+        <div className={cx(s.items, "grid grid-cols-1 tablet:grid-cols-4 gap-0 tablet:gap-4")}>
           <div className="flex flex-col items-center justify-start">
             <span className={s.iconC}>
               <IconQuality fill="var(--red-dit)" />
@@ -112,7 +121,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className={cx(s.franchise, "flex flex-col items-center")}>
+      <section className={cx(s.franchise, "flex flex-col items-center px-4 tablet:px-0")}>
         <div className={s.otherDelights}>
           <Marquee repeat={5}>
             <div className="flex items-center">
@@ -132,15 +141,17 @@ export default function About() {
         </div>
         <div className={s.text}>
           <p>
-            <span className="font-medium">Owra</span> is more than just a brand;{" "}
-            <span className="italic">it&apos;s a lifestyle</span>. We&apos;re here to make every moment of your life{" "}
-            <span className="italic">more enjoyable and special</span>.
+            {t.rich("franchise.text.p1", {
+              strong: (chunks) => <strong className="font-semibold italic">{chunks}</strong>,
+            })}
           </p>
           <p>
-            <span className="font-medium">Join us</span> and add a little more joy to your life with Owra.
+            {t.rich("franchise.text.p2", {
+              strong: (chunks) => <strong className="font-semibold italic">{chunks}</strong>,
+            })}
           </p>
         </div>
-        <div className={cx(s.boxes, "flex")}>
+        <div className={cx(s.boxes, "flex justify-center gap-4")}>
           <div>
             <Img src={nutrifusion} alt="Nutrifusion Product" />
           </div>
@@ -156,17 +167,25 @@ export default function About() {
         </div>
       </section>
       <section className={cx(s.career, "flex flex-col-reverse tablet:grid grid-cols-1 tablet:grid-cols-2")}>
-        <div className={cx(s.text, "flex flex-col items-start justify-center")}>
-          <h4>{t.rich("career.title", { strong: (chunks) => <strong className="font-semibold">{chunks}</strong> })}</h4>
+        <div className={cx(s.text, "flex flex-col items-center tablet:items-start justify-center")}>
+          <h4>
+            {t.rich("career.title", { strong: (chunks) => <strong className="font-semibold italic">{chunks}</strong> })}
+          </h4>
           <p>{t("career.text")}</p>
           <Link className={s.cta} href="mailto:career@owra.co">
-            <Button theme="white">{t("career.cta")}</Button>
+            <LetterSwapForward
+              label={`${t("career.cta")}`}
+              reverse={false}
+              transition={{
+                type: "spring",
+                duration: 0.5,
+              }}
+              staggerDuration={0.01}
+            />
           </Link>
         </div>
-        <div>
-          <div className={s.imgC}>
-            <Img className="object-cover" src={"/img/home-2.jpg"} alt="Owra" width={1000} height={1000} />
-          </div>
+        <div className={s.imgC}>
+          <Img className="object-cover" src={"/img/home-2.jpg"} alt="Owra" width={1000} height={1000} />
         </div>
         <div className={s.fillerBottom}>
           <IconFiller />

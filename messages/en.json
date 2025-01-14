@@ -89,13 +89,15 @@
             }
         },
         "franchise": {
-            "cta": "Become a Franchise",
-            "text": "Chill Owra is more than just a brand; it is a lifestyle. We are here to make every moment more enjoyable and special for you. Join us and add a little more joy to your life with Chill Owra."
+            "text": {
+                "p1": "<strong>Owra</strong> is more than just a brand; <strong>it's a lifestyle.</strong> We're here to make every moment of your life <strong>more enjoyable and special</strong>.",
+                "p2": "<strong>Join us</strong> and add a little more joy to your life with Owra."
+            }
         },
         "career": {
-            "cta": "Career",
+            "cta": "Explore Career Opportunities",
             "title": "Would you like to <strong>work with us?</strong>",
-            "text": "The Chill Owra family consists of experts and passionate people in their field. Each of them loves their job and works to achieve the best results. Each member of our team shares the same passion for offering the best products for you."
+            "text": "The Owra family is made up of expert and passionate individuals. Each one loves what they do and works hard to achieve the best results. Every member of our team shares the same passion for delivering the best products for you."
         }
     },
     "franchise": {
