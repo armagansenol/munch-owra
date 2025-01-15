@@ -416,6 +416,8 @@
     @include mobile {
       @include dims(auto, mobile-vw(250px));
       border-radius: mobile-vw(10px);
+      margin: 0 mobile-vw(16px);
+      margin-bottom: mobile-vw(30px);
     }
   }
 
