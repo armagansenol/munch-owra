@@ -1,5 +1,6 @@
 .intro {
   margin: desktop-vw(50px) 0;
+  margin-top: desktop-vw(75px);
 
   @include mobile {
     margin: mobile-vw(50px) 0;
@@ -9,25 +10,45 @@
     color: var(--cedar-wood-finish);
     font-size: desktop-vw(40px);
     font-family: var(--font-asap);
-    font-weight: 500;
+    font-weight: 400;
+    margin-bottom: desktop-vw(10px);
 
     @include mobile {
       font-size: mobile-vw(40px);
     }
   }
+
+  > p {
+    color: var(--cedar-wood-finish);
+    font-size: desktop-vw(18px);
+    font-family: var(--font-asap);
+    font-weight: 400;
+
+    @include mobile {
+      font-size: mobile-vw(18px);
+    }
+  }
 }
 
 .products {
-  padding-bottom: desktop-vw(250px);
+  padding-bottom: desktop-vw(100px);
 
   @include mobile {
     padding-bottom: mobile-vw(100px);
   }
 
+  &:before {
+    content: "";
+    @include dims(90%, desktop-vw(1px));
+    @include position(absolute, auto, 0, 0, 50%);
+    background-color: var(--cedar-wood-finish);
+    transform: translateX(-50%);
+  }
+
   .product {
     color: var(--cedar-wood-finish);
-    font-size: desktop-vw(18px);
-    font-family: var(--font-asap);
+    font-size: desktop-vw(32px);
+    font-family: var(--font-anton);
     font-weight: 500;
     gap: desktop-vw(16px);
 
@@ -47,11 +68,7 @@
     }
 
     .imgC {
-      @include dims(desktop-vw(260px), desktop-vw(310px));
-      border-radius: desktop-vw(16px);
-      border: 1px solid var(--cedar-wood-finish);
-      overflow: hidden;
-      padding: desktop-vw(40px);
+      @include dims(desktop-vw(170px), desktop-vw(320px));
 
       @include mobile {
         @include dims(mobile-vw(260px), mobile-vw(310px));

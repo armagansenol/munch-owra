@@ -242,8 +242,9 @@
         }
     },
     "products": {
-        "productGroups": "Products",
-        "otherOptions": "Other Options",
-        "otherProducts": "Other Products"
+        "productGroups": "All <strong>the Munch</strong> You Need, Right Here",
+        "description": "Energize your day with unique, flavor-packed bites.",
+        "ingredients": "Ingredients",
+        "breadcrumb": "All Products"
     }
 }

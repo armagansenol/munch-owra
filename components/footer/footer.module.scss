@@ -5,8 +5,8 @@
   .nav {
     color: var(--cedar-wood-finish);
     margin-bottom: desktop-vw(50px);
-    margin-top: desktop-vw(50px);
-    padding: 0 desktop-vw(80px);
+    margin-top: desktop-vw(75px);
+    padding: 0 desktop-vw(120px);
     z-index: 20;
 
     @include mobile {

@@ -14,6 +14,7 @@ import { DefaultLayout } from "@/layouts/default"
 import { routes } from "@/lib/constants"
 import { useTheme } from "@/lib/store/theme"
 import { Locales, Product } from "@/types"
+import { IconArrow } from "@/components/icons"
 
 export interface ProductGroupProps {
   product: Product
@@ -34,15 +35,15 @@ export default function ProductGroup(props: ProductGroupProps) {
     <DefaultLayout seo={routes[locale as Locales].products.seo}>
       <section className={cx(s.intro, "flex flex-col justify-center")}>
         <div className={s.breadcrumb}>
-          <Link href={`/${routes[locale as Locales].products.path}`}>{t("products.productGroups")}</Link>
+          <Link href={`/${routes[locale as Locales].products.path}`}>{t("products.breadcrumb")}</Link>
           <span> / </span>
-          <span>{props.product.name}</span>
+          <span className={s.productName}>{props.product.name}</span>
         </div>
       </section>
-      <section className={cx(s.product, "flex flex-col tablet:grid grid-cols-12 gap-0 tablet:gap-20")}>
-        <div className="col-span-6 flex flex-col-reverse tablet:grid grid-cols-12 gap-2 tablet:gap-4">
+      <section className={cx(s.product, "flex flex-col tablet:grid grid-cols-12")}>
+        <div className="col-span-6 flex flex-col-reverse tablet:grid grid-cols-12 gap-4">
           <div
-            className={cx(s.imgs, "col-span-2 flex flex-row tablet:flex-col justify-center tablet:justify-start gap-2")}
+            className={cx(s.imgs, "col-span-2 flex flex-row tablet:flex-col justify-center tablet:justify-start gap-4")}
           >
             {props.product.images.map((item, i) => {
               return (
@@ -65,16 +66,33 @@ export default function ProductGroup(props: ProductGroupProps) {
                 width={500}
                 alt="Product Visual"
               />
+              <div
+                className={cx(s.prevBtn, "flex items-center justify-center cursor-pointer")}
+                onClick={() =>
+                  setCurrentItem((prev) => (prev - 1 + props.product.images.length) % props.product.images.length)
+                }
+              >
+                <div className={s.iconC}>
+                  <IconArrow fill={props.product.backgroundColor} rotate={180} />
+                </div>
+              </div>
+              <div
+                className={cx(s.nextBtn, "flex items-center justify-center cursor-pointer")}
+                onClick={() => setCurrentItem((prev) => (prev + 1) % props.product.images.length)}
+              >
+                <div className={s.iconC}>
+                  <IconArrow fill={props.product.backgroundColor} />
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div className={cx(s.info, "col-span-6")}>
-          <div className={s.volume}>{props.product.volume}</div>
           <div className={s.name}>{props.product.name}</div>
           <div className={s.size}>{props.product.size}</div>
           <div className={s.desc}>{props.product.description}</div>
           <div className={cx(s.other)}>
-            <div className={s.title}>{t("products.otherOptions")}</div>
+            <div className={s.title}>{t("products.ingredients")}</div>
             <div className={cx(s.items, "flex items-center justify-center tablet:justify-start gap-3 flex-wrap")}>
               {props.product.other.map((item, i) => {
                 return (

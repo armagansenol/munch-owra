@@ -21,10 +21,15 @@ export default function Products(props: ProductsProps) {
 
   return (
     <DefaultLayout seo={routes[locale as Locales].products.seo}>
-      <section className={cx(s.intro, "flex items-center justify-center")}>
-        <h1>{t("products.productGroups")}</h1>
+      <section className={cx(s.intro, "flex flex-col items-center justify-center")}>
+        <h1>
+          {t.rich("products.productGroups", {
+            strong: (chunks) => <strong className="font-semibold italic">{chunks}</strong>,
+          })}
+        </h1>
+        <p>{t("products.description")}</p>
       </section>
-      <section className={cx(s.products, "flex items-center justify-center flex-wrap gap-10")}>
+      <section className={cx(s.products, "flex items-center justify-center flex-wrap gap-24")}>
         {props.productGroups &&
           props.productGroups.map((item, i) => {
             return (

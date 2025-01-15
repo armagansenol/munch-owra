@@ -21,26 +21,30 @@
   }
 
   .breadcrumb {
-    color: var(--theme-secondary);
+    color: var(--cedar-wood-finish);
     font-size: desktop-vw(16px);
     font-family: var(--font-asap);
-    font-weight: 700;
+    font-weight: 400;
     transition: 400ms color ease;
 
     @include mobile {
       font-size: mobile-vw(15px);
       text-align: center;
     }
+
+    .productName {
+      opacity: 0.5;
+    }
   }
 }
 
 .product {
   padding: 0 desktop-vw(80px);
-  padding-bottom: desktop-vw(100px);
+  padding-bottom: desktop-vw(150px);
 
   @include mobile {
     padding: 0 mobile-vw(16px);
-    padding-bottom: mobile-vw(50px);
+    padding-bottom: mobile-vw(100px);
   }
 
   .imgs {
@@ -54,7 +58,7 @@
       transition: 400ms background-color ease;
 
       @include mobile {
-        @include dims(auto, mobile-vw(80px));
+        @include dims(mobile-vw(80px), mobile-vw(80px));
         border-radius: mobile-vw(6px);
         padding: mobile-vw(10px);
       }
@@ -74,12 +78,16 @@
   }
 
   .mainImgC {
-    @include dims(auto, desktop-vw(620px));
+    @include dims(auto, desktop-vw(520px));
     background-color: var(--theme-primary);
-    border-radius: desktop-vw(16px);
-    padding: desktop-vw(40px);
+    border-radius: desktop-vw(8px);
     position: relative;
     transition: 400ms background-color ease;
+
+    @include mobile {
+      @include dims(auto, mobile-vw(340px));
+      border-radius: mobile-vw(8px);
+    }
 
     &::before {
       content: "";
@@ -91,39 +99,67 @@
       z-index: -1;
     }
 
-    @include mobile {
-      @include dims(auto, mobile-vw(320px));
-      border-radius: mobile-vw(16px);
-      padding: mobile-vw(40px);
+    .prevBtn {
+      @include dims(desktop-vw(50px));
+      background-color: var(--black);
+      border-radius: 50%;
+      padding: desktop-vw(10px);
+      position: absolute;
+      left: desktop-vw(20px);
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 100;
+
+      @include mobile {
+        @include dims(mobile-vw(35px));
+        left: mobile-vw(10px);
+      }
+    }
+
+    .nextBtn {
+      @include dims(desktop-vw(50px));
+      background-color: var(--black);
+      border-radius: 50%;
+      padding: desktop-vw(10px);
+      position: absolute;
+      right: desktop-vw(20px);
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 100;
+
+      @include mobile {
+        @include dims(mobile-vw(35px));
+        right: mobile-vw(10px);
+      }
+    }
+
+    .iconC {
+      @include dims(desktop-vw(14px));
+
+      @include mobile {
+        @include dims(mobile-vw(10px));
+      }
+
+      * {
+        transition: 300ms all ease;
+      }
     }
   }
 
   .info {
-    @include dims(desktop-vw(500px), auto);
-    padding-top: desktop-vw(50px);
+    @include dims(desktop-vw(550px), auto);
+    padding-top: desktop-vw(30px);
+    padding-left: desktop-vw(60px);
 
     @include mobile {
       @include dims(auto);
       padding-top: mobile-vw(50px);
     }
 
-    .volume {
-      color: var(--theme-secondary);
-      font-size: desktop-vw(16px);
-      font-family: var(--font-asap);
-      font-weight: 400;
-      transition: 400ms color ease;
-
-      @include mobile {
-        font-size: mobile-vw(16px);
-        text-align: center;
-      }
-    }
-
     .name {
       color: var(--theme-secondary);
       font-size: desktop-vw(40px);
-      font-family: var(--font-asap);
+      font-family: var(--font-anton);
       font-weight: 400;
       transition: 400ms color ease;
 
@@ -136,10 +172,11 @@
     }
 
     .size {
-      color: var(--theme-secondary);
+      color: var(--cedar-wood-finish);
       font-size: desktop-vw(16px);
       font-family: var(--font-asap);
-      font-weight: 700;
+      font-weight: 600;
+      font-style: italic;
       margin-bottom: desktop-vw(20px);
       transition: 400ms color ease;
 
@@ -151,8 +188,8 @@
     }
 
     .desc {
-      color: var(--black);
-      font-size: desktop-vw(14px);
+      color: var(--cedar-wood-finish);
+      font-size: desktop-vw(16px);
       font-family: var(--font-asap);
       font-weight: 400;
       margin-bottom: desktop-vw(50px);
@@ -167,10 +204,10 @@
 
     .other {
       .title {
-        color: var(--theme-secondary);
-        font-size: desktop-vw(16px);
+        color: var(--cedar-wood-finish);
+        font-size: desktop-vw(20px);
         font-family: var(--font-asap);
-        font-weight: 700;
+        font-weight: 600;
         margin-bottom: desktop-vw(20px);
         transition: 400ms color ease;
 
@@ -182,15 +219,11 @@
       }
 
       .imgC {
-        @include dims(desktop-vw(60px));
-        border-radius: 50%;
-        border: 1px solid var(--theme-secondary);
-        padding: desktop-vw(4px);
+        @include dims(desktop-vw(110px));
         transition: 400ms border ease;
 
         @include mobile {
-          @include dims(mobile-vw(60px));
-          padding: mobile-vw(4px);
+          @include dims(mobile-vw(110px));
         }
       }
     }
@@ -298,10 +331,4 @@
       border-radius: mobile-vw(10px);
     }
   }
-
-  // .waveC {
-  //   @include position(absolute, auto, 0, 0, 0);
-  //   transform: translateY(60%);
-  //   z-index: -1;
-  // }
 }

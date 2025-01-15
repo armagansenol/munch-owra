@@ -10,7 +10,7 @@
   }
 
   .fillerTop {
-    @include position(absolute, desktop-vw(-220px), auto, auto, auto);
+    @include position(absolute, desktop-vw(-240px), auto, auto, auto);
     @include dims(100%);
     transform: rotateY(180deg);
     z-index: -1;
