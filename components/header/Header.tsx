@@ -61,7 +61,7 @@ export default function Header() {
       <Link href={`/${routes[locale as Locales].products.path}`} className={cx(s.marquee, "cursor-pointer block")}>
         <Marquee repeat={10}>
           <div className={cx(s.feelingThirsty, "flex items-center")}>
-            <small>{t("modal.heading")}</small>
+            <small>{t("noticebar")}</small>
             <span className={s.iconC}>
               <IconPointer fill="var(--cedar-wood-finish)" />
             </span>

@@ -187,7 +187,8 @@
             "button": {
                 "text": "Drop a Line & Chill"
             }
-        }
+        },
+        "noticebar": "Ürünleri İncele"
     },
     "footer": {
         "salesAndOrders": "Sales and Orders",
