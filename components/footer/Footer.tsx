@@ -64,7 +64,7 @@ export default function Footer() {
           <span className={cx(s.social, "flex")}>
             {socialMedia?.map((item, i) => {
               return (
-                <Link className={s.iconC} href={item.url} key={i}>
+                <Link className={cx(s.iconC, "cursor-pointer")} href={item.url} key={i}>
                   {icons[item.name as SocialMedia]}
                 </Link>
               )

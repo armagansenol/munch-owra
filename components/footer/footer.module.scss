@@ -120,13 +120,4 @@
       z-index: 200;
     }
   }
-
-  .iceC {
-    @include position(absolute, auto, 0, desktop-vw(-100px), 0);
-    z-index: 30;
-
-    @include mobile {
-      @include position(absolute, auto, mobile-vw(-70px), mobile-vw(-20px), mobile-vw(-100px));
-    }
-  }
 }
