@@ -51,8 +51,8 @@ select {
 }
 
 *::selection {
-  background-color: var(--theme-secondary);
-  color: var(--theme-primary);
+  background-color: var(--theme-primary);
+  color: var(--theme-secondary);
 }
 
 input {
