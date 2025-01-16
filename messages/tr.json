@@ -2,14 +2,15 @@
     "home": {
         "intro": {
             "heading": "Her Gün <strong>Zinde Kalın</strong>, Her Lokmada <strong>Doğal Atıştırın.</strong>",
-            "description": "Doğanın en iyi seçimleriyle güçlendirilmiş günlük enerji ve sağlık dozu.",
+            "description": "Doğanın en iyi seçkisiyle güçlendirilmiş günlük enerji ve sağlık dozu.",
             "cta": "Tüm Ürünleri Gör"
         },
         "why": {
             "heading": "Her Gün <strong>Zinde Kalın</strong>, Her Lokmada <strong>Doğal Atıştırın.</strong>",
-            "description": "Doğanın en iyi seçimleriyle güçlendirilmiş günlük enerji ve sağlık dozu.",
+            "description": "Doğanın en iyi seçkisiyle güçlendirilmiş günlük enerji ve sağlık dozu.",
             "cta": "Ürünlerimiz"
         },
+        "marqueeProducts": "YARAMAZ KARIŞIMLARIMIZ",
         "pros": {
             "items": {
                 "i1": {
@@ -32,220 +33,221 @@
         },
         "prosSlider": {
             "s1": {
-                "title": "Chill Owra ile Kalite",
-                "description": "Chill Owra'da her üründe kaliteyi ön planda tutuyoruz. Kullandığımız malzemelerden üretim sürecine kadar her aşamada en yüksek standartları titizlikle sağlıyoruz. Memnuniyetiniz önceliğimizdir."
+                "title": "Owra ile Kalite",
+                "description": "Owra'da her üründe kaliteyi ön planda tutuyoruz. Kullandığımız malzemelerden üretim sürecine kadar her aşamada en yüksek standartları titizlikle sağlıyoruz. Memnuniyetiniz önceliğimizdir."
             },
             "s2": {
-                "title": "Chill Owra ile Eğlence",
-                "description": "Chill Owra sadece bir marka değil, eğlenceli anların yaratıcısıdır. Ürünlerimiz, ister arkadaşlarınızla ister ailenizle olun, günlük rutininize neşe katmayı hedefler."
+                "title": "Owra ile Eğlence",
+                "description": "Owra sadece bir marka değil, eğlenceli anların yaratıcısıdır. Ürünlerimiz, ister arkadaşlarınızla ister ailenizle olun, günlük rutininize neşe katmayı hedefler."
             },
             "s3": {
-                "title": "Chill Owra Farkı",
-                "description": "Chill Owra kalite ve eğlenceyi birleştirerek fark yaratır. Her anı unutulmaz kılmayı hedefliyoruz."
+                "title": "Owra Farkı",
+                "description": "Owra kalite ve eğlenceyi bir araya getirerek fark yaratır. Her anı ürünlerimizle unutulmaz kılmayı hedefliyoruz."
             }
         },
         "contact": {
             "heading": "Sorularınız mı var? <br></br> <strong>Yardımcı olmaktan mutluluk duyarız!</strong>"
         },
         "footer": {
-            "copyright": "©2024 Chill Owra",
+            "copyright": "©2024 Owra",
             "madeBy": "Byte My Work"
         }
     },
     "about": {
         "intro": {
             "heading": {
-                "p1": "It’s All About <strong>Good Taste</strong>",
-                "p2": "and <strong>Good Vibes</strong>"
+                "p1": "Her Şey <strong>İyi Tat</strong>",
+                "p2": "ve <strong>İyi Enerji</strong> İle İlgili"
             },
-            "text": "Owra was founded with the aim of bringing quality and fun into your life. It all started with our desire to offer fresh and high-quality products to our loved ones. Today, we offer a wide range of products, from icy fruit juices to coffee and other beverages."
+            "text": "Owra, hayatınıza kalite ve eğlence katmak amacıyla kuruldu. Her şey sevdiklerimize taze ve kaliteli ürünler sunma isteğimizle başladı. Bugün, buzlu meyve sularından kahveye ve diğer içeceklere kadar geniş bir ürün yelpazesi sunuyoruz."
         },
-        "marquee": "WHERE QUALITY MEETS FUN",
-        "marquee2": "OTHER DELIGHTS WE'VE CRAFTED",
+        "marquee": "KALİTE VE EĞLENCENİN BULUŞTUĞU YER",
+        "marquee2": "HAZIRLADIĞIMIZ DİĞER LEZZETLERİMİZ",
         "mission": {
-            "heading": "Our Mission",
-            "text": "At Owra, we aim to deliver quality and enjoyment in every bite. We carefully select our products, prepare them with the freshest ingredients, and present them to you. Customer satisfaction and promoting a healthy lifestyle are our top priorities."
+            "heading": "Misyonumuz",
+            "text": "Owra'da, her lokmada kalite ve keyif sunmayı hedefliyoruz. Ürünlerimizi özenle seçiyor, en taze malzemelerle hazırlıyor ve size sunuyoruz. Müşteri memnuniyeti ve sağlıklı yaşam tarzını desteklemek önceliklerimizdir."
         },
         "vision": {
-            "heading": "Our Vision",
-            "text": "Being a part of moments where quality and fun meet across Turkey. We strive to make sure that when Owra is mentioned, the first things that come to mind are trust and flavor."
+            "heading": "Vizyonumuz",
+            "text": "Türkiye genelinde kalite ve eğlencenin buluştuğu anların bir parçası olmak. Owra denildiğinde akla gelen ilk şeylerin güven ve lezzet olması için çalışıyoruz."
         },
         "values": {
             "quality": {
-                "heading": "Quality",
-                "text": "We ensure the highest quality standards in our products."
+                "heading": "Kalite",
+                "text": "Ürünlerimizde en yüksek kalite standartlarını sağlıyoruz."
             },
             "fun": {
-                "heading": "Fun",
-                "text": "We are here to bring a little more joy into your life."
+                "heading": "Eğlence",
+                "text": "Hayatınıza biraz daha neşe katmak için buradayız."
             },
             "trust": {
-                "heading": "Trust",
-                "text": "We always maintain the trust of our customers."
+                "heading": "Güven",
+                "text": "Müşterilerimizin güvenini her zaman koruyoruz."
             },
             "innovation": {
-                "heading": "Innovation",
-                "text": "We constantly renew and improve ourselves."
+                "heading": "Yenilik",
+                "text": "Kendimizi sürekli yeniliyor ve geliştiriyoruz."
             }
         },
         "franchise": {
             "text": {
-                "p1": "<strong>Owra</strong> is more than just a brand; <strong>it's a lifestyle.</strong> We're here to make every moment of your life <strong>more enjoyable and special</strong>.",
-                "p2": "<strong>Join us</strong> and add a little more joy to your life with Owra."
+                "p1": "<strong>Owra</strong> sadece bir marka değil; <strong>bir yaşam tarzıdır.</strong> Hayatınızın her anını <strong>daha keyifli ve özel</strong> kılmak için buradayız.",
+                "p2": "<strong>Bize katılın</strong> ve Owra ile hayatınıza biraz daha neşe katın."
             }
         },
         "career": {
-            "cta": "Explore Career Opportunities",
-            "title": "Would you like to <strong>work with us?</strong>",
-            "text": "The Owra family is made up of expert and passionate individuals. Each one loves what they do and works hard to achieve the best results. Every member of our team shares the same passion for delivering the best products for you."
+            "cta": "Kariyer Fırsatlarını Keşfedin",
+            "title": "<strong>Bizimle çalışmak</strong> ister misiniz?",
+            "text": "Owra ailesi, uzman ve tutkulu bireylerden oluşur. Her biri yaptığı işi seviyor ve en iyi sonuçları elde etmek için çok çalışıyor. Ekibimizin her üyesi, sizin için en iyi ürünleri sunma tutkusunu paylaşıyor."
         }
     },
     "franchise": {
         "intro": {
-            "heading": "Join the Chill Owra Family!",
-            "text": "At Chill Owra, we are looking for new partners to join our growing family! With Chill Owra Franchise opportunities, you can start your own business and become a successful entrepreneur. We want to work together to provide the best service to our customers with our quality, freshness, and fun-focused products.",
-            "cta": "Become a Franchise"
+            "heading": "Owra Ailesine Katılın!",
+            "text": "Owra'da, büyüyen ailemize katılacak yeni ortaklar arıyoruz! Owra Franchise fırsatları ile kendi işinizi kurabilir ve başarılı bir girişimci olabilirsiniz. Kalite, tazelik ve eğlence odaklı ürünlerimizle müşterilerimize en iyi hizmeti sunmak için birlikte çalışmak istiyoruz.",
+            "cta": "Franchise Ol"
         },
         "why": {
-            "heading": "Why Should You Franchise with Us?",
+            "heading": "Neden Bizimle Franchise Olmalısınız?",
             "items": {
                 "i1": {
-                    "heading": "Brand Power",
-                    "text": "Chill Owra is a strong brand that combines quality and fun."
+                    "heading": "Marka Gücü",
+                    "text": "Owra, kalite ve eğlenceyi birleştiren güçlü bir markadır."
                 },
                 "i2": {
-                    "heading": "Support",
-                    "text": "We provide comprehensive training and operational support to our franchisees."
+                    "heading": "Destek",
+                    "text": "Franchise'larımıza kapsamlı eğitim ve operasyonel destek sağlıyoruz."
                 },
                 "i3": {
-                    "heading": "Product Variety",
-                    "text": "We offer a wide range of products, including ice, fruit juices, coffee, and more."
+                    "heading": "Ürün Çeşitliliği",
+                    "text": "Buz, meyve suları, kahve ve daha fazlasını içeren geniş bir ürün yelpazesi sunuyoruz."
                 },
                 "i4": {
-                    "heading": "Marketing Support",
-                    "text": "We provide support with national marketing campaigns and local advertising strategies."
+                    "heading": "Pazarlama Desteği",
+                    "text": "Ulusal pazarlama kampanyaları ve yerel reklam stratejileriyle destek sağlıyoruz."
                 },
                 "i5": {
-                    "heading": "Innovation",
-                    "text": "We continuously offer opportunities for product development and innovation."
+                    "heading": "Yenilik",
+                    "text": "Sürekli olarak ürün geliştirme ve yenilik fırsatları sunuyoruz."
                 }
             }
         },
         "advantages": {
-            "heading": "Advantages of Chill Owra Franchise Ownership",
+            "heading": "Owra Franchise Sahipliğinin Avantajları",
             "items": {
                 "i1": {
-                    "heading": "Establishment and Operational Guidance",
-                    "text": "We guide you as you start and run your business."
+                    "heading": "Kuruluş ve İşletme Rehberliği",
+                    "text": "İşinizi kurarken ve yönetirken size rehberlik ediyoruz."
                 },
                 "i2": {
-                    "heading": "Product Supply",
-                    "text": "We ensure the supply of high-quality ingredients."
+                    "heading": "Ürün Tedariki",
+                    "text": "Yüksek kaliteli malzemelerin tedarikini sağlıyoruz."
                 },
                 "i3": {
-                    "heading": "Brand Recognition",
-                    "text": "You benefit from Chill Owra's strong brand image."
+                    "heading": "Marka Bilinirliği",
+                    "text": "Owra'nın güçlü marka imajından faydalanırsınız."
                 },
                 "i4": {
-                    "heading": "Profitability",
-                    "text": "We offer a profitable business model with competitive returns."
+                    "heading": "Karlılık",
+                    "text": "Rekabetçi getirilerle karlı bir iş modeli sunuyoruz."
                 }
             }
         },
         "contact": {
-            "heading": "How Can I Apply?",
-            "text": "Contact us for more information on the Chill Owra Franchise application process and how to apply. Our team will work with you to discuss the franchise options that are right for you. You can fill out the application form or contact us for more detailed information.",
+            "heading": "Nasıl Başvurabilirim?",
+            "text": "Owra Franchise başvuru süreci ve nasıl başvuracağınız hakkında daha fazla bilgi için bizimle iletişime geçin. Ekibimiz, size uygun franchise seçeneklerini görüşmek için sizinle çalışacaktır. Başvuru formunu doldurabilir veya daha detaylı bilgi için bizimle iletişime geçebilirsiniz.",
             "contactInfo": {
-                "phone": "Phone:",
-                "email": "Email:",
-                "address": "Address:"
+                "phone": "Telefon:",
+                "email": "E-posta:",
+                "address": "Adres:"
             }
         }
     },
     "contact": {
-        "heading": "Get in Touch",
+        "heading": "İletişime Geçin",
         "contactInfo": {
-            "phone": "Phone:",
-            "email": "Email:",
-            "address": "Address:"
+            "phone": "Telefon:",
+            "email": "E-posta:",
+            "address": "Adres:"
         }
     },
     "notFound": {
-        "title": "PAGE NOT FOUND",
-        "button": "HOMEPAGE"
+        "title": "SAYFA BULUNAMADI",
+        "button": "ANA SAYFA"
     },
     "cursor": {
-        "discover": "Discover Products"
+        "discover": "Ürünleri Keşfet"
     },
     "header": {
         "modal": {
-            "heading": "See All Products",
+            "heading": "Tüm Ürünleri Gör",
             "content": {
-                "p1": "If you’re craving your favorite frozen concoction, drop us an email.",
-                "p2": "We promise it’s worth the brain freeze!"
+                "p1": "En sevdiğiniz soğuk içeceğinizi özlediyseniz, bize e-posta gönderin.",
+                "p2": "Beyin donmasına değeceğine söz veriyoruz!"
             },
             "button": {
-                "text": "Drop a Line & Chill"
+                "text": "Mesaj At & Serinle"
             }
         },
-        "noticebar": "Ürünleri İncele"
+        "noticebar": "Tüm Ürünleri Gör"
     },
     "footer": {
-        "salesAndOrders": "Sales and Orders",
-        "generalQuestions": "General Questions",
-        "address": "Address",
+        "salesAndOrders": "Satış ve Siparişler",
+        "generalQuestions": "Genel Sorular",
+        "address": "Adres",
         "copyright": {
-            "year": "2024 Chill Owra"
+            "year": "2024 Owra"
         }
     },
     "formContact": {
-        "consent": "I consent to the processing of my personal data under KVKK No. 6698, as detailed in the information notice.",
+        "consent": "6698 sayılı KVKK kapsamında, bilgilendirme metninde belirtildiği şekilde kişisel verilerimin işlenmesine onay veriyorum.",
         "fields": {
             "name": {
-                "placeholder": "Name Surname",
-                "error": "Please enter a valid name"
+                "placeholder": "Ad Soyad",
+                "error": "Lütfen geçerli bir isim girin"
             },
             "email": {
-                "placeholder": "Email Address",
-                "error": "Please enter a valid email address"
+                "placeholder": "E-posta Adresi",
+                "error": "Lütfen geçerli bir e-posta adresi girin"
             },
             "phone": {
-                "placeholder": "Phone Number",
-                "error": "Please enter a valid phone number"
+                "placeholder": "Telefon Numarası",
+                "error": "Lütfen geçerli bir telefon numarası girin"
             },
             "message": {
-                "placeholder": "How Can We Help?",
-                "error": "Please enter your message"
+                "placeholder": "Size Nasıl Yardımcı Olabiliriz?",
+                "error": "Lütfen mesajınızı girin"
             }
         },
         "button": {
-            "text": "Submit Form"
+            "text": "Formu Gönder"
         }
     },
     "productSlider": {
         "s1": {
-            "title": "Chill Owra"
+            "title": "Owra"
         },
         "s2": {
-            "title": "Chill Owra Boba"
+            "title": "Owra Boba"
         },
         "s3": {
-            "title": "Chill Owra Coffee"
+            "title": "Owra Coffee"
         },
         "cta": {
-            "title": "Experience in 3D"
+            "title": "3D Deneyimle"
         }
     },
     "productDetail": {
         "franchise": {
-            "cta": "Become a Franchise",
-            "text": "Chill Owra is more than just a brand; it is a lifestyle. We are here to make every moment more enjoyable and special for you. Join us and add a little more joy to your life with Chill Owra."
+            "cta": "Franchise Ol",
+            "text": "Owra sadece bir marka değil; bir yaşam tarzıdır. Her anınızı daha keyifli ve özel kılmak için buradayız. Bize katılın ve Owra ile hayatınıza biraz daha neşe katın."
         }
     },
     "products": {
-        "productGroups": "All <strong>the Munch</strong> You Need, Right Here",
-        "description": "Energize your day with unique, flavor-packed bites.",
-        "ingredients": "Ingredients",
-        "breadcrumb": "All Products"
+        "productGroups": "İhtiyacınız Olan Tüm <strong>Atıştırmalıklar</strong> Burada!",
+        "relatedProducts": "İhtiyacınız Olan Tüm <strong>Atıştırmalıklar</strong> Ve Daha Fazlası!",
+        "description": "Benzersiz, lezzet dolu atıştırmalıklarla gününüzü enerjik kılın.",
+        "ingredients": "İçindekiler",
+        "breadcrumb": "Tüm Ürünler"
     }
 }

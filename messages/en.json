@@ -10,6 +10,7 @@
             "description": "A daily dose of energy and wellness, powered by nature's finest selection.",
             "cta": "Our Products"
         },
+        "marqueeProducts": "OUR MISCHIEVOUS MIXES",
         "pros": {
             "items": {
                 "i1": {
@@ -32,23 +33,23 @@
         },
         "prosSlider": {
             "s1": {
-                "title": "Quality with Chill Owra",
-                "description": "At Chill Owra, we prioritize quality in every product. We meticulously ensure the highest standards at every stage, from the materials we use to the production process. Your satisfaction is our priority."
+                "title": "Quality with Owra",
+                "description": "At Owra, we prioritize quality in every product. We meticulously ensure the highest standards at every stage, from the materials we use to the production process. Your satisfaction is our priority."
             },
             "s2": {
-                "title": "Fun with Chill Owra",
-                "description": "Chill Owra is not just a brand, it's the creator of fun moments. Our products aim to add joy to your daily routine, whether with friends or family."
+                "title": "Fun with Owra",
+                "description": "Owra is not just a brand, it's the creator of fun moments. Our products aim to add joy to your daily routine, whether with friends or family."
             },
             "s3": {
-                "title": "The Chill Owra Difference",
-                "description": "Chill Owra creates a difference by combining quality and fun. We aim to make every moment unforgettable with our products."
+                "title": "The Owra Difference",
+                "description": "Owra creates a difference by combining quality and fun. We aim to make every moment unforgettable with our products."
             }
         },
         "contact": {
             "heading": "Do you have any questions? <br></br> <strong>We're happy to help!</strong>"
         },
         "footer": {
-            "copyright": "©2024 Chill Owra",
+            "copyright": "©2024 Owra",
             "madeBy": "Byte My Work"
         }
     },
@@ -102,8 +103,8 @@
     },
     "franchise": {
         "intro": {
-            "heading": "Join the Chill Owra Family!",
-            "text": "At Chill Owra, we are looking for new partners to join our growing family! With Chill Owra Franchise opportunities, you can start your own business and become a successful entrepreneur. We want to work together to provide the best service to our customers with our quality, freshness, and fun-focused products.",
+            "heading": "Join the Owra Family!",
+            "text": "At Owra, we are looking for new partners to join our growing family! With Owra Franchise opportunities, you can start your own business and become a successful entrepreneur. We want to work together to provide the best service to our customers with our quality, freshness, and fun-focused products.",
             "cta": "Become a Franchise"
         },
         "why": {
@@ -111,7 +112,7 @@
             "items": {
                 "i1": {
                     "heading": "Brand Power",
-                    "text": "Chill Owra is a strong brand that combines quality and fun."
+                    "text": "Owra is a strong brand that combines quality and fun."
                 },
                 "i2": {
                     "heading": "Support",
@@ -132,7 +133,7 @@
             }
         },
         "advantages": {
-            "heading": "Advantages of Chill Owra Franchise Ownership",
+            "heading": "Advantages of Owra Franchise Ownership",
             "items": {
                 "i1": {
                     "heading": "Establishment and Operational Guidance",
@@ -144,7 +145,7 @@
                 },
                 "i3": {
                     "heading": "Brand Recognition",
-                    "text": "You benefit from Chill Owra's strong brand image."
+                    "text": "You benefit from Owra's strong brand image."
                 },
                 "i4": {
                     "heading": "Profitability",
@@ -154,7 +155,7 @@
         },
         "contact": {
             "heading": "How Can I Apply?",
-            "text": "Contact us for more information on the Chill Owra Franchise application process and how to apply. Our team will work with you to discuss the franchise options that are right for you. You can fill out the application form or contact us for more detailed information.",
+            "text": "Contact us for more information on the Owra Franchise application process and how to apply. Our team will work with you to discuss the franchise options that are right for you. You can fill out the application form or contact us for more detailed information.",
             "contactInfo": {
                 "phone": "Phone:",
                 "email": "Email:",
@@ -195,7 +196,7 @@
         "generalQuestions": "General Questions",
         "address": "Address",
         "copyright": {
-            "year": "2024 Chill Owra"
+            "year": "2024 Owra"
         }
     },
     "formContact": {
@@ -224,13 +225,13 @@
     },
     "productSlider": {
         "s1": {
-            "title": "Chill Owra"
+            "title": "Owra"
         },
         "s2": {
-            "title": "Chill Owra Boba"
+            "title": "Owra Boba"
         },
         "s3": {
-            "title": "Chill Owra Coffee"
+            "title": "Owra Coffee"
         },
         "cta": {
             "title": "Experience in 3D"
@@ -239,11 +240,12 @@
     "productDetail": {
         "franchise": {
             "cta": "Become a Franchise",
-            "text": "Chill Owra is more than just a brand; it is a lifestyle. We are here to make every moment more enjoyable and special for you. Join us and add a little more joy to your life with Chill Owra."
+            "text": "Owra is more than just a brand; it is a lifestyle. We are here to make every moment more enjoyable and special for you. Join us and add a little more joy to your life with Owra."
         }
     },
     "products": {
-        "productGroups": "All <strong>the Munch</strong> You Need, Right Here",
+        "productGroups": "All <strong>the Munch</strong> You Need, Right Here!",
+        "relatedProducts": "All <strong>the Munch</strong> You Need, And More!",
         "description": "Energize your day with unique, flavor-packed bites.",
         "ingredients": "Ingredients",
         "breadcrumb": "All Products"
