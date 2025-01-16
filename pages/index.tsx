@@ -46,7 +46,7 @@ export default function Home() {
             <p className="text-center lg:text-left">{t("intro.description")}</p>
             <Link
               className={cx(s.cta, "flex items-center justify-center cursor-pointer mx-auto lg:mx-0")}
-              href="/products"
+              href="/urunler"
             >
               <LetterSwapForward
                 label={`${t("intro.cta")}`}
@@ -157,7 +157,7 @@ export default function Home() {
       <div className={s.marqueeProductsC}>
         <Marquee repeat={5}>
           <div className="flex items-center">
-            <h2>OUR MISCHIEVOUS MIXES</h2>
+            <h2>{t("marqueeProducts")}</h2>
           </div>
         </Marquee>
       </div>
