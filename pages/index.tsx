@@ -182,7 +182,7 @@ export default function Home() {
             {t.rich("why.heading", { strong: (chunks) => <strong className="font-bold italic">{chunks}</strong> })}
           </h1>
           <p>{t("why.description")}</p>
-          <Link className={cx(s.cta, "flex items-center justify-center mx-auto lg:mx-0")} href="/products">
+          <Link className={cx(s.cta, "flex items-center justify-center mx-auto lg:mx-0")} href="/urunler">
             <LetterSwapForward
               label={`${t("why.cta")}`}
               reverse={false}
