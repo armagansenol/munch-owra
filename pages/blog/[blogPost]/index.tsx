@@ -107,11 +107,11 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     }
 
     return {
-      // props: {
-      //   blog: data,
-      //   messages: (await import(`@/messages/${context.locale}.json`)).default,
-      // },
-      props: data,
+      props: {
+        blog: data.blog,
+        nextblogs: data.nextblogs,
+        messages: (await import(`@/messages/${context.locale}.json`)).default,
+      },
     }
   } catch (error) {
     console.error("Error fetching blog post:", error)
