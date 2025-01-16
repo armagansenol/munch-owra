@@ -11,17 +11,16 @@ import { FormSchema, useSubmitForm } from "@/api/mutations/contact-form"
 import { Checkbox } from "@/components/utility/checkbox"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/utility/form"
 import { Input } from "@/components/utility/input"
-import { LoadingSpinner } from "@/components/utility/loading-spinner"
 import { Textarea } from "@/components/utility/textarea"
 import { FormType } from "@/types"
 
 export interface FormContactProps {
-  theme?: "blue" | "white"
+  theme?: "dark" | "white"
   formType: FormType
 }
 
 export default function FormContact(props: FormContactProps) {
-  const { theme = "blue", formType } = props
+  const { theme = "dark", formType } = props
   const t = useTranslations("formContact")
   const [responseMessage, setResponseMessage] = useState("")
 
