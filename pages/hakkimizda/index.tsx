@@ -132,7 +132,7 @@ export default function About() {
         <div className={s.links}>
           <Link href="https://chillowra.com" className={cx(s.link, "block cursor-pointer")}>
             <div className="flex items-center justify-between">
-              <h2>Chill Owra</h2>
+              <h2>Owra</h2>
               <span className={s.iconC}>
                 <IconArrow fill="var(--cedar-wood-finish)" />
               </span>
