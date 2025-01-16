@@ -24,8 +24,9 @@
     gap: desktop-vw(40px);
 
     @include mobile {
+      align-items: center;
       flex-direction: column;
-      gap: mobile-vw(30px);
+      gap: mobile-vw(0px);
     }
 
     .imgC {
@@ -35,18 +36,35 @@
         @include dims(100%, mobile-vw(230px));
       }
     }
+
+    .text {
+      .title {
+        font-size: desktop-vw(28px);
+
+        @include mobile {
+          font-size: mobile-vw(24px);
+        }
+      }
+
+      .description {
+        font-size: desktop-vw(12px);
+
+        @include mobile {
+          font-size: mobile-vw(12px);
+        }
+      }
+    }
   }
 
   .imgC {
     @include dims(100%, desktop-vw(320px));
-    border-radius: desktop-vw(20px);
+    border-radius: desktop-vw(10px);
     overflow: hidden;
     transition: 600ms all cubic-bezier(0.175, 0.885, 0.32, 1);
 
     @include mobile {
       @include dims(100%, mobile-vw(230px));
       border-radius: mobile-vw(10px);
-      margin-bottom: mobile-vw(15px);
     }
 
     > div {
@@ -61,10 +79,13 @@
 
     @include mobile {
       margin-top: mobile-vw(20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .category {
-      color: var(--black);
+      color: var(--red-dit);
       font-family: var(--font-asap);
       font-size: desktop-vw(16px);
       font-weight: 400;
@@ -78,7 +99,7 @@
     }
 
     .time {
-      color: var(--black);
+      color: var(--cedar-wood-finish);
       font-family: var(--font-asap);
       font-size: desktop-vw(16px);
       font-weight: 400;
@@ -92,38 +113,38 @@
     }
 
     .title {
-      color: var(--black);
+      color: var(--cedar-wood-finish);
       font-family: var(--font-asap);
       font-size: desktop-vw(24px);
       font-weight: 700;
       margin-bottom: desktop-vw(14px);
 
       @include mobile {
-        font-size: mobile-vw(14px);
+        font-size: mobile-vw(24px);
         margin-bottom: mobile-vw(10px);
         text-align: center;
       }
     }
 
     .description {
-      color: var(--black);
+      color: var(--cedar-wood-finish);
       font-family: var(--font-asap);
       font-size: desktop-vw(16px);
       font-weight: 400;
-      margin-bottom: desktop-vw(75px);
+      margin-bottom: desktop-vw(50px);
 
       @include mobile {
         font-size: mobile-vw(14px);
-        margin-bottom: mobile-vw(10px);
+        margin-bottom: mobile-vw(30px);
         text-align: center;
       }
     }
 
     .date {
       @include position(absolute, 0, 0, auto, auto);
-      color: var(--black);
+      color: var(--cedar-wood-finish);
       font-family: var(--font-asap);
-      font-size: desktop-vw(18px);
+      font-size: desktop-vw(16px);
       font-weight: 400;
 
       @include mobile {
@@ -142,6 +163,32 @@
         font-size: mobile-vw(30px);
         margin-bottom: mobile-vw(10px);
         text-align: center;
+      }
+    }
+
+    .cta {
+      background-color: var(--cedar-wood-finish);
+      border: 1px solid var(--cedar-wood-finish);
+      border-radius: desktop-vw(12px);
+      color: var(--white);
+      display: inline-flex;
+      font-family: var(--font-asap);
+      font-size: desktop-vw(18px);
+      font-weight: 600;
+      padding: desktop-vw(7px) desktop-vw(20px);
+      transition: 300ms all ease;
+
+      @include mobile {
+        border-radius: mobile-vw(12px);
+        font-size: mobile-vw(16px);
+        padding: mobile-vw(7px) mobile-vw(16px);
+      }
+
+      @include hover {
+        &:hover {
+          background-color: var(--white);
+          color: var(--cedar-wood-finish);
+        }
       }
     }
   }

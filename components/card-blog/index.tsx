@@ -7,6 +7,7 @@ import { Img } from "@/components/utility/img"
 import { Link } from "@/components/utility/link"
 import { routes } from "@/lib/constants"
 import { CardBlogProps, Locales } from "@/types"
+import LetterSwapForward from "../letter-swap-forward"
 
 type Props = CardBlogProps
 
@@ -34,7 +35,18 @@ const CardBlog = (props: Props) => {
         <p className={s.title}>{props.title}</p>
         <p className={s.description}>{props.description}</p>
         <p className={s.date}>{props.date}</p>
-        <p className={s.link}>Devamını Oku</p>
+        <p className={s.cta}>
+          <LetterSwapForward
+            label={`${locale === "tr" ? "Devamını Oku" : "Read More"}`}
+            reverse={false}
+            className="font-bold"
+            transition={{
+              type: "spring",
+              duration: 0.5,
+            }}
+            staggerDuration={0.01}
+          />
+        </p>
       </div>
       <div></div>
     </Link>

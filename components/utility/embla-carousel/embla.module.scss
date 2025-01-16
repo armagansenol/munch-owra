@@ -19,6 +19,10 @@
     flex-shrink: 0;
     min-width: 0;
     padding-left: var(--slide-spacing);
+
+    @include mobile {
+      @include dims(100%, auto);
+    }
   }
 }
 

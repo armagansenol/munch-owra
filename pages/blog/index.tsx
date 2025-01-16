@@ -38,7 +38,6 @@ const Blog = ({ blogPage }: BlogProps) => {
             })}
         </EmblaCarousel>
       </section>
-
       <section className={cx(s.content, "flex flex-col tablet:grid grid-cols-3")}>
         {blogPage.blogs &&
           blogPage.blogs.map((item, i) => {
