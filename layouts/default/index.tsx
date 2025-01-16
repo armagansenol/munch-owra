@@ -1,13 +1,13 @@
 import s from "./default-layout.module.scss"
 
 import cx from "clsx"
+import { usePathname } from "next/navigation"
 import { useRouter } from "next/router"
 import { ReactNode, useEffect } from "react"
 
-import { CustomHead } from "@/components/utility/custom-head"
-
 import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
+import { CustomHead } from "@/components/utility/custom-head"
 import { baseUrl } from "@/lib/constants"
 import { useCursorStore } from "@/lib/store/cursor"
 import { useLenisStore } from "@/lib/store/lenis"
@@ -23,6 +23,7 @@ const DefaultLayout = ({ children, seo, theme = "light" }: Props) => {
   const router = useRouter()
   const cursorStore = useCursorStore()
   const { lenis } = useLenisStore()
+  const pathname = usePathname()
 
   useEffect(() => {
     if (cursorStore.type !== CursorType.default) cursorStore.reset()
@@ -30,7 +31,7 @@ const DefaultLayout = ({ children, seo, theme = "light" }: Props) => {
 
   useEffect(() => {
     lenis?.scrollTo(0, { immediate: true })
-  }, [lenis])
+  }, [lenis, pathname])
 
   return (
     <div className={cx(s.defaultLayout, `theme-${theme}`)}>
