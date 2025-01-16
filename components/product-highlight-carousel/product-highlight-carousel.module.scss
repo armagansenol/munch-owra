@@ -1,0 +1,72 @@
+.productHighlightCarousel {
+  @include dims(100vw, auto);
+  overflow: hidden;
+  position: relative;
+
+  .slide {
+    @include dims(100vw, auto);
+    flex-shrink: 0;
+
+    .card {
+      color: var(--cedar-wood-finish);
+      font-size: mobile-vw(32px);
+      font-family: var(--font-anton);
+      font-weight: 500;
+      gap: mobile-vw(16px);
+      opacity: 0.8;
+      pointer-events: none;
+      transform: scale(0.8);
+      transition: 700ms all ease;
+      text-align: center;
+
+      &.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: scale(1);
+      }
+    }
+
+    .imgC {
+      @include dims(100%, auto);
+
+      @include mobile {
+        @include dims(mobile-vw(240px));
+      }
+    }
+  }
+
+  .prevBtn {
+    @include dims(mobile-vw(40px));
+    background-color: var(--black);
+    border-radius: 50%;
+    padding: mobile-vw(10px);
+    position: absolute;
+    left: mobile-vw(20px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+  .nextBtn {
+    @include dims(mobile-vw(40px));
+    background-color: var(--black);
+    border-radius: 50%;
+    padding: mobile-vw(10px);
+    position: absolute;
+    right: mobile-vw(20px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+
+  .iconC {
+    @include dims(desktop-vw(30px));
+
+    @include mobile {
+      @include dims(mobile-vw(10px));
+    }
+
+    * {
+      transition: 300ms all ease;
+    }
+  }
+}

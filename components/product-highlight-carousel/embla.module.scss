@@ -1,0 +1,17 @@
+.embla {
+  --slide-size: 100%;
+}
+.emblaViewport {
+  overflow: hidden;
+}
+.emblaContainer {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+.emblaSlide {
+  flex-shrink: 0;
+
+  @include mobile {
+    @include dims(100vw, auto);
+  }
+}

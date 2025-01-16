@@ -29,7 +29,7 @@ export default function Products(props: ProductsProps) {
         </h1>
         <p>{t("products.description")}</p>
       </section>
-      <section className={cx(s.products, "flex items-center justify-center flex-wrap gap-24")}>
+      <section className={cx(s.products, "flex items-center justify-center flex-wrap gap-12 tablet:gap-24")}>
         {props.productGroups &&
           props.productGroups.map((item, i) => {
             return (
