@@ -52,15 +52,14 @@
       @include dims(auto, desktop-vw(90px));
       background-color: var(--theme-primary);
       border-radius: desktop-vw(6px);
-      padding: desktop-vw(10px);
       transition: 200ms all ease;
       position: relative;
       transition: 400ms background-color ease;
+      overflow: hidden;
 
       @include mobile {
-        @include dims(mobile-vw(70px), mobile-vw(70px));
-        border-radius: mobile-vw(6px);
-        padding: mobile-vw(10px);
+        @include dims(mobile-vw(50px));
+        border-radius: mobile-vw(4px);
       }
 
       &.active {
@@ -81,6 +80,7 @@
     @include dims(auto, desktop-vw(520px));
     background-color: var(--theme-primary);
     border-radius: desktop-vw(8px);
+    overflow: hidden;
     position: relative;
     transition: 400ms background-color ease;
 
@@ -220,7 +220,22 @@
         }
       }
 
-      .imgC {
+      .ingredientsDetail {
+        color: var(--cedar-wood-finish);
+        font-size: desktop-vw(16px);
+        font-family: var(--font-asap);
+        font-weight: 400;
+        margin-bottom: desktop-vw(20px);
+        transition: 400ms color ease;
+
+        @include mobile {
+          font-size: mobile-vw(16px);
+          margin-bottom: mobile-vw(20px);
+          text-align: center;
+        }
+      }
+
+      .stickerC {
         @include dims(desktop-vw(110px));
         transition: 400ms border ease;
 
@@ -229,6 +244,10 @@
         }
       }
     }
+  }
+
+  .stickerC {
+    @include dims(desktop-vw(100px));
   }
 }
 

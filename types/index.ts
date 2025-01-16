@@ -105,6 +105,9 @@ export interface Product {
   size: string
   volume: string
   description: string
+  ingredients: string
+  ingredientsIcon: string
+  packageImage: string
   images: {
     id: number
     img: string
@@ -114,6 +117,7 @@ export interface Product {
     url: string
     size: string
     image: string
+    name: string
   }[]
   backgroundColor: string
   textColor: string

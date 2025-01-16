@@ -55,8 +55,10 @@ export default function ProductGroup(props: ProductGroupProps) {
     },
   ]
 
+  console.log(props.product)
+
   useIsomorphicLayoutEffect(() => {
-    theme.setColors(props.product.textColor, props.product.backgroundColor)
+    theme.setColors("var(--white)", props.product.textColor)
     return () => theme.resetColors()
   }, [props.product.textColor, props.product.backgroundColor])
 
@@ -72,7 +74,7 @@ export default function ProductGroup(props: ProductGroupProps) {
       <section className={cn(s.product, "flex flex-col tablet:grid grid-cols-12")}>
         <div className="col-span-6 flex flex-col-reverse tablet:grid grid-cols-12 gap-4">
           <div
-            className={cn(s.imgs, "col-span-2 flex flex-row tablet:flex-col justify-center tablet:justify-start gap-4")}
+            className={cn(s.imgs, "col-span-2 flex flex-row tablet:flex-col justify-center tablet:justify-start gap-2")}
           >
             {props.product.images.map((item, i) => {
               return (
@@ -81,7 +83,7 @@ export default function ProductGroup(props: ProductGroupProps) {
                   key={i}
                   onClick={() => setCurrentItem(i)}
                 >
-                  <Img className="object-contain" src={item.img} height={500} width={500} alt="Product Visual" />
+                  <Img className="object-cover" src={item.img} height={500} width={500} alt="Product Visual" />
                 </div>
               )
             })}
@@ -89,7 +91,7 @@ export default function ProductGroup(props: ProductGroupProps) {
           <div className="col-span-10">
             <div className={s.mainImgC}>
               <Img
-                className="object-contain"
+                className="object-cover"
                 src={props.product.images[currentItem].img}
                 height={500}
                 width={500}
@@ -102,7 +104,7 @@ export default function ProductGroup(props: ProductGroupProps) {
                 }
               >
                 <div className={s.iconC}>
-                  <IconArrow fill={props.product.backgroundColor} rotate={180} />
+                  <IconArrow fill={props.product.textColor} rotate={180} />
                 </div>
               </div>
               <div
@@ -110,7 +112,7 @@ export default function ProductGroup(props: ProductGroupProps) {
                 onClick={() => setCurrentItem((prev) => (prev + 1) % props.product.images.length)}
               >
                 <div className={s.iconC}>
-                  <IconArrow fill={props.product.backgroundColor} />
+                  <IconArrow fill={props.product.textColor} />
                 </div>
               </div>
             </div>
@@ -120,29 +122,26 @@ export default function ProductGroup(props: ProductGroupProps) {
           <div className={s.name}>{props.product.name}</div>
           <div className={s.size}>{props.product.size}</div>
           <div className={s.desc}>{props.product.description}</div>
-          <div className={cn(s.other)}>
+          <div className={cn(s.other, "flex flex-col items-center tablet:items-start justify-start")}>
             <div className={s.title}>{t("products.ingredients")}</div>
-            <div className={cn(s.items, "flex items-center justify-center tablet:justify-start gap-3 flex-wrap")}>
-              {props.product.other.map((item, i) => {
-                return (
-                  <Link
-                    href={`/${routes[locale as Locales].products.path}/${item.url}`}
-                    className={cn(s.imgC, "cursor-pointer")}
-                    key={i}
-                  >
-                    <Img className="object-contain" src={item.image} height={500} width={500} alt="Product Visual" />
-                  </Link>
-                )
-              })}
+            <div className={s.ingredientsDetail}>{props.product.ingredients}</div>
+            <div className={cn(s.stickerC)}>
+              <Img
+                className="object-contain"
+                src={props.product.ingredientsIcon}
+                height={500}
+                width={500}
+                alt="Sticker"
+              />
             </div>
           </div>
         </div>
       </section>
       <section>
         <GridSpecs
-          primaryFill="var(--magentle)"
+          primaryFill={props.product.textColor}
           secondaryFill="var(--steamed-milk)"
-          productImage={props.product.images[currentItem].img}
+          productImage={props.product.packageImage}
         />
       </section>
       {/* related products */}
@@ -164,12 +163,12 @@ export default function ProductGroup(props: ProductGroupProps) {
           <div className="hidden tablet:block">
             <section className={cn(s.relatedProducts, "flex flex-col items-center")}>
               <div className="flex items-center justify-center gap-32 px-40">
-                {relatedProducts.map((item) => {
+                {props.product.other.map((item) => {
                   return (
                     <Link
                       className={cn(s.relatedProduct, "flex flex-col items-center flex-shrink-0 cursor-pointer")}
                       key={item.id}
-                      href={`/`}
+                      href={`/urunler/${item.url}`}
                       prefetch={true}
                     >
                       <div className={s.imgC}>

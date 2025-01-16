@@ -58,8 +58,8 @@
     gap: desktop-vw(16px);
 
     @include mobile {
-      font-size: mobile-vw(28px);
-      gap: mobile-vw(8px);
+      font-size: mobile-vw(36px);
+      gap: mobile-vw(16px);
     }
 
     @include hover {

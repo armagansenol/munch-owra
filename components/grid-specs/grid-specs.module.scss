@@ -148,7 +148,7 @@
     }
 
     .imgC {
-      @include position(absolute, auto, auto, desktop-vw(-480px), 50%);
+      @include position(absolute, auto, auto, desktop-vw(-450px), 50%);
       @include dims(65%, auto);
       transform: translateX(-40%) rotate(-10deg);
 
