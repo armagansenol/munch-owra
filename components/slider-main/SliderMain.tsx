@@ -8,10 +8,11 @@ import { truncateByWords } from "@/lib/utils"
 import { CardBlogProps } from "@/types"
 import { useEffect, useRef, useState } from "react"
 
+import { routes } from "@/lib/constants"
 import useEmblaCarousel from "embla-carousel-react"
 import { IconArrow } from "../icons"
+import LetterSwapForward from "../letter-swap-forward"
 import { Link } from "../utility/link"
-import { routes } from "@/lib/constants"
 
 export interface SliderMainProps {
   items: CardBlogProps[]
@@ -87,12 +88,21 @@ export default function SliderMain(props: SliderMainProps) {
           return (
             <div className={cx(s.itemC, "flex flex-col", { [s.active]: currentSlide === i })} key={i}>
               <p className={s.category}>{item.category}</p>
-              <p className={s.time}>{item.time} Dakika Okuma Süresi</p>
+              <p className={s.time}>{item.time}</p>
               <p className={s.title}>{truncateByWords(item.title, 7)}</p>
               <p className={s.description}>{truncateByWords(item.description, 18)}</p>
               <p className={s.date}>{item.date}</p>
-              <Link className={s.link} href={`/${routes.tr.blog.path}/${item.url}`}>
-                Devamını Oku
+              <Link className={s.cta} href={`/${routes.tr.blog.path}/${item.url}`}>
+                <LetterSwapForward
+                  label="Devamını Oku"
+                  reverse={false}
+                  className="font-bold"
+                  transition={{
+                    type: "spring",
+                    duration: 0.5,
+                  }}
+                  staggerDuration={0.01}
+                />
               </Link>
             </div>
           )
@@ -101,12 +111,12 @@ export default function SliderMain(props: SliderMainProps) {
           <div className={cx(s.buttons, "flex gap-1")}>
             <div className={cx(s.btn, "cursor-pointer flex items-center justify-center")} onClick={handlePrev}>
               <span className={s.icon}>
-                <IconArrow fill="var(--cedar-wood-finish)" rotate={180} />
+                <IconArrow fill="var(--red-dit)" rotate={180} />
               </span>
             </div>
             <div className={cx(s.btn, "cursor-pointer flex items-center justify-center")} onClick={handleNext}>
               <span className={s.icon}>
-                <IconArrow fill="var(--cedar-wood-finish)" />
+                <IconArrow fill="var(--red-dit)" />
               </span>
             </div>
           </div>

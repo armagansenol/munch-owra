@@ -1,17 +1,16 @@
 .sliderMain {
-  border-bottom: 3px solid var(--cedar-wood-finish);
-  border-top: 3px solid var(--cedar-wood-finish);
+  border-bottom: 3px solid var(--black);
 
   @include mobile {
     border-bottom: none;
   }
 
   .text {
-    border-right: 3px solid var(--cedar-wood-finish);
+    border-right: 3px solid var(--black);
     position: relative;
 
     @include mobile {
-      @include dims(auto, mobile-vw(350px));
+      @include dims(auto, mobile-vw(320px));
       border-right: none;
       order: 2;
     }
@@ -25,7 +24,8 @@
 
       .btn {
         @include dims(desktop-vw(45px));
-        border: 1px solid var(--cedar-wood-finish);
+        border-radius: 50%;
+        border: 1px solid var(--black);
 
         @include mobile {
           @include dims(mobile-vw(32px));
@@ -41,7 +41,7 @@
       }
 
       .indicator {
-        color: var(--black);
+        color: var(--cedar-wood-finish);
         font-family: var(--font-asap);
         font-size: desktop-vw(12px);
         font-weight: 400;
@@ -67,7 +67,7 @@
       }
 
       .category {
-        color: var(--black);
+        color: var(--red-dit);
         font-family: var(--font-asap);
         font-size: desktop-vw(14px);
         font-weight: 400;
@@ -81,7 +81,7 @@
       }
 
       .time {
-        color: var(--black);
+        color: var(--cedar-wood-finish);
         font-family: var(--font-asap);
         font-size: desktop-vw(12px);
         font-weight: 400;
@@ -94,9 +94,9 @@
       }
 
       .title {
-        color: var(--black);
+        color: var(--cedar-wood-finish);
         font-family: var(--font-asap);
-        font-size: desktop-vw(20px);
+        font-size: desktop-vw(24px);
         font-weight: 700;
         line-height: 1.3;
         margin-bottom: desktop-vw(14px);
@@ -111,7 +111,7 @@
       }
 
       .description {
-        color: var(--black);
+        color: var(--cedar-wood-finish);
         font-family: var(--font-asap);
         font-size: desktop-vw(14px);
         font-weight: 400;
@@ -126,7 +126,7 @@
 
       .date {
         @include position(absolute, 0, 0, auto, auto);
-        color: var(--black);
+        color: var(--cedar-wood-finish);
         font-family: var(--font-asap);
         font-size: desktop-vw(12px);
         font-weight: 400;
@@ -150,6 +150,37 @@
           text-align: center;
         }
       }
+
+      .cta {
+        margin-top: auto;
+        margin-right: auto;
+        background-color: var(--cedar-wood-finish);
+        border: 1px solid var(--cedar-wood-finish);
+        border-radius: desktop-vw(12px);
+        color: var(--white);
+        display: inline-flex;
+        font-family: var(--font-asap);
+        font-size: desktop-vw(18px);
+        font-weight: 600;
+        padding: desktop-vw(7px) desktop-vw(20px);
+        transition: 300ms all ease;
+
+        @include mobile {
+          border-radius: mobile-vw(12px);
+          font-size: mobile-vw(16px);
+          padding: mobile-vw(7px) mobile-vw(16px);
+          margin: 0 auto;
+          margin-bottom: mobile-vw(10px);
+          margin-top: auto;
+        }
+
+        @include hover {
+          &:hover {
+            background-color: var(--white);
+            color: var(--cedar-wood-finish);
+          }
+        }
+      }
     }
   }
 
@@ -162,18 +193,18 @@
       margin-left: desktop-vw(20px);
 
       @include mobile {
-        @include dims(100vw, mobile-vw(225px));
+        @include dims(100vw, mobile-vw(240px));
         margin: 0;
-        padding: mobile-vw(20px);
+        padding: mobile-vw(16px);
       }
 
       .img {
         @include dims(100%);
-        border-radius: desktop-vw(20px);
+        border-radius: desktop-vw(12px);
         overflow: hidden;
 
         @include mobile {
-          border-radius: mobile-vw(12px);
+          border-radius: mobile-vw(8px);
         }
       }
     }

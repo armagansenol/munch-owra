@@ -69,11 +69,14 @@ const BlogPost = (props: Props) => {
       </section>
 
       <section className={s.other}>
-        <div className={s.marquee}>
+        <Link
+          href={`/${routes[locale as Locales].blog.path}/${props.nextblogs[0].url}`}
+          className={cx(s.marquee, "cursor-pointer")}
+        >
           <Marquee duration={30} repeat={4} inverted>
-            <h5>Sıradaki İçerik</h5>
+            <h5>{locale === "tr" ? "SIRADAKI İÇERİK" : "NEXT CONTENT"}</h5>
           </Marquee>
-        </div>
+        </Link>
 
         <div className={s.sliderC}>
           <SliderMain items={props.nextblogs} />
@@ -88,15 +91,32 @@ export default BlogPost
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const blogPost = context.params?.blogPost as string
 
-  const data = await single(blogPost)
-
   if (!blogPost) {
     return {
       notFound: true,
     }
   }
 
-  return {
-    props: data,
+  try {
+    const data = await single(blogPost)
+
+    if (!data) {
+      return {
+        notFound: true,
+      }
+    }
+
+    return {
+      // props: {
+      //   blog: data,
+      //   messages: (await import(`@/messages/${context.locale}.json`)).default,
+      // },
+      props: data,
+    }
+  } catch (error) {
+    console.error("Error fetching blog post:", error)
+    return {
+      notFound: true,
+    }
   }
 }

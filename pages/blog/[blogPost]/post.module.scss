@@ -4,29 +4,30 @@
 
   @include mobile {
     column-gap: mobile-vw(22px);
-    padding: mobile-vw(50px) mobile-vw(16px);
+    padding: mobile-vw(30px) mobile-vw(16px);
     padding-bottom: 0;
   }
 
   .back {
+    color: var(--cedar-wood-finish);
     font-family: var(--font-asap);
     font-size: desktop-vw(16px);
     font-weight: 400;
 
     @include mobile {
       font-size: mobile-vw(14px);
-      margin-bottom: mobile-vw(10px);
+      margin-bottom: mobile-vw(20px);
     }
   }
 
   .info {
-    color: var(--black);
+    color: var(--cedar-wood-finish);
     margin-bottom: desktop-vw(40px);
     position: relative;
 
     @include mobile {
       align-items: center;
-      margin-bottom: mobile-vw(50px);
+      margin-bottom: mobile-vw(20px);
       order: 2;
     }
 
@@ -105,7 +106,7 @@
 .banner {
   @include dims(100%, auto);
   background: var(--alaskan-mist);
-  border-radius: desktop-vw(20px);
+  border-radius: desktop-vw(10px);
   grid-column: 1/13;
   overflow: hidden;
 
@@ -125,7 +126,7 @@
   }
 
   .content {
-    color: var(--black);
+    color: var(--cedar-wood-finish);
     font-family: var(--font-asap);
     font-size: desktop-vw(16px);
     font-weight: 400;
@@ -195,27 +196,36 @@
     strong {
       font-weight: 700;
     }
+
+    img {
+      @include dims(auto, desktop-vw(400px));
+      border-radius: desktop-vw(10px);
+      object-fit: cover;
+
+      @include mobile {
+        @include dims(auto, mobile-vw(240px));
+        border-radius: mobile-vw(10px);
+      }
+    }
   }
 }
 
 .other {
-  margin-bottom: desktop-vw(220px);
-
   .marquee {
-    border-top: 3px solid var(--cedar-wood-finish);
+    background-color: var(--black);
     display: block;
-    padding: desktop-vw(32px) 0;
+    padding: desktop-vw(10px) 0;
 
     @include mobile {
       padding: mobile-vw(10px) 0;
     }
 
     h5 {
-      color: var(--cedar-wood-finish);
-      font-family: var(--font-asap);
+      color: var(--red-dit);
+      font-family: var(--font-anton);
       font-size: desktop-vw(80px);
       font-weight: 400;
-      margin: 0 desktop-vw(75px);
+      margin: 0 desktop-vw(50px);
 
       @include mobile {
         font-size: mobile-vw(30px);
