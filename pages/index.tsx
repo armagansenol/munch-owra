@@ -217,6 +217,21 @@ export default function Home() {
         <div className={s.fillerBottom}>
           <IconFiller />
         </div>
+        <div className={cx(s.munch, s.munch1, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-1}>
+            <Img className="object-contain" src={"/img/munchies/m-10.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch2, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-1}>
+            <Img className="object-contain" src={"/img/munchies/m-8.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
+        <div className={cx(s.munch, s.munch3, "w-10 h-10")}>
+          <ParallaxWrapper speedY={-1}>
+            <Img className="object-contain" src={"/img/munchies/m-12.png"} alt="Owra" width={200} height={200} />
+          </ParallaxWrapper>
+        </div>
       </section>
     </DefaultLayout>
   )

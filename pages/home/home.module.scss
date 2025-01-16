@@ -470,4 +470,36 @@
       @include dims(100vw, mobile-vw(160px));
     }
   }
+
+  .munch {
+    z-index: 10;
+  }
+
+  .munch1 {
+    @include position(absolute, auto, auto, desktop-vw(-240px), desktop-vw(400px));
+    @include dims(desktop-vw(55px));
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .munch2 {
+    @include position(absolute, auto, desktop-vw(450px), desktop-vw(-300px), auto);
+    @include dims(desktop-vw(66px));
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .munch3 {
+    @include position(absolute, auto, desktop-vw(-80px), desktop-vw(-450px), auto);
+    @include dims(desktop-vw(220px));
+    filter: blur(4px);
+
+    @include mobile {
+      display: none;
+    }
+  }
 }

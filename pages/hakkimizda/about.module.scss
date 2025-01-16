@@ -334,7 +334,7 @@
 
 .career {
   background-color: var(--cedar-wood-finish);
-  margin-bottom: desktop-vw(200px);
+  margin-bottom: desktop-vw(100px);
   padding: desktop-vw(80px) desktop-vw(120px);
   position: relative;
 
@@ -430,6 +430,38 @@
     @include mobile {
       @include position(absolute, auto, auto, mobile-vw(-50px), auto);
       @include dims(100vw, mobile-vw(160px));
+    }
+  }
+
+  .munch {
+    z-index: 10;
+  }
+
+  .munch1 {
+    @include position(absolute, auto, auto, desktop-vw(-140px), desktop-vw(400px));
+    @include dims(desktop-vw(55px));
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .munch2 {
+    @include position(absolute, auto, desktop-vw(450px), desktop-vw(-200px), auto);
+    @include dims(desktop-vw(66px));
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .munch3 {
+    @include position(absolute, auto, desktop-vw(-80px), desktop-vw(-350px), auto);
+    @include dims(desktop-vw(220px));
+    filter: blur(4px);
+
+    @include mobile {
+      display: none;
     }
   }
 }
