@@ -9,7 +9,7 @@
     @include dims(desktop-vw(400px), desktop-vw(440px));
 
     @include mobile {
-      @include dims(mobile-vw(330px), mobile-vw(300px));
+      @include dims(mobile-vw(160px), mobile-vw(300px));
     }
   }
 
