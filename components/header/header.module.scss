@@ -94,15 +94,33 @@
   font-size: desktop-vw(20px);
   font-weight: 900;
   padding: desktop-vw(10px) 0;
+  transition: 300ms background-color ease, 300ms color ease;
 
   @include mobile {
     font-size: mobile-vw(18px);
     padding: mobile-vw(8px) 0;
   }
 
+  @include hover {
+    &:hover {
+      background-color: var(--cedar-wood-finish);
+      color: var(--gourmet-honey);
+
+      .iconC {
+        * {
+          fill: var(--gourmet-honey);
+        }
+      }
+    }
+  }
+
   .iconC {
     @include dims(desktop-vw(20px));
     margin: 0 desktop-vw(32px);
+
+    * {
+      transition: 300ms fill ease;
+    }
 
     @include mobile {
       @include dims(mobile-vw(18px));
