@@ -162,13 +162,7 @@ export default function FormContact(props: FormContactProps) {
               />
             </div>
             <button className={s.submitBtn} type="submit" disabled={!form.formState.isValid}>
-              {isLoading ? (
-                <div className={cx(s.spinnerC, "pointer-events-none")}>
-                  <LoadingSpinner />
-                </div>
-              ) : (
-                <span className="pointer-events-none">{t("button.text")}</span>
-              )}
+              <span className="pointer-events-none">{t("button.text")}</span>
             </button>
           </form>
         </Form>
