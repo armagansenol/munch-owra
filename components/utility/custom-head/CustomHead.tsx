@@ -16,7 +16,7 @@ export default function CustomHead({
   description,
   image,
   keywords,
-  themeColor = "#0075CE",
+  themeColor = "#701500",
   twitter = { handle: "@owra" },
 }: Props) {
   return (
