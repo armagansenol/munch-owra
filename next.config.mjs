@@ -12,7 +12,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cms.munchowra.com",
+        hostname: "cms.owra.co",
         pathname: "**",
       },
     ],

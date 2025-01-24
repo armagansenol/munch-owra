@@ -63,7 +63,7 @@ export default function Header() {
           <div className={cx(s.feelingThirsty, "flex items-center")}>
             <small>{t("noticebar")}</small>
             <span className={s.iconC}>
-              <IconPointer fill="var(--cedar-wood-finish)" />
+              <IconPointer fill="var(--gourmet-honey)" />
             </span>
           </div>
         </Marquee>

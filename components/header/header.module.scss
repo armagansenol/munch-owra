@@ -88,8 +88,8 @@
 }
 
 .marquee {
-  background-color: var(--gourmet-honey);
-  color: var(--cedar-wood-finish);
+  background-color: var(--cedar-wood-finish);
+  color: var(--gourmet-honey);
   font-family: var(--font-asap);
   font-size: desktop-vw(20px);
   font-weight: 900;
@@ -103,12 +103,12 @@
 
   @include hover {
     &:hover {
-      background-color: var(--cedar-wood-finish);
-      color: var(--gourmet-honey);
+      background-color: var(--gourmet-honey);
+      color: var(--cedar-wood-finish);
 
       .iconC {
         * {
-          fill: var(--gourmet-honey);
+          fill: var(--cedar-wood-finish);
         }
       }
     }

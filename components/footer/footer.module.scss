@@ -16,7 +16,7 @@
     }
 
     .row {
-      gap: desktop-vw(150px);
+      gap: desktop-vw(130px);
 
       @include mobile {
         gap: mobile-vw(50px);
@@ -41,7 +41,7 @@
       > h6 {
         color: var(--cedar-wood-finish);
         font-family: var(--font-asap);
-        font-size: desktop-vw(20px);
+        font-size: desktop-vw(14px);
         font-weight: 600;
         line-height: 1.35;
         margin-bottom: desktop-vw(4px);
@@ -56,7 +56,7 @@
       > p {
         color: var(--cedar-wood-finish);
         font-family: var(--font-asap);
-        font-size: desktop-vw(18px);
+        font-size: desktop-vw(16px);
         font-weight: 400;
         line-height: 1.35;
 

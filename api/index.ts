@@ -1,5 +1,5 @@
 import axios from "axios"
 
 export const apiClient = axios.create({
-  baseURL: "https://cms.munchowra.com/services",
+  baseURL: "https://cms.owra.co/api/munchowra",
 })
