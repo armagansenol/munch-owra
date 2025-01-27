@@ -10,6 +10,7 @@ import dynamic from "next/dynamic"
 import { Anton, Asap } from "next/font/google"
 import { useRouter } from "next/router"
 import { QueryClient, QueryClientProvider } from "react-query"
+import { Analytics } from "@vercel/analytics/next"
 
 const Cursor = dynamic(() => import("@/components/cursor").then((module) => module.Cursor), {
   ssr: false,
@@ -48,6 +49,7 @@ export default function App({ Component, pageProps }: AppProps) {
         >
           <SmoothLayout>
             <Component {...pageProps} />
+            <Analytics />
           </SmoothLayout>
           <Modal />
           <Cursor />
